@@ -1,0 +1,207 @@
+\hypertarget{classEOSLuaEnvironment}{
+\section{EOSLuaEnvironment Class Reference}
+\label{classEOSLuaEnvironment}\index{EOSLuaEnvironment@{EOSLuaEnvironment}}
+}
+This class wraps the Lua interpreter environment instance.  
+
+
+{\tt \#include $<$EOSLuaEnvironment.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classEOSLuaEnvironment_9d99c0b601ab2e3e86c11b7410a00d26}{EOSLuaEnvironment} ()
+\begin{CompactList}\small\item\em constructor \item\end{CompactList}\item 
+virtual \hyperlink{classEOSLuaEnvironment_d57156a90aff28c59db3fc756bed0d94}{$\sim$EOSLuaEnvironment} ()
+\begin{CompactList}\small\item\em destructor \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaEnvironment_50fa986c464d28a30c07178165a9aa8c}{init} ()
+\begin{CompactList}\small\item\em initializes Lua interpreter environment \item\end{CompactList}\item 
+void \hyperlink{classEOSLuaEnvironment_30d30f126d7c66533bfc73cc580ea9de}{destroy} ()
+\begin{CompactList}\small\item\em closes Lua interpreter environment \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaEnvironment_c1657fa448dfda93c41f1a09a77aa91e}{runFile} (const char $\ast$filename)
+\begin{CompactList}\small\item\em executes a Lua source, from a regular file \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaEnvironment_2c229ac186b5df733a1b2177fd7218aa}{runBuffer} (const unsigned char $\ast$bufferPtr, size\_\-t bufferSize, const char $\ast$bufferName=NULL)
+\begin{CompactList}\small\item\em executes a Lua source, from a memory buffer \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaEnvironment_dad2df9fe00ab74fa40f61e65b64d041}{callFunction} (int nArgs, int nReturns=0)
+\begin{CompactList}\small\item\em calls a Lua function loaded in Lua stack \item\end{CompactList}\item 
+char $\ast$ \hyperlink{classEOSLuaEnvironment_f0ec64cece3cb022704af6aab5377bbf}{getLuaValueAsString} (const char $\ast$luaVarName)
+\begin{CompactList}\small\item\em returns a value from Lua runtime, in string format \item\end{CompactList}\item 
+lua\_\-State $\ast$ \hyperlink{classEOSLuaEnvironment_f0e9201ab81ce4be089f0f99197a06b1}{getLuaState} ()
+\begin{CompactList}\small\item\em Gets the pointer to the Lua interpreter environment. \item\end{CompactList}\item 
+virtual bool \hyperlink{classEOSLuaEnvironment_b56241a405c111658211cab0706fff71}{isOk} ()
+\begin{CompactList}\small\item\em Checks if the VM is OK and can be still used. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static void \hyperlink{classEOSLuaEnvironment_cfd50ba33863147fab881765110410c0}{vmPanic} (lua\_\-State $\ast$lua)
+\begin{CompactList}\small\item\em emergency method called in case of Lua interpreter panic \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+lua\_\-State $\ast$ \hyperlink{classEOSLuaEnvironment_0658d1e689f5a6cccdf4456a6a938b6f}{luaState}
+\begin{CompactList}\small\item\em Lua interpreter environment. \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaEnvironment_575f4654bd2650a110661fd4e4d56a6d}{allOk}
+\begin{CompactList}\small\item\em sanity-status flag \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classEOSLuaEnvironment_8d4d4493b7762dc75eedcd5c5313b472}{handleError} (lua\_\-State $\ast$lua, int errorCode)
+\begin{CompactList}\small\item\em this function dumps detailed runtime Lua errors on stderr \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+char \hyperlink{classEOSLuaEnvironment_38958bc6b0b6e68b9a66b6e9ff21f5ec}{tempValueString} \mbox{[}1024\mbox{]}
+\begin{CompactList}\small\item\em temporary buffer used by getLuaValueAsString \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class wraps the Lua interpreter environment instance. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEOSLuaEnvironment_9d99c0b601ab2e3e86c11b7410a00d26}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{EOSLuaEnvironment}]{\setlength{\rightskip}{0pt plus 5cm}EOSLuaEnvironment::EOSLuaEnvironment ()}}
+\label{classEOSLuaEnvironment_9d99c0b601ab2e3e86c11b7410a00d26}
+
+
+constructor 
+
+\hypertarget{classEOSLuaEnvironment_d57156a90aff28c59db3fc756bed0d94}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!$\sim$EOSLuaEnvironment@{$\sim$EOSLuaEnvironment}}
+\index{$\sim$EOSLuaEnvironment@{$\sim$EOSLuaEnvironment}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{$\sim$EOSLuaEnvironment}]{\setlength{\rightskip}{0pt plus 5cm}EOSLuaEnvironment::$\sim$EOSLuaEnvironment ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classEOSLuaEnvironment_d57156a90aff28c59db3fc756bed0d94}
+
+
+destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEOSLuaEnvironment_50fa986c464d28a30c07178165a9aa8c}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!init@{init}}
+\index{init@{init}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaEnvironment::init ()}}
+\label{classEOSLuaEnvironment_50fa986c464d28a30c07178165a9aa8c}
+
+
+initializes Lua interpreter environment 
+
+\hypertarget{classEOSLuaEnvironment_30d30f126d7c66533bfc73cc580ea9de}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!destroy@{destroy}}
+\index{destroy@{destroy}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void EOSLuaEnvironment::destroy ()}}
+\label{classEOSLuaEnvironment_30d30f126d7c66533bfc73cc580ea9de}
+
+
+closes Lua interpreter environment 
+
+\hypertarget{classEOSLuaEnvironment_c1657fa448dfda93c41f1a09a77aa91e}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!runFile@{runFile}}
+\index{runFile@{runFile}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{runFile}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaEnvironment::runFile (const char $\ast$ {\em filename})}}
+\label{classEOSLuaEnvironment_c1657fa448dfda93c41f1a09a77aa91e}
+
+
+executes a Lua source, from a regular file 
+
+\hypertarget{classEOSLuaEnvironment_2c229ac186b5df733a1b2177fd7218aa}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!runBuffer@{runBuffer}}
+\index{runBuffer@{runBuffer}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{runBuffer}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaEnvironment::runBuffer (const unsigned char $\ast$ {\em bufferPtr}, \/  size\_\-t {\em bufferSize}, \/  const char $\ast$ {\em bufferName} = {\tt NULL})}}
+\label{classEOSLuaEnvironment_2c229ac186b5df733a1b2177fd7218aa}
+
+
+executes a Lua source, from a memory buffer 
+
+\hypertarget{classEOSLuaEnvironment_dad2df9fe00ab74fa40f61e65b64d041}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!callFunction@{callFunction}}
+\index{callFunction@{callFunction}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{callFunction}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaEnvironment::callFunction (int {\em nArgs}, \/  int {\em nReturns} = {\tt 0})}}
+\label{classEOSLuaEnvironment_dad2df9fe00ab74fa40f61e65b64d041}
+
+
+calls a Lua function loaded in Lua stack 
+
+\hypertarget{classEOSLuaEnvironment_f0ec64cece3cb022704af6aab5377bbf}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!getLuaValueAsString@{getLuaValueAsString}}
+\index{getLuaValueAsString@{getLuaValueAsString}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{getLuaValueAsString}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ EOSLuaEnvironment::getLuaValueAsString (const char $\ast$ {\em luaVarName})}}
+\label{classEOSLuaEnvironment_f0ec64cece3cb022704af6aab5377bbf}
+
+
+returns a value from Lua runtime, in string format 
+
+\hypertarget{classEOSLuaEnvironment_f0e9201ab81ce4be089f0f99197a06b1}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!getLuaState@{getLuaState}}
+\index{getLuaState@{getLuaState}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{getLuaState}]{\setlength{\rightskip}{0pt plus 5cm}lua\_\-State$\ast$ EOSLuaEnvironment::getLuaState ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSLuaEnvironment_f0e9201ab81ce4be089f0f99197a06b1}
+
+
+Gets the pointer to the Lua interpreter environment. 
+
+\hypertarget{classEOSLuaEnvironment_cfd50ba33863147fab881765110410c0}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!vmPanic@{vmPanic}}
+\index{vmPanic@{vmPanic}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{vmPanic}]{\setlength{\rightskip}{0pt plus 5cm}void EOSLuaEnvironment::vmPanic (lua\_\-State $\ast$ {\em lua})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classEOSLuaEnvironment_cfd50ba33863147fab881765110410c0}
+
+
+emergency method called in case of Lua interpreter panic 
+
+\hypertarget{classEOSLuaEnvironment_b56241a405c111658211cab0706fff71}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!isOk@{isOk}}
+\index{isOk@{isOk}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{isOk}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool EOSLuaEnvironment::isOk ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classEOSLuaEnvironment_b56241a405c111658211cab0706fff71}
+
+
+Checks if the VM is OK and can be still used. 
+
+\hypertarget{classEOSLuaEnvironment_8d4d4493b7762dc75eedcd5c5313b472}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!handleError@{handleError}}
+\index{handleError@{handleError}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{handleError}]{\setlength{\rightskip}{0pt plus 5cm}void EOSLuaEnvironment::handleError (lua\_\-State $\ast$ {\em lua}, \/  int {\em errorCode})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSLuaEnvironment_8d4d4493b7762dc75eedcd5c5313b472}
+
+
+this function dumps detailed runtime Lua errors on stderr 
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classEOSLuaEnvironment_0658d1e689f5a6cccdf4456a6a938b6f}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!luaState@{luaState}}
+\index{luaState@{luaState}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{luaState}]{\setlength{\rightskip}{0pt plus 5cm}lua\_\-State$\ast$ {\bf EOSLuaEnvironment::luaState}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classEOSLuaEnvironment_0658d1e689f5a6cccdf4456a6a938b6f}
+
+
+Lua interpreter environment. 
+
+\hypertarget{classEOSLuaEnvironment_575f4654bd2650a110661fd4e4d56a6d}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!allOk@{allOk}}
+\index{allOk@{allOk}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{allOk}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf EOSLuaEnvironment::allOk}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classEOSLuaEnvironment_575f4654bd2650a110661fd4e4d56a6d}
+
+
+sanity-status flag 
+
+\hypertarget{classEOSLuaEnvironment_38958bc6b0b6e68b9a66b6e9ff21f5ec}{
+\index{EOSLuaEnvironment@{EOSLuaEnvironment}!tempValueString@{tempValueString}}
+\index{tempValueString@{tempValueString}!EOSLuaEnvironment@{EOSLuaEnvironment}}
+\subsubsection[{tempValueString}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf EOSLuaEnvironment::tempValueString}\mbox{[}1024\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSLuaEnvironment_38958bc6b0b6e68b9a66b6e9ff21f5ec}
+
+
+temporary buffer used by getLuaValueAsString 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{EOSLuaEnvironment_8h}{EOSLuaEnvironment.h}\item 
+\hyperlink{EOSLuaEnvironment_8cpp}{EOSLuaEnvironment.cpp}\end{CompactItemize}

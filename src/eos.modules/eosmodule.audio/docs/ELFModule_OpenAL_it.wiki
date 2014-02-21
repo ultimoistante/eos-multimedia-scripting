@@ -1,0 +1,473 @@
+~~NOTOC~~
+====== API reference for ELF Extension Module ======
+
+<box 100% grey left|**Module summary:**>
+^ Module name:        | **ELFModule_OpenAL** |
+^ Module namespace:   | **ELFOpenAL** |
+^ Module version:     | 0.9.92 |
+
+<box 100% grey left | Function list:>
+^ [[#ELFOpenAL.initialize]] | Inizializza il modulo OpenAL. Questa è la prima funzione che devi chiamare per usare il modulo. |
+^ [[#ELFOpenAL.shutdown]] | Arresta il modulo OpenAL. |
+^ [[#ELFOpenAL.update]] | Aggiorna il modulo OpenAL. |
+^ [[#ELFOpenAL.listenerSetPosition]] | Imposta la posizione assoluta del listener |
+^ [[#ELFOpenAL.listenerSetVelocity]] | Imposta la velocità assoluta del listener |
+^ [[#ELFOpenAL.listenerSetOrientation]] | Imposta l'orientamento del listener |
+^ [[#ELFOpenAL.listenerSetOrientationAt]] | Imposta l'orientamento AT del listener |
+^ [[#ELFOpenAL.listenerSetOrientationUp]] | Imposta l'orientamento UP del listener |
+^ [[#ELFOpenAL.listenerSetGain]] | Imposta il guadagno del volume del listener |
+^ [[#ELFOpenAL.setDistanceFactor]] | Imposta il distance factor |
+^ [[#ELFOpenAL.setDopplerFactor]] | Imposta il doppler factor |
+^ [[#ELFOpenAL.setRolloffFactor]] | Imposta il rolloff factor |
+^ [[#ELFOpenAL.setMaxDistance]] | Imposta la distanza massima |
+^ [[#ELFOpenAL.setReferenceDistance]] | Imposta la distanza di riferimento |
+^ [[#ELFOpenAL.soundLoad]] | Carica un suono |
+^ [[#ELFOpenAL.soundUnload]] | Scarica un suono, precedentemente caricato, dalla memoria |
+^ [[#ELFOpenAL.soundPlay]] | Suona un suono |
+^ [[#ELFOpenAL.soundReplay]] | Suona un suono già suonato |
+^ [[#ELFOpenAL.soundCrossLap]] | Effettua un CrossLap tra il suono corrente ed un altro |
+^ [[#ELFOpenAL.soundPause]] | Mette in pausa un suono che sta suonando |
+^ [[#ELFOpenAL.soundUnpause]] | Riprende un suono in pausa |
+^ [[#ELFOpenAL.soundMute]] | Azzera il volume di un suono che sta suonando |
+^ [[#ELFOpenAL.soundUnmute]] | Ripristina un suono dal volume azzerato |
+^ [[#ELFOpenAL.soundStop]] | Ferma un suono che sta suonando |
+^ [[#ELFOpenAL.soundSetPosition]] | Imposta la posizione di un suono |
+^ [[#ELFOpenAL.soundTranslate]] | Trasla la posizione di un suono |
+^ [[#ELFOpenAL.soundSetPitch]] | Imposta il pitch di un suono |
+^ [[#ELFOpenAL.soundSetGain]] | Imposta il guadagno del volume di un suono |
+^ [[#ELFOpenAL.soundFlush]] | Scarica i buffer in coda di un suono |
+^ [[#ELFOpenAL.soundIsPlaying]] | Interroga lo stato corrente di esecuzione di un suono |
+^ [[#ELFOpenAL.soundIsLooping]] | Interroga lo stato corrente di esecuzione ciclica di un suono |
+^ [[#ELFOpenAL.soundIsMuted]] | Interroga lo stato silenziazione di un suono |
+</box>
+
+</box>
+
+=====ELFOpenAL.initialize=====
+<box 100% grey round left|//Boolean // = **ELFOpenAL.initialize** ( )>
+
+Inizializza il modulo OpenAL. Questa è la prima funzione che devi chiamare per usare il modulo.
+
+^ Parameters: ^^|
+|  no parameters  |||
+
+^ Returns: ^^|
+| Boolean |  ****  | true in caso di successo, false altrimenti |
+
+</box>
+=====ELFOpenAL.shutdown=====
+<box 100% grey round left|//Boolean // = **ELFOpenAL.shutdown** ( )>
+
+Arresta il modulo OpenAL.
+
+^ Parameters: ^^|
+|  no parameters  |||
+
+^ Returns: ^^|
+| Boolean |  ****  | true in caso di successo, false altrimenti |
+
+</box>
+=====ELFOpenAL.update=====
+<box 100% grey round left|**ELFOpenAL.update** ( Numeric frameTime  )>
+
+Aggiorna il modulo OpenAL.
+
+In questo momento questo modulo non necessita la chiamata di questa funzione, comunque usala per garantire la compatibilità futura.
+
+^ Parameters: ^^|
+| Numeric |  **frameTime**  | durata dell'ultima frame, in secondi |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.listenerSetPosition=====
+<box 100% grey round left|**ELFOpenAL.listenerSetPosition** ( Numeric x, Numeric y, Numeric z  )>
+
+Imposta la posizione assoluta del listener
+
+^ Parameters: ^^|
+| Numeric |  **x**  | coordinata X assoluta dove posizionare il listener |
+| Numeric |  **y**  | coordinata Y assoluta dove posizionare il listener |
+| Numeric |  **z**  | coordinata Z assoluta dove posizionare il listener |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.listenerSetVelocity=====
+<box 100% grey round left|**ELFOpenAL.listenerSetVelocity** ( Numeric x, Numeric y, Numeric z  )>
+
+Imposta la velocità assoluta del listener
+
+^ Parameters: ^^|
+| Numeric |  **x**  | velocità assoluta sull'asse X |
+| Numeric |  **y**  | velocità assoluta sull'asse Y |
+| Numeric |  **z**  | velocità assoluta sull'asse Z |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.listenerSetOrientation=====
+<box 100% grey round left|**ELFOpenAL.listenerSetOrientation** ( Numeric atx, Numeric aty, Numeric atz, Numeric upx, Numeric upy, Numeric upz  )>
+
+Imposta l'orientamento del listener
+
+^ Parameters: ^^|
+| Numeric |  **atx**  | componente X del vettore AT del listener |
+| Numeric |  **aty**  | componente Y del vettore AT del listener |
+| Numeric |  **atz**  | componente Z del vettore AT del listener |
+| Numeric |  **upx**  | componente X del vettore UP del listener |
+| Numeric |  **upy**  | componente Y del vettore UP del listener |
+| Numeric |  **upz**  | componente Z del vettore UP del listener |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.listenerSetOrientationAt=====
+<box 100% grey round left|**ELFOpenAL.listenerSetOrientationAt** ( Numeric atx, Numeric aty, Numeric atz  )>
+
+Imposta l'orientamento AT del listener
+
+^ Parameters: ^^|
+| Numeric |  **atx**  | componente X del vettore AT del listener |
+| Numeric |  **aty**  | componente Y del vettore AT del listener |
+| Numeric |  **atz**  | componente Z del vettore AT del listener |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.listenerSetOrientationUp=====
+<box 100% grey round left|**ELFOpenAL.listenerSetOrientationUp** ( Numeric upx, Numeric upy, Numeric upz  )>
+
+Imposta l'orientamento UP del listener
+
+^ Parameters: ^^|
+| Numeric |  **upx**  | componente X del vettore UP del listener |
+| Numeric |  **upy**  | componente Y del vettore UP del listener |
+| Numeric |  **upz**  | componente Z del vettore UP del listener |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.listenerSetGain=====
+<box 100% grey round left|**ELFOpenAL.listenerSetGain** ( Numeric gain  )>
+
+Imposta il guadagno del volume del listener
+
+^ Parameters: ^^|
+| Numeric |  **gain**  | guadagno volume listener - valore default: 1.0 |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.setDistanceFactor=====
+<box 100% grey round left|**ELFOpenAL.setDistanceFactor** ( Numeric distanceFactor  )>
+
+Imposta il distance factor
+
+Modifica questo valore per regolare le distanze in OpenAL alla scala adottata nella tua applicazione.
+
+^ Parameters: ^^|
+| Numeric |  **distanceFactor**  | distance factor - valore default: 1.0 |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.setDopplerFactor=====
+<box 100% grey round left|**ELFOpenAL.setDopplerFactor** ( Numeric dopplerFactor  )>
+
+Imposta il doppler factor
+
+Imposta il fattore di scala del doppler in OpenAL.
+
+^ Parameters: ^^|
+| Numeric |  **dopplerFactor**  | doppler factor - valore default: 1.0 |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.setRolloffFactor=====
+<box 100% grey round left|**ELFOpenAL.setRolloffFactor** ( Numeric dopplerFactor  )>
+
+Imposta il rolloff factor
+
+Imposta il fattore di caduta delle sorgenti sonore.
+
+^ Parameters: ^^|
+| Numeric |  **dopplerFactor**  | rolloff factor - valore default: 1.0 |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.setMaxDistance=====
+<box 100% grey round left|**ELFOpenAL.setMaxDistance** ( Numeric maxDistance  )>
+
+Imposta la distanza massima
+
+Imposta la distanza massima oltre la quale non verrà più applicata nessuna attenuazione alla sorgente sonora.
+
+^ Parameters: ^^|
+| Numeric |  **maxDistance**  | distanza massima - valore default: 4000.0 |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.setReferenceDistance=====
+<box 100% grey round left|**ELFOpenAL.setReferenceDistance** ( Numeric referenceDistance  )>
+
+Imposta la distanza di riferimento
+
+Imposta la distanza oltre la quale il volume della sorgente sonora cadrebbe normalmente della metà.
+
+^ Parameters: ^^|
+| Numeric |  **referenceDistance**  | distanza di riferimento - valore default: 3000.0 |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundLoad=====
+<box 100% grey round left|//Numeric // = **ELFOpenAL.soundLoad** ( String filename  )>
+
+Carica un suono
+
+Formati attualmente supportati: OGG, WAV.
+
+^ Parameters: ^^|
+| String |  **filename**  | nome del file da caricare |
+
+^ Returns: ^^|
+| Numeric |  **soundId**  | ritorna l'ID del suono letto in caso di successo, altrimenti -1 |
+
+</box>
+=====ELFOpenAL.soundUnload=====
+<box 100% grey round left|**ELFOpenAL.soundUnload** ( Numeric soundId  )>
+
+Scarica un suono, precedentemente caricato, dalla memoria
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundPlay=====
+<box 100% grey round left|**ELFOpenAL.soundPlay** ( Numeric soundId, Numeric gain, Boolean isRelative, Boolean loop  )>
+
+Suona un suono
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+| Numeric |  **gain**  | guadagno del volume del suono - valore default: 1.0 |
+| Boolean |  **isRelative**  | impostare a true se la posizione del suono è relativa al listener |
+| Boolean |  **loop**  | impostare a true se il suono sarà suonato in loop |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundReplay=====
+<box 100% grey round left|**ELFOpenAL.soundReplay** ( Numeric soundId  )>
+
+Suona un suono già suonato
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundCrossLap=====
+<box 100% grey round left|**ELFOpenAL.soundCrossLap** ( Numeric soundId, Numeric soundIdToCrossLap  )>
+
+Effettua un CrossLap tra il suono corrente ed un altro
+
+Sovrappone e smussa il contorno di una transizione tra due suoni separati. Attualmente implementato solo per i suoni OGG.
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+| Numeric |  **soundIdToCrossLap**  | un soundId valido, con cui effettuare crosslap |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundPause=====
+<box 100% grey round left|**ELFOpenAL.soundPause** ( Numeric soundId  )>
+
+Mette in pausa un suono che sta suonando
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundUnpause=====
+<box 100% grey round left|**ELFOpenAL.soundUnpause** ( Numeric soundId  )>
+
+Riprende un suono in pausa
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundMute=====
+<box 100% grey round left|**ELFOpenAL.soundMute** ( Numeric soundId  )>
+
+Azzera il volume di un suono che sta suonando
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundUnmute=====
+<box 100% grey round left|**ELFOpenAL.soundUnmute** ( Numeric soundId  )>
+
+Ripristina un suono dal volume azzerato
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundStop=====
+<box 100% grey round left|**ELFOpenAL.soundStop** ( Numeric soundId  )>
+
+Ferma un suono che sta suonando
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundSetPosition=====
+<box 100% grey round left|**ELFOpenAL.soundSetPosition** ( Numeric soundId, Numeric x, Numeric y, Numeric z  )>
+
+Imposta la posizione di un suono
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+| Numeric |  **x**  | coordinata X dove posizionare il suono |
+| Numeric |  **y**  | coordinata Y dove posizionare il suono |
+| Numeric |  **z**  | coordinata Z dove posizionare il suono |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundTranslate=====
+<box 100% grey round left|**ELFOpenAL.soundTranslate** ( Numeric soundId, Numeric px, Numeric py, Numeric pz, Numeric vx, Numeric vy, Numeric vz  )>
+
+Trasla la posizione di un suono
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+| Numeric |  **px**  | coordinata X dove posizionare il suono |
+| Numeric |  **py**  | coordinata Y dove posizionare il suono |
+| Numeric |  **pz**  | coordinata Z dove posizionare il suono |
+| Numeric |  **vx**  | velocità assoluta sull'asse X |
+| Numeric |  **vy**  | velocità assoluta sull'asse Y |
+| Numeric |  **vz**  | velocità assoluta sull'asse Z |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundSetPitch=====
+<box 100% grey round left|**ELFOpenAL.soundSetPitch** ( Numeric soundId, Numeric pitch  )>
+
+Imposta il pitch di un suono
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+| Numeric |  **pitch**  | pitch del suono - valore default: 1.0 |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundSetGain=====
+<box 100% grey round left|**ELFOpenAL.soundSetGain** ( Numeric soundId, Numeric gain  )>
+
+Imposta il guadagno del volume di un suono
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+| Numeric |  **gain**  | guadagno del volume del suono - valore default: 1.0 |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundFlush=====
+<box 100% grey round left|**ELFOpenAL.soundFlush** ( Numeric soundId  )>
+
+Scarica i buffer in coda di un suono
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+
+^ Returns: ^^|
+|  no returns  |||
+
+</box>
+=====ELFOpenAL.soundIsPlaying=====
+<box 100% grey round left|//Boolean // = **ELFOpenAL.soundIsPlaying** ( Numeric soundId  )>
+
+Interroga lo stato corrente di esecuzione di un suono
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+
+^ Returns: ^^|
+| Boolean |  ****  | true se il suono è in esecuzione, altrimenti false |
+
+</box>
+=====ELFOpenAL.soundIsLooping=====
+<box 100% grey round left|//Boolean // = **ELFOpenAL.soundIsLooping** ( Numeric soundId  )>
+
+Interroga lo stato corrente di esecuzione ciclica di un suono
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+
+^ Returns: ^^|
+| Boolean |  ****  | true se il suono è in esecuzione ciclica, altrimenti false |
+
+</box>
+=====ELFOpenAL.soundIsMuted=====
+<box 100% grey round left|//Boolean // = **ELFOpenAL.soundIsMuted** ( Numeric soundId  )>
+
+Interroga lo stato silenziazione di un suono
+
+^ Parameters: ^^|
+| Numeric |  **soundId**  | un sound id di un suono precedentemente caricato |
+
+^ Returns: ^^|
+| Boolean |  ****  | true se il suono è silenziato, altrimenti false |
+
+</box>

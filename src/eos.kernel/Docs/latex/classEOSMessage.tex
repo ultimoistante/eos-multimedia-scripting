@@ -1,0 +1,176 @@
+\hypertarget{classEOSMessage}{
+\section{EOSMessage Class Reference}
+\label{classEOSMessage}\index{EOSMessage@{EOSMessage}}
+}
+This class models the EOS Message Structure.  
+
+
+{\tt \#include $<$EOSMessage.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classEOSMessage_4f107c4d2bc222fff75d0a600f8ebfa9}{EOSMessage} (const char $\ast$messageClass)
+\begin{CompactList}\small\item\em constructor \item\end{CompactList}\item 
+\hyperlink{classEOSMessage_57e0677a37c99625d6480d91a910a8bc}{$\sim$EOSMessage} ()
+\begin{CompactList}\small\item\em destructor \item\end{CompactList}\item 
+void \hyperlink{classEOSMessage_7eea6ddaa2fc88e278f1b8916a72da94}{addValue} (const char $\ast$valueKey, bool valueData)
+\begin{CompactList}\small\item\em pushes a boolean value field in the message structure \item\end{CompactList}\item 
+void \hyperlink{classEOSMessage_fa321169de1d36442816d52085a2d7c8}{addValue} (const char $\ast$valueKey, double valueData)
+\begin{CompactList}\small\item\em pushes a numeric value field in the message structure \item\end{CompactList}\item 
+void \hyperlink{classEOSMessage_4e26aa7bc47fb80d6b06cbdb12b63a51}{addValue} (const char $\ast$valueKey, const char $\ast$valueData)
+\begin{CompactList}\small\item\em pushes a string value field in the message structure \item\end{CompactList}\item 
+void \hyperlink{classEOSMessage_2acc24a0b1bd887a34357057a0678537}{toLuaMessageBoardTable} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em loads all message fields in the Lua runtime \hyperlink{classEOSMessage}{EOSMessage} global table \item\end{CompactList}\item 
+void \hyperlink{classEOSMessage_fee56421daea7a52d9c9bfccb95e92ee}{setSender} (const char $\ast$sender)
+\begin{CompactList}\small\item\em sets sender process name \item\end{CompactList}\item 
+void \hyperlink{classEOSMessage_cd7733e73deb926208b222b7f7c50d4d}{setReceiver} (const char $\ast$receiver)
+\begin{CompactList}\small\item\em sets receiver process name \item\end{CompactList}\item 
+std::string \& \hyperlink{classEOSMessage_1d5409e96cc5af7426f36b4e7e90e745}{getSender} ()
+\begin{CompactList}\small\item\em returns sender process name \item\end{CompactList}\item 
+std::string \& \hyperlink{classEOSMessage_190437e488f9966c3a66efc6343dd2ff}{getReceiver} ()
+\begin{CompactList}\small\item\em returns receiver process name \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+std::vector$<$ \hyperlink{classMessageField}{MessageField} $\ast$ $>$ \hyperlink{classEOSMessage_96ec4e4136d8098a9de40eda92f49dc2}{values}
+\begin{CompactList}\small\item\em message fields vector \item\end{CompactList}\item 
+std::string \hyperlink{classEOSMessage_0d4527e99c9d665cd65b3cd753ef59df}{senderName}
+\begin{CompactList}\small\item\em this string holds sender name \item\end{CompactList}\item 
+std::string \hyperlink{classEOSMessage_e2b133e9168915c7c0daf1116aed816b}{receiverName}
+\begin{CompactList}\small\item\em this string holds receiver name \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class models the EOS Message Structure. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEOSMessage_4f107c4d2bc222fff75d0a600f8ebfa9}{
+\index{EOSMessage@{EOSMessage}!EOSMessage@{EOSMessage}}
+\index{EOSMessage@{EOSMessage}!EOSMessage@{EOSMessage}}
+\subsubsection[{EOSMessage}]{\setlength{\rightskip}{0pt plus 5cm}EOSMessage::EOSMessage (const char $\ast$ {\em messageClass})}}
+\label{classEOSMessage_4f107c4d2bc222fff75d0a600f8ebfa9}
+
+
+constructor 
+
+\hypertarget{classEOSMessage_57e0677a37c99625d6480d91a910a8bc}{
+\index{EOSMessage@{EOSMessage}!$\sim$EOSMessage@{$\sim$EOSMessage}}
+\index{$\sim$EOSMessage@{$\sim$EOSMessage}!EOSMessage@{EOSMessage}}
+\subsubsection[{$\sim$EOSMessage}]{\setlength{\rightskip}{0pt plus 5cm}EOSMessage::$\sim$EOSMessage ()}}
+\label{classEOSMessage_57e0677a37c99625d6480d91a910a8bc}
+
+
+destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEOSMessage_7eea6ddaa2fc88e278f1b8916a72da94}{
+\index{EOSMessage@{EOSMessage}!addValue@{addValue}}
+\index{addValue@{addValue}!EOSMessage@{EOSMessage}}
+\subsubsection[{addValue}]{\setlength{\rightskip}{0pt plus 5cm}void EOSMessage::addValue (const char $\ast$ {\em valueKey}, \/  bool {\em valueData})}}
+\label{classEOSMessage_7eea6ddaa2fc88e278f1b8916a72da94}
+
+
+pushes a boolean value field in the message structure 
+
+\hypertarget{classEOSMessage_fa321169de1d36442816d52085a2d7c8}{
+\index{EOSMessage@{EOSMessage}!addValue@{addValue}}
+\index{addValue@{addValue}!EOSMessage@{EOSMessage}}
+\subsubsection[{addValue}]{\setlength{\rightskip}{0pt plus 5cm}void EOSMessage::addValue (const char $\ast$ {\em valueKey}, \/  double {\em valueData})}}
+\label{classEOSMessage_fa321169de1d36442816d52085a2d7c8}
+
+
+pushes a numeric value field in the message structure 
+
+\hypertarget{classEOSMessage_4e26aa7bc47fb80d6b06cbdb12b63a51}{
+\index{EOSMessage@{EOSMessage}!addValue@{addValue}}
+\index{addValue@{addValue}!EOSMessage@{EOSMessage}}
+\subsubsection[{addValue}]{\setlength{\rightskip}{0pt plus 5cm}void EOSMessage::addValue (const char $\ast$ {\em valueKey}, \/  const char $\ast$ {\em valueData})}}
+\label{classEOSMessage_4e26aa7bc47fb80d6b06cbdb12b63a51}
+
+
+pushes a string value field in the message structure 
+
+\hypertarget{classEOSMessage_2acc24a0b1bd887a34357057a0678537}{
+\index{EOSMessage@{EOSMessage}!toLuaMessageBoardTable@{toLuaMessageBoardTable}}
+\index{toLuaMessageBoardTable@{toLuaMessageBoardTable}!EOSMessage@{EOSMessage}}
+\subsubsection[{toLuaMessageBoardTable}]{\setlength{\rightskip}{0pt plus 5cm}void EOSMessage::toLuaMessageBoardTable (lua\_\-State $\ast$ {\em luaRuntime})}}
+\label{classEOSMessage_2acc24a0b1bd887a34357057a0678537}
+
+
+loads all message fields in the Lua runtime \hyperlink{classEOSMessage}{EOSMessage} global table 
+
+\hypertarget{classEOSMessage_fee56421daea7a52d9c9bfccb95e92ee}{
+\index{EOSMessage@{EOSMessage}!setSender@{setSender}}
+\index{setSender@{setSender}!EOSMessage@{EOSMessage}}
+\subsubsection[{setSender}]{\setlength{\rightskip}{0pt plus 5cm}void EOSMessage::setSender (const char $\ast$ {\em sender})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSMessage_fee56421daea7a52d9c9bfccb95e92ee}
+
+
+sets sender process name 
+
+\hypertarget{classEOSMessage_cd7733e73deb926208b222b7f7c50d4d}{
+\index{EOSMessage@{EOSMessage}!setReceiver@{setReceiver}}
+\index{setReceiver@{setReceiver}!EOSMessage@{EOSMessage}}
+\subsubsection[{setReceiver}]{\setlength{\rightskip}{0pt plus 5cm}void EOSMessage::setReceiver (const char $\ast$ {\em receiver})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSMessage_cd7733e73deb926208b222b7f7c50d4d}
+
+
+sets receiver process name 
+
+\hypertarget{classEOSMessage_1d5409e96cc5af7426f36b4e7e90e745}{
+\index{EOSMessage@{EOSMessage}!getSender@{getSender}}
+\index{getSender@{getSender}!EOSMessage@{EOSMessage}}
+\subsubsection[{getSender}]{\setlength{\rightskip}{0pt plus 5cm}std::string\& EOSMessage::getSender ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSMessage_1d5409e96cc5af7426f36b4e7e90e745}
+
+
+returns sender process name 
+
+\hypertarget{classEOSMessage_190437e488f9966c3a66efc6343dd2ff}{
+\index{EOSMessage@{EOSMessage}!getReceiver@{getReceiver}}
+\index{getReceiver@{getReceiver}!EOSMessage@{EOSMessage}}
+\subsubsection[{getReceiver}]{\setlength{\rightskip}{0pt plus 5cm}std::string\& EOSMessage::getReceiver ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSMessage_190437e488f9966c3a66efc6343dd2ff}
+
+
+returns receiver process name 
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classEOSMessage_96ec4e4136d8098a9de40eda92f49dc2}{
+\index{EOSMessage@{EOSMessage}!values@{values}}
+\index{values@{values}!EOSMessage@{EOSMessage}}
+\subsubsection[{values}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<${\bf MessageField}$\ast$$>$ {\bf EOSMessage::values}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSMessage_96ec4e4136d8098a9de40eda92f49dc2}
+
+
+message fields vector 
+
+\hypertarget{classEOSMessage_0d4527e99c9d665cd65b3cd753ef59df}{
+\index{EOSMessage@{EOSMessage}!senderName@{senderName}}
+\index{senderName@{senderName}!EOSMessage@{EOSMessage}}
+\subsubsection[{senderName}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf EOSMessage::senderName}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSMessage_0d4527e99c9d665cd65b3cd753ef59df}
+
+
+this string holds sender name 
+
+\hypertarget{classEOSMessage_e2b133e9168915c7c0daf1116aed816b}{
+\index{EOSMessage@{EOSMessage}!receiverName@{receiverName}}
+\index{receiverName@{receiverName}!EOSMessage@{EOSMessage}}
+\subsubsection[{receiverName}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf EOSMessage::receiverName}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSMessage_e2b133e9168915c7c0daf1116aed816b}
+
+
+this string holds receiver name 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{EOSMessage_8h}{EOSMessage.h}\item 
+\hyperlink{EOSMessage_8cpp}{EOSMessage.cpp}\end{CompactItemize}

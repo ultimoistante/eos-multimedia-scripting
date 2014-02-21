@@ -1,0 +1,81 @@
+--
+-- ogre module test
+--
+
+function this.init()
+	--
+	-- variables
+	this.fps = 0
+	this.fullscreen = false
+	this.screenWidth = 640
+	this.screenHeight = 480
+	--
+	-- load modules
+	eos.module.load("./module.glitter")
+	eos.module.load("./module.oisinput")
+	eos.module.load("./module.bullet")
+	eos.module.load("./module.ogre")
+	--
+	-- initializes glitter
+	this.windowId = eos.glitter.window.create(0, this.screenWidth, this.screenHeight, 32, 0, this.fullscreen)	
+	--
+	-- initializes ois on glitter window
+	eos.oisinput.attachToWindow(this.windowId, this.screenWidth, this.screenHeight, false, this.fullscreen)	
+	--
+	-- initializes ogre on glitter window
+	eos.ogre.initialize(this.windowId)
+	--
+	-- below, we create and load an Ogre renderTarget directly in a Glitter surface
+	this.surfaceId = eos.glitter.surface.createFromObject(eos.ogre.createRenderTarget("default", 320, 200))
+
+	-- let's set a skybox...
+	eos.ogre.world.setSkyBox("Examples/SpaceSkyBox")
+
+  local boxObject = eos.bullet.body.createBox("testbody1", 100, 2, 100, 0) -- name, xsize, ysize, zsize, mass
+  local sphereObject = eos.bullet.body.createBox("testbody2", 10, 10, 10, 5) -- name, radius, mass
+  eos.bullet.body.setPosition("testbody2", 0, 1000, 0)
+ 
+  this.count = 0
+end
+
+
+
+function this.update()
+	--
+	--if(this.count == 300) then eos.shutdown() end
+	this.count = this.count + 1
+	--
+	eos.ogre.camera.rotateByAngles(0.01, 0, 0)
+	--eos.ogre.camera.translate(0, 0, -0.001, false)
+	eos.ogre.update(15)
+	eos.ogre.render()
+	--
+	eos.bullet.update(1.0/60)
+	--
+  print(eos.bullet.body.getPosition("testbody2"))
+	--eos.glitter.surface.rotateByAngles(this.surfaceId, 0, 1, 0, 10)
+	--
+	if(eos.glitter.window.update(this.windowId)	 == false) then eos.shutdown() end
+	eos.oisinput.update()
+	--
+	local fpscounter = eos.glitter.window.getFps(this.windowId)
+	if(fpscounter ~= this.fps) then
+		this.fps = fpscounter
+		print("fps:", this.fps)
+	end
+end
+
+
+function this.cleanup()	
+end
+
+
+function this.processMessage()
+	--
+	if(EOSMessage.messageClass == "OISInput") then
+		if(EOSMessage.keyCode == eos.oisinput.KEY_ESC) then
+			eos.shutdown()
+		end
+	end
+end
+

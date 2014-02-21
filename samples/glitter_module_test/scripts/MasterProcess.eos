@@ -1,0 +1,55 @@
+
+function this.init()
+  	--
+	this.iterations = 0
+	this.fps = 0
+	--
+	if(eos.module.load("./module.glitter") == false) then eos.shutdown() end
+	if(eos.module.load("./module.freeimage") == false) then eos.shutdown() end
+	if(eos.module.load("./module.oisinput") == false) then eos.shutdown() end
+	if(eos.module.load("./module.ogre") == false) then eos.shutdown() end
+	--
+	this.windowId = eos.glitter.window.create(0, 800, 600, 24, 0, false)	
+	eos.oisinput.attachToWindow(this.windowId, 800, 600, false, false)
+	--
+  	-- initializes OGRE on glitter window
+	eos.ogre.initialize(this.windowId)
+	--
+	this.surfaceId = eos.glitter.surface.createFromObject(eos.ogre.createRenderTarget("default", 320, 200))
+	--  	
+	-- sets a skybox...
+	eos.ogre.world.setSkyBox("Examples/SpaceSkyBox");	
+	--
+end
+
+
+function this.update()
+	--
+	eos.ogre.update(15)
+	eos.ogre.render()
+	eos.glitter.window.update(this.windowId)
+	--
+	eos.oisinput.update()
+	--
+	newFps = eos.glitter.window.getFps(this.windowId)
+	if(newFps ~= this.fps) then
+		this.fps = newFps
+		print(this.fps)
+	end	
+end
+
+
+function this.cleanup()
+end
+
+
+function this.processMessage()
+  --
+	if(EOSMessage.messageClass == "OISInput") then
+		if(EOSMessage.keyCode == eos.oisinput.KEY_ESC) then
+			eos.shutdown()
+		end
+	end
+  --
+end
+

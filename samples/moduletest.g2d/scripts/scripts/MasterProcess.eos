@@ -1,0 +1,60 @@
+--
+-- freeimage and session objects test
+--
+
+function this.init()
+	--
+	-- variables
+	this.fps = 0
+	this.fullscreen = false
+	this.screenWidth = 800
+	this.screenHeight = 600
+	--
+	-- load modules
+	eos.module.load("./module.glitter")
+	eos.module.load("./module.oisinput")
+	eos.module.load("./module.freeimage")
+	--
+	-- initialize glitter
+	this.windowId = eos.glitter.window.create(0, this.screenWidth, this.screenHeight, 32, 0, this.fullscreen)	
+	--
+	-- initialize ois	
+	eos.oisinput.attachToWindow(this.windowId, this.screenWidth, this.screenHeight, false, this.fullscreen)	
+	--
+	-- below, we load an image directly in a Glitter surface
+	this.surfaceId = eos.glitter.surface.createFromObject(eos.freeimage.load("PowerUpMetal.tga"))
+	
+	this.surfaceZPos = 0
+	
+end
+
+
+function this.update()
+	--
+	this.surfaceZPos = this.surfaceZPos - 0.1	
+	eos.glitter.surface.setPosition(this.surfaceId, 0, 0, this.surfaceZPos)	
+	--
+	if(eos.glitter.window.update(this.windowId)	 == false) then eos.shutdown() end
+	eos.oisinput.update()
+	--
+	local fpscounter = eos.glitter.window.getFps(this.windowId)
+	if(fpscounter ~= this.fps) then
+		this.fps = fpscounter
+		print("fps:", this.fps)
+	end
+end
+
+
+function this.cleanup()	
+end
+
+
+function this.processMessage()
+	--
+	if(EOSMessage.messageClass == "OISInput") then
+		if(EOSMessage.keyCode == eos.oisinput.KEY_ESC) then
+			eos.shutdown()
+		end
+	end
+end
+

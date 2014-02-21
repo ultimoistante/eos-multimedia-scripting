@@ -1,0 +1,25 @@
+
+function this.init()
+  --
+  this.iterations = 0
+	print(this.processName.." just started")
+	--
+end
+
+
+function this.update()
+  --
+  this.iterations = this.iterations + 1
+  print(string.format("hello from %s! (iteration number: %2d)", this.processName, this.iterations))
+  --
+end
+
+
+function this.cleanup()
+	print(this.processName.." destroyed")
+end
+
+
+function this.processMessage()
+end
+

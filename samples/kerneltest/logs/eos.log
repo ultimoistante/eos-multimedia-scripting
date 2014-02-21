@@ -1,0 +1,21 @@
+EOS Application started on 12/03/2013 - 19:22:28.
+[19:22:28][I] EOS Integrated Scripting System - Kernel v.0.9.1 (Aurora), Nov 04, 2009
+[19:22:28][I] (C) 2009-2013 Salvatore Carotenuto, aka ultimoistante (mailto: ultimoistante@gmail.com)
+[19:22:28][I] [eos.kernel.init()] - Instancing Lua environment... done.
+[19:22:28][I] [eos.kernel.init()] - Registering functions groups in Lua environment...
+[19:22:28][I]    + [ main        ]
+[19:22:28][I]    + [ module      ]
+[19:22:28][I]    + [ time        ]
+[19:22:28][I]    + [ process     ]
+[19:22:28][I]    + [ message     ]
+[19:22:28][I]    + [ log         ]
+[19:22:28][I] [eos.kernel.init()] - Initializing ScriptManager... done.
+[19:22:28][I] [eos.kernel.init()] - Loading MasterProcess script...
+[19:22:28][I] [eos.kernel.createProcess()] - Process 'DummyProcess' created.
+[19:22:28][I] [eos.kernel.init()] - MasterProcess init() executed.
+[19:22:28][I] [eos.kernel.init()] - initialization complete.
+[19:22:28][I] --- [eos.kernel.run()] - Running...
+[19:22:28][I] --- [eos.kernel.run()] - End Running.
+[19:22:28][I] [eos.kernel.cleanup()] - Cleaning up...
+[19:22:28][I] [eos.kernel.cleanup()] - Cleanup complete.
+Application closed.

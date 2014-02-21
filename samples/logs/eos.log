@@ -1,0 +1,17 @@
+EOS Application started on 13/03/2013 - 15:10:15.
+[15:10:15][I] EOS Integrated Scripting System - Kernel v.0.9.1 (Aurora), Nov 04, 2009
+[15:10:15][I] (C) 2009-2013 Salvatore Carotenuto, aka ultimoistante (mailto: ultimoistante@gmail.com)
+[15:10:15][I] [eos.kernel.init()] - Instancing Lua environment... done.
+[15:10:15][I] [eos.kernel.init()] - Registering functions groups in Lua environment...
+[15:10:15][I]    + [ main        ]
+[15:10:15][I]    + [ module      ]
+[15:10:15][I]    + [ time        ]
+[15:10:15][I]    + [ process     ]
+[15:10:15][I]    + [ message     ]
+[15:10:15][I]    + [ log         ]
+[15:10:15][I] [eos.kernel.init()] - Initializing ScriptManager... done.
+[15:10:15][I] [eos.kernel.init()] - Loading MasterProcess script...
+[15:10:15][E] [eos.kernel.init()] - FATAL: unable to activate MasterProcess. Exiting.
+[15:10:15][I] [eos.cleanup()] - Cleaning up...
+[15:10:15][I] [eos.cleanup()] - Cleanup complete.
+Application closed.

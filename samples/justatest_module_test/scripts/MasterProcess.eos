@@ -1,0 +1,38 @@
+
+function this.init()
+  	--
+	this.iterations = 0
+	this.fps = 0
+	--
+	--if(eos.module.load("./module.glitter") == false) then eos.shutdown() end
+	--if(eos.module.load("./module.freeimage") == false) then eos.shutdown() end
+	--if(eos.module.load("./module.oisinput") == false) then eos.shutdown() end
+	--
+	--this.windowId = eos.glitter.window.create(0, 800, 600, 24, 0, false)	
+	--
+end
+
+
+function this.update()
+	--
+	this.iterations = this.iterations + 1
+	--eos.glitter.window.update(this.windowId)
+	--
+	if(this.iterations == 8000000) then
+	--if(this.iterations == 8000) then
+	  print(this.iterations)
+	  eos.shutdown()
+  end
+	--
+end
+
+
+function this.cleanup()
+end
+
+
+function this.processMessage()
+  --
+  --
+end
+

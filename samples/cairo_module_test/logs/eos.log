@@ -1,0 +1,39 @@
+EOS Application started on 20/09/2009 - 17:35:59.
+[17:35:59][I] EOS Integrated Scripting System - Kernel v.1.0.0 (Aurora), Sep 03, 2008
+[17:35:59][I] (C) 2009-2013 Salvatore Carotenuto, aka ultimoistante (mailto: ultimoistante@gmail.com)
+[17:35:59][I] [eos.kernel.init()] - Instancing Lua environment... done.
+[17:35:59][I] [eos.kernel.init()] - Registering functions groups in Lua environment...
+[17:35:59][I]    + [ main        ]
+[17:35:59][I]    + [ module      ]
+[17:35:59][I]    + [ time        ]
+[17:35:59][I]    + [ process     ]
+[17:35:59][I]    + [ message     ]
+[17:35:59][I]    + [ log         ]
+[17:35:59][I]    + [ dataSources ]
+[17:35:59][I] [eos.kernel.init()] - Initializing ScriptManager... done.
+[17:35:59][I] [eos.kernel.init()] - Loading MasterProcess script...
+[17:35:59][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[17:35:59][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[17:35:59][I]               +  3D OpenGL-powered Compositing Window Manager Module for EOS environment
+[17:35:59][I]               +  table name: eos.glitter
+[17:35:59][I] [eos.kernel] >>> loaded module oisinput.eosmodule
+[17:35:59][I]               +  oisinput.eosmodule v.0.2 - August 08, 2009
+[17:35:59][I]               +  OIS Input Module for EOS environment
+[17:35:59][I]               +  table name: eos.oisinput
+[17:35:59][I] [eos.kernel] >>> loaded module cairo.eosmodule
+[17:35:59][I]               +  cairo.eosmodule v.0.1 - September 12, 2009
+[17:35:59][I]               +  Cairo-powered Vector Graphics Module for EOS
+[17:35:59][I]               +  table name: eos.cairo
+[17:36:00][I] [eos.oisinput] OIS Input attached to window whith id 56623108.
+[17:36:00][I] [eos.cairo] - Render Target 'default' successfully created.
+[17:36:00][I] [eos.kernel][createDataSource] - DataSource 'cairo.default' successfully registered.
+[17:36:00][I] [eos.kernel.init()] - MasterProcess init() executed.
+[17:36:00][I] [eos.kernel.init()] - initialization complete.
+[17:36:00][I] --- [eos.kernel.run()] - Running...
+[17:36:02][I] --- [eos.kernel.run()] - End Running.
+[17:36:02][I] [eos.kernel.cleanup()] - Cleaning up...
+[17:36:02][I] [eos.cairo] All render targets deleted.
+[17:36:02][I] [eos.oisinput] Shutting down...
+[17:36:02][I] [eos.glitter] Shutting down...
+[17:36:03][I] [eos.kernel.cleanup()] - Cleanup complete.
+Application closed.

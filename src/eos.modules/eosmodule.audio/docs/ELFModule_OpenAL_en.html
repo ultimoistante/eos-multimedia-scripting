@@ -1,0 +1,1898 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+  <head>
+    <title></title>
+    <link href="elfdocgen.css" rel="stylesheet" type="text/css">
+  </head>
+
+<body>
+
+<div id="pageHeader">
+  <div id="headerLogo"><img src="elf_logo.png"/></div>
+  <div>
+    <table class="headerTable">
+      <tr>
+        <td colspan="2">API Reference for ELF Extension Module</td>
+      </tr>
+      <tr>
+        <td>Module name:</td>
+        <td>ELFModule_OpenAL</td>
+      </tr>
+      <tr>
+        <td>Module namespace:</td>
+        <td>ELFOpenAL</td>
+      </tr>
+      <tr>
+        <td>Module version:</td>
+        <td>0.9.92</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div id="fnListDiv">
+<b>Functions list:</b><br>
+  <table class="fnListTable">
+    <tr>
+      <td class="fnList"><a href="#initialize">ELFOpenAL.initialize</a></td>
+      <td class="fnList">Initializes OpenAL module. This is the first function you must call to use the module.</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#shutdown">ELFOpenAL.shutdown</a></td>
+      <td class="fnList">Shuts down OpenAL module.</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#update">ELFOpenAL.update</a></td>
+      <td class="fnList">Updates OpenAL module status.</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#listenerSetPosition">ELFOpenAL.listenerSetPosition</a></td>
+      <td class="fnList">Sets absolute listener position</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#listenerSetVelocity">ELFOpenAL.listenerSetVelocity</a></td>
+      <td class="fnList">Sets absolute listener velocity</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#listenerSetOrientation">ELFOpenAL.listenerSetOrientation</a></td>
+      <td class="fnList">Sets listener orientation</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#listenerSetOrientationAt">ELFOpenAL.listenerSetOrientationAt</a></td>
+      <td class="fnList">Sets listener AT orientation</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#listenerSetOrientationUp">ELFOpenAL.listenerSetOrientationUp</a></td>
+      <td class="fnList">Sets listener UP orientation</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#listenerSetGain">ELFOpenAL.listenerSetGain</a></td>
+      <td class="fnList">Sets listener volume gain</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#setDistanceFactor">ELFOpenAL.setDistanceFactor</a></td>
+      <td class="fnList">Sets distance factor</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#setDopplerFactor">ELFOpenAL.setDopplerFactor</a></td>
+      <td class="fnList">Sets doppler factor</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#setRolloffFactor">ELFOpenAL.setRolloffFactor</a></td>
+      <td class="fnList">Sets rolloff factor</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#setMaxDistance">ELFOpenAL.setMaxDistance</a></td>
+      <td class="fnList">Sets max distance</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#setReferenceDistance">ELFOpenAL.setReferenceDistance</a></td>
+      <td class="fnList">Sets reference distance</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundLoad">ELFOpenAL.soundLoad</a></td>
+      <td class="fnList">Loads a sound</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundUnload">ELFOpenAL.soundUnload</a></td>
+      <td class="fnList">Unloads a previously loaded sound from memory</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundPlay">ELFOpenAL.soundPlay</a></td>
+      <td class="fnList">Plays a sound</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundReplay">ELFOpenAL.soundReplay</a></td>
+      <td class="fnList">Replays a sound already played</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundCrossLap">ELFOpenAL.soundCrossLap</a></td>
+      <td class="fnList">CrossLaps current sound with another one</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundPause">ELFOpenAL.soundPause</a></td>
+      <td class="fnList">Pauses a currently playing sound</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundUnpause">ELFOpenAL.soundUnpause</a></td>
+      <td class="fnList">Resumes a sound in pause</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundMute">ELFOpenAL.soundMute</a></td>
+      <td class="fnList">Mute a currently playing sound</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundUnmute">ELFOpenAL.soundUnmute</a></td>
+      <td class="fnList">Resumes a muted sound</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundStop">ELFOpenAL.soundStop</a></td>
+      <td class="fnList">Stops a currently playing sound</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundSetPosition">ELFOpenAL.soundSetPosition</a></td>
+      <td class="fnList">Sets sound position</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundTranslate">ELFOpenAL.soundTranslate</a></td>
+      <td class="fnList">Translates sound position</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundSetPitch">ELFOpenAL.soundSetPitch</a></td>
+      <td class="fnList">Sets the pitch of a sound</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundSetGain">ELFOpenAL.soundSetGain</a></td>
+      <td class="fnList">Sets the gain of a sound</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundFlush">ELFOpenAL.soundFlush</a></td>
+      <td class="fnList">Flushes a sound</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundIsPlaying">ELFOpenAL.soundIsPlaying</a></td>
+      <td class="fnList">Queries current play status of a sound</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundIsLooping">ELFOpenAL.soundIsLooping</a></td>
+      <td class="fnList">Queries current loop status of a sound</td>
+    </tr>
+    <tr>
+      <td class="fnList"><a href="#soundIsMuted">ELFOpenAL.soundIsMuted</a></td>
+      <td class="fnList">Queries current mute status of a sound</td>
+    </tr>
+  </table>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="initialize"></a>
+    <table>
+      <tr>
+        <td>Boolean </td>
+        <td>&nbsp;=&nbsp;</td>
+        <td>ELFOpenAL.initialize</td>
+        <td>(&nbsp;</td>
+        <td class="paramType"></td>
+        <td></td>
+        <td>)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Initializes OpenAL module. This is the first function you must call to use the module.</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+  </div>
+  <div class="fnReturns">
+    <!-- returns table -->
+    <table> 
+      <tr>
+        <td colspan="5">Returns:</td>
+      </tr>
+      <!-- return detail row -->
+      <tr> 
+        <td>&nbsp;</td>
+        <td class="returnType">Boolean</td>
+        <td class="returnName"></td>
+        <td>&nbsp;-&nbsp;</td>
+        <td class="returnDesc">true in case of success, false otherwise</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="shutdown"></a>
+    <table>
+      <tr>
+        <td>Boolean </td>
+        <td>&nbsp;=&nbsp;</td>
+        <td>ELFOpenAL.shutdown</td>
+        <td>(&nbsp;</td>
+        <td class="paramType"></td>
+        <td></td>
+        <td>)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Shuts down OpenAL module.</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+  </div>
+  <div class="fnReturns">
+    <!-- returns table -->
+    <table> 
+      <tr>
+        <td colspan="5">Returns:</td>
+      </tr>
+      <!-- return detail row -->
+      <tr> 
+        <td>&nbsp;</td>
+        <td class="returnType">Boolean</td>
+        <td class="returnName"></td>
+        <td>&nbsp;-&nbsp;</td>
+        <td class="returnDesc">true in case of success, false otherwise</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="update"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.update</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>frameTime</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Updates OpenAL module status.</p>
+    <p>In this moment this module does not need the call of this function in order to work, however use it in order to guarantee future compatibility.</p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">frameTime</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">update time, in seconds</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="listenerSetPosition"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.listenerSetPosition</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>x</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>y</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>z</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets absolute listener position</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">x</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">absolute X position where to set the listener</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">y</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">absolute Y position where to set the listener</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">z</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">absolute Z position where to set the listener</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="listenerSetVelocity"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.listenerSetVelocity</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>x</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>y</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>z</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets absolute listener velocity</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">x</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">absolute velocity on X axis</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">y</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">absolute velocity on Y axis</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">z</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">absolute velocity on Z axis</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="listenerSetOrientation"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.listenerSetOrientation</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>atx</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>aty</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>atz</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>upx</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>upy</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>upz</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets listener orientation</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">atx</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">X component of the listener's AT vector</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">aty</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Y component of the listener's AT vector</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">atz</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Z component of the listener's AT vector</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">upx</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">X component of the listener's UP vector</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">upy</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Y component of the listener's UP vector</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">upz</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Z component of the listener's UP vector</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="listenerSetOrientationAt"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.listenerSetOrientationAt</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>atx</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>aty</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>atz</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets listener AT orientation</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">atx</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">X component of the listener's AT vector</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">aty</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Y component of the listener's AT vector</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">atz</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Z component of the listener's AT vector</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="listenerSetOrientationUp"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.listenerSetOrientationUp</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>upx</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>upy</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>upz</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets listener UP orientation</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">upx</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">X component of the listener's UP vector</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">upy</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Y component of the listener's UP vector</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">upz</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Z component of the listener's UP vector</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="listenerSetGain"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.listenerSetGain</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>gain</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets listener volume gain</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">gain</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">listener volume gain - default value: 1.0</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="setDistanceFactor"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.setDistanceFactor</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>distanceFactor</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets distance factor</p>
+    <p>Modify this value to adjust OpenAL distances to scale adopted in your application.</p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">distanceFactor</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">distance factor - default value: 1.0</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="setDopplerFactor"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.setDopplerFactor</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>dopplerFactor</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets doppler factor</p>
+    <p>Sets the OpenAL doppler factor value.</p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">dopplerFactor</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">doppler factor - default value: 1.0</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="setRolloffFactor"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.setRolloffFactor</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>rolloffFactor</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets rolloff factor</p>
+    <p>Sets the rolloff rate for the audio sources</p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">rolloffFactor</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">rolloff factor - default value: 1.0</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="setMaxDistance"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.setMaxDistance</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>maxDistance</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets max distance</p>
+    <p>Sets the distance where there will no longer be any attenuation of the source.</p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">maxDistance</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">max distance - default value: 4000.0</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="setReferenceDistance"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.setReferenceDistance</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>referenceDistance</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets reference distance</p>
+    <p>Sets the distance under which the volume for the source would normally drop by half.</p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">referenceDistance</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">reference distance - default value: 3000.0</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundLoad"></a>
+    <table>
+      <tr>
+        <td>soundId </td>
+        <td>&nbsp;=&nbsp;</td>
+        <td>ELFOpenAL.soundLoad</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">String&nbsp;</td>
+        <td>filename</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Loads a sound</p>
+    <p>Actually supported formats: OGG, WAV.</p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">String&nbsp;&nbsp;</td>
+           <td class="paramName">filename</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">filename to load</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+    <!-- returns table -->
+    <table> 
+      <tr>
+        <td colspan="5">Returns:</td>
+      </tr>
+      <!-- return detail row -->
+      <tr> 
+        <td>&nbsp;</td>
+        <td class="returnType">Numeric</td>
+        <td class="returnName">soundId</td>
+        <td>&nbsp;-&nbsp;</td>
+        <td class="returnDesc">the ID of loaded sound in case of success, -1 otherwise</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundUnload"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundUnload</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Unloads a previously loaded sound from memory</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundPlay"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundPlay</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>gain</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Boolean&nbsp;&nbsp;</td>
+        <td>isRelative</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Boolean&nbsp;&nbsp;</td>
+        <td>loop</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Plays a sound</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">gain</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">volume gain of this sound - default value: 1.0</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Boolean&nbsp;&nbsp;</td>
+           <td class="paramName">isRelative</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">true if sound position is relative to listener</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Boolean&nbsp;&nbsp;</td>
+           <td class="paramName">loop</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">true if sound will be played in loop</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundReplay"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundReplay</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Replays a sound already played</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundCrossLap"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundCrossLap</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>soundIdToCrossLap</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>CrossLaps current sound with another one</p>
+    <p>Overlaps and blends the boundary at a transition between two separate sounds. Actually implemented only for OGG sounds.</p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundIdToCrossLap</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid soundId, to crosslap with current sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundPause"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundPause</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Pauses a currently playing sound</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundUnpause"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundUnpause</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Resumes a sound in pause</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundMute"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundMute</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Mute a currently playing sound</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundUnmute"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundUnmute</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Resumes a muted sound</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundStop"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundStop</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Stops a currently playing sound</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundSetPosition"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundSetPosition</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>x</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>y</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>z</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets sound position</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">x</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">X position where to set the sound</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">y</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Y position where to set the sound</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">z</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Z position where to set the sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundTranslate"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundTranslate</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>px</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>py</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>pz</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>vx</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>vy</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>vz</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Translates sound position</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">px</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">X position where to set the sound</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">py</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Y position where to set the sound</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">pz</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">Z position where to set the sound</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">vx</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">absolute velocity on X axis</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">vy</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">absolute velocity on Y axis</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">vz</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">absolute velocity on Z axis</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundSetPitch"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundSetPitch</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>pitch</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets the pitch of a sound</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">pitch</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">sound pitch - default value: 1.0</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundSetGain"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundSetGain</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;,</td>
+      </tr>
+      <tr>
+        <td colspan=3></td>
+        <td></td>
+        <td class="paramType">Numeric&nbsp;&nbsp;</td>
+        <td>gain</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Sets the gain of a sound</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">gain</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">volume gain of this sound - default value: 1.0</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundFlush"></a>
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>ELFOpenAL.soundFlush</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Flushes a sound</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundIsPlaying"></a>
+    <table>
+      <tr>
+        <td>Boolean </td>
+        <td>&nbsp;=&nbsp;</td>
+        <td>ELFOpenAL.soundIsPlaying</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Queries current play status of a sound</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+    <!-- returns table -->
+    <table> 
+      <tr>
+        <td colspan="5">Returns:</td>
+      </tr>
+      <!-- return detail row -->
+      <tr> 
+        <td>&nbsp;</td>
+        <td class="returnType">Boolean</td>
+        <td class="returnName"></td>
+        <td>&nbsp;-&nbsp;</td>
+        <td class="returnDesc">true if sound was playing now, false otherwise</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundIsLooping"></a>
+    <table>
+      <tr>
+        <td>Boolean </td>
+        <td>&nbsp;=&nbsp;</td>
+        <td>ELFOpenAL.soundIsLooping</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Queries current loop status of a sound</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+    <!-- returns table -->
+    <table> 
+      <tr>
+        <td colspan="5">Returns:</td>
+      </tr>
+      <!-- return detail row -->
+      <tr> 
+        <td>&nbsp;</td>
+        <td class="returnType">Boolean</td>
+        <td class="returnName"></td>
+        <td>&nbsp;-&nbsp;</td>
+        <td class="returnDesc">true if sound was playing in loop, false otherwise</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="function">
+  <div class="fnTitle">
+    <a name="soundIsMuted"></a>
+    <table>
+      <tr>
+        <td>Boolean </td>
+        <td>&nbsp;=&nbsp;</td>
+        <td>ELFOpenAL.soundIsMuted</td>
+        <td>(&nbsp;</td>
+        <td class="paramType">Numeric&nbsp;</td>
+        <td>soundId</td>
+        <td>&nbsp;)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fnDescription">
+    <p>Queries current mute status of a sound</p>
+    <p></p>
+  </div>
+  <div class="fnParams">
+      <!-- parameters table -->
+      <table> 
+        <tr>
+          <td colspan="5">Parameters:</td>
+        </tr>
+         <!-- parameter detail row -->
+         <tr> 
+           <td>&nbsp;</td>
+           <td class="paramType">Numeric&nbsp;&nbsp;</td>
+           <td class="paramName">soundId</td>
+           <td>&nbsp;-&nbsp;</td>
+           <td class="paramDesc">a valid sound id of a previously loaded sound</td>
+         </tr>
+       </table>
+  </div>
+  <div class="fnReturns">
+    <!-- returns table -->
+    <table> 
+      <tr>
+        <td colspan="5">Returns:</td>
+      </tr>
+      <!-- return detail row -->
+      <tr> 
+        <td>&nbsp;</td>
+        <td class="returnType">Boolean</td>
+        <td class="returnName"></td>
+        <td>&nbsp;-&nbsp;</td>
+        <td class="returnDesc">true if sound was muted, false otherwise</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div id="copyrightFooter">
+  <p><a href="http://www.emthesis.com" target="new"><img src="emthesis_logo.png" border=0/></a></p>
+  <p>documentation generated by elfdocgen 1.2  |  ELF Integrated Scripting System is a trademark of Emthesis Development s.n.c.</p>
+</div>
+
+
+</body>
+</html>

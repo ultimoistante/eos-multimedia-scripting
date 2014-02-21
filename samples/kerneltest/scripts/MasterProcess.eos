@@ -1,0 +1,30 @@
+
+function this.init()
+  --
+	this.iterations = 0
+	--
+	eos.process.create("DummyProcess", "DummyProcess")
+	eos.process.setActive("DummyProcess", true)
+	--
+end
+
+
+function this.update()
+	--
+	this.iterations = this.iterations + 1
+	print(this.processName..": iteration "..this.iterations)
+	--
+	if(this.iterations == 50) then
+		eos.shutdown()
+	end
+	--
+end
+
+
+function this.cleanup()
+end
+
+
+function this.processMessage()
+end
+

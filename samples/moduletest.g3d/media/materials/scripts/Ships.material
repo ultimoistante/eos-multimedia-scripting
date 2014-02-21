@@ -1,0 +1,931 @@
+material Ship01/Ship01
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0 55
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01.tga 2d
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+	
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0 55
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01.tga 2d
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				cubic_texture ReflSkyStar.dds combinedUVW
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op add
+				env_map cubic_reflection
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+
+material Ship01/Ship01Motors
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.2 0.2 0.2 1
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01Motor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship01/Ship01Light
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.0 0.0 0.0 0
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override true
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01Light.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				texture Ship01Light.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship01/GreenLaserColor
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.0 0.0 0.0 0
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting off
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture GreenLaserColor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				texture GreenLaserColor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship02/Ship02
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0 55
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship02.tga 2d
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				cubic_texture ReflSkyStar.dds combinedUVW
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op add
+				env_map cubic_reflection
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship02/Ship02Motors
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.2 0.2 0.2 1
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01Motor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+
+material Ship02/Ship02Light
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.0 0.0 0.0 0
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override true
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01Light.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				texture Ship01Light.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship02/GreenLaserColor
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.0 0.0 0.0 0
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting off
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture GreenLaserColor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				texture GreenLaserColor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+
+material Ship03/Ship03
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0 55
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship03.tga 2d
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				cubic_texture ReflSkyStar.dds combinedUVW
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op add
+				env_map cubic_reflection
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship03/Ship03Motors
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.2 0.2 0.2 1
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01Motor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+
+material Ship03/Ship03Light
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.0 0.0 0.0 0
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override true
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01Light.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				texture Ship01Light.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship03/GreenLaserColor
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.0 0.0 0.0 0
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting off
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture GreenLaserColor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				texture GreenLaserColor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship04/Ship04
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0 55
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship04.tga 2d
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				cubic_texture ReflSkyStar.dds combinedUVW
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op add
+				env_map cubic_reflection
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship04/Ship04Motors
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.2 0.2 0.2 1
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01Motor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship04/Ship04Light
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.0 0.0 0.0 0
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override true
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01Light.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				texture Ship01Light.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship04/GreenLaserColor
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.0 0.0 0.0 0
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting off
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture GreenLaserColor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				texture GreenLaserColor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship05/Ship05
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 1.0 1.0 1.0 55
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship05.tga 2d
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				cubic_texture ReflSkyStar.dds combinedUVW
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op add
+				env_map cubic_reflection
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship05/Ship05Motors
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.2 0.2 0.2 1
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01Motor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+
+material Ship05/Ship05Light
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.0 0.0 0.0 0
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting on
+			fog_override true
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture Ship01Light.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				texture Ship01Light.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}
+
+material Ship05/GreenLaserColor
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.0 0.0 0.0 0
+			emissive 0.0 0.0 0.0
+			scene_blend one zero
+			depth_check on
+			depth_func less_equal
+			depth_write on
+			depth_bias 0
+			cull_software back
+			lighting off
+			fog_override false
+			shading gouraud
+			colour_write on
+
+			texture_unit
+			{
+				texture GreenLaserColor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+
+			texture_unit
+			{
+				texture GreenLaserColor.tga 2d
+				tex_coord_set 0 
+				tex_address_mode wrap
+				filtering linear linear point
+				colour_op modulate
+				scroll 0.0 0.0
+				scale 1.0 1.0
+				rotate 0.0
+			}
+		}
+	}
+}

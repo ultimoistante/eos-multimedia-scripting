@@ -1,0 +1,58 @@
+--
+-- webkit test
+--
+
+function this.init()
+	--
+	-- variables
+	this.fullscreen = false
+	this.screenWidth = 800
+	this.screenHeight = 600
+	--
+	-- load modules
+	if(eos.module.load("./eosmodule.view") == false) then eos.shutdown() end
+	if(eos.module.load("./eosmodule.input") == false) then eos.shutdown() end
+	if(eos.module.load("./eosmodule.web") == false) then eos.shutdown() end
+	--
+	-- initialize view
+	this.windowId = eos.view.window.create(0, this.screenWidth, this.screenHeight, 32, 0, this.fullscreen)	
+	--
+	-- initialize input	
+	eos.input.attachToWindow(this.windowId, this.screenWidth, this.screenHeight, false, this.fullscreen)	
+	--
+	-- below, we load a webpage
+	--this.surfaceId = eos.view.surface.createFromObject(eos.web.load("http://acid3.acidtests.org/"))
+	this.surfaceId = eos.view.surface.createFromObject(eos.web.load("http://www.google.it/"))
+	this.surfaceZPos = 0
+end
+
+
+function this.update()
+	--
+	this.surfaceZPos = this.surfaceZPos - 1
+	eos.view.surface.setPosition(this.surfaceId, 0, 0, this.surfaceZPos)
+	--
+	if(eos.view.window.update(this.windowId) == false) then
+		eos.shutdown() 
+	end
+	eos.view.window.setCaption(this.windowId, "EOS Window [fps: "..eos.view.window.getFps(this.windowId).."]")
+	--
+	eos.input.update()
+	--eos.web.update()
+end
+
+
+function this.cleanup()	
+end
+
+
+function this.processMessage()
+	--
+	if(eos.message.current.class == "input") then
+		if(eos.message.current.keyCode == eos.input.KEY_ESC) then
+			eos.shutdown()
+		end
+	end
+	--
+end
+

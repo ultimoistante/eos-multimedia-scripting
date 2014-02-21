@@ -1,0 +1,70 @@
+
+function this.init()
+  	--
+	this.iterations = 0
+	this.fps = 0
+	--
+	if(eos.module.load("./eosmodule.view") == false) then eos.shutdown() end
+	if(eos.module.load("./eosmodule.input") == false) then eos.shutdown() end
+	if(eos.module.load("./eosmodule.g2d") == false) then eos.shutdown() end
+	--if(eos.module.load("./eosmodule.box2d") == false) then eos.shutdown() end
+	if(eos.module.load("./eosmodule.image") == false) then eos.shutdown() end
+	--
+	this.windowId = eos.view.window.create(0, 800, 600, 24, 0, false)	
+	eos.input.attachToWindow(this.windowId, 800, 600, false, false) 	
+	--
+	this.surfaceId = eos.view.surface.createFromObject(eos.g2d.renderTarget.create("default", 800, 600))	
+	
+	--eos.box2d.body.create("ground", 0.5, 0.2, 0)
+	--eos.box2d.body.setPosition("ground", 0, -600)
+	--eos.box2d.body.addBoxShape("ground", 0, 0, 800, 25)]
+	
+	this.n = 1
+	this.x = 50
+end
+
+
+function this.update()
+	
+	--eos.shutdown()
+	
+	--eos.box2d.module.update(1/60)
+	eos.g2d.module.update()
+	eos.view.window.update(this.windowId)
+	--
+	eos.input.update()
+	--
+	newFps = eos.view.window.getFps(this.windowId)
+	if(newFps ~= this.fps) then
+		this.fps = newFps
+		print(this.fps)
+		
+		local spriteName = "sprite"..this.n
+			local bodyName = "body"..this.n
+			eos.g2d.sprite.create(spriteName)	
+			eos.g2d.sprite.setFixedFrame(spriteName, eos.image.load("box.jpg"))
+			--eos.g2d.sprite.bindToObject(spriteName, eos.box2d.body.create(bodyName, 0.5, 0.5, 20))	
+			--eos.box2d.body.addBoxShape(bodyName, -32, -32, 32, 32)
+			--eos.box2d.body.setPosition(bodyName, 180+this.x, -150)	
+			
+			this.n = this.n + 1
+			this.x = this.x + 10
+	end	
+end
+
+
+function this.cleanup()
+end
+
+
+function this.processMessage()
+	--
+	if(eos.message.current.class == "input") then
+		if(eos.message.current.keyCode == eos.input.KEY_ESC) then
+			eos.shutdown()
+		end
+	end
+	--
+end
+
+

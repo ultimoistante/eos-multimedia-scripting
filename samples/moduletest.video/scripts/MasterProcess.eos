@@ -1,0 +1,61 @@
+--
+-- freeimage and session objects test
+--
+
+function this.init()
+	--
+	-- variables
+	this.fullscreen = false
+	this.screenWidth = 800
+	this.screenHeight = 600
+	--
+	-- load modules
+	if(eos.module.load("./eosmodule.view") == false) then eos.shutdown() end
+	if(eos.module.load("./eosmodule.input") == false) then eos.shutdown() end
+	if(eos.module.load("./eosmodule.video") == false) then eos.shutdown() end
+	--
+	-- initialize view
+	this.windowId = eos.view.window.create(0, this.screenWidth, this.screenHeight, 32, 0, this.fullscreen)	
+	--
+	-- initialize video module
+	eos.video.initialize()
+	--
+	-- initialize ois	
+	eos.input.attachToWindow(this.windowId, this.screenWidth, this.screenHeight, false, this.fullscreen)	
+	--
+	-- video stream opening
+	eos.video.stream.open(eos.application.path.."/media/meischeid.mov")
+	--
+	-- below, we bind the video buffer directly in a view surface
+	this.surfaceId = eos.view.surface.createFromObject(eos.video.getOutputRGB())	
+	eos.view.surface.setPosition(this.surfaceId, 0, 0, 200)
+end
+
+
+function this.update()
+	--
+	eos.video.update()
+	--
+	if(eos.view.window.update(this.windowId) == false) then
+		eos.shutdown() 
+	end
+	eos.view.window.setCaption(this.windowId, "EOS Window [fps: "..eos.view.window.getFps(this.windowId).."]")
+	--
+	eos.input.update()
+end
+
+
+function this.cleanup()	
+end
+
+
+function this.processMessage()
+	--
+	if(eos.message.current.class == "input") then
+		if(eos.message.current.keyCode == eos.input.KEY_ESC) then
+			eos.shutdown()
+		end
+	end
+	--
+end
+

@@ -1,0 +1,81 @@
+--
+-- kinect module test
+--
+
+function this.init()
+	--
+	-- variables
+	this.fps = 0
+	this.fullscreen = false
+	this.screenWidth = 640
+	this.screenHeight = 480
+	--
+	-- load modules
+	eos.module.load("./eosmodule.view")
+	eos.module.load("./eosmodule.input")
+	eos.module.load("./eosmodule.kinect")
+	--
+	-- initialize view
+	this.windowId = eos.view.window.create(0, this.screenWidth, this.screenHeight, 32, 0, this.fullscreen)	
+	--
+	-- initialize input
+	eos.input.attachToWindow(this.windowId, this.screenWidth, this.screenHeight, false, this.fullscreen)	
+	--
+	-- initialize kinect
+	eos.kinect.initialize()
+	--
+	this.surfaceId = eos.view.surface.createFromObject(eos.kinect.getOutputRGB())
+	--
+end
+
+
+function this.update()
+	--eos.shutdown()
+	--
+	eos.kinect.update()
+	eos.view.surface.rotateByAxisAngle(this.surfaceId, 0, 0, 1, 200)
+	if(eos.view.window.update(this.windowId) == false) then eos.shutdown() end
+	eos.input.update()
+	--
+	local fpscounter = eos.view.window.getFps(this.windowId)
+	if(fpscounter ~= this.fps) then
+		this.fps = fpscounter
+		print("fps:", this.fps)
+	end
+end
+
+
+function this.cleanup()	
+end
+
+
+function this.processMessage()
+	--
+	if(eos.message.current.class == "input") then
+		if(eos.message.current.keyCode == eos.input.KEY_ESC) then
+			eos.shutdown()
+		end
+	end
+	--
+	if(eos.message.current.class == "kinect") then
+		if(eos.message.current.event == eos.kinect.EVT_NEWUSER) then
+			print("[eos.kinect] Detected new user with id: "..eos.message.current.userId..", time: "..eos.message.current.time)
+		end
+		if(eos.message.current.event == eos.kinect.EVT_LOSTUSER) then
+			print("[eos.kinect] Lost user with id: "..eos.message.current.userId..", time: "..eos.message.current.time)
+		end
+		if(eos.message.current.event == eos.kinect.EVT_POSEDETECTED) then
+			print("[eos.kinect] Pose "..eos.message.current.pose.." detected for user with id: "..eos.message.current.userId..", time: "..eos.message.current.time)
+		end
+		if(eos.message.current.event == eos.kinect.EVT_CALIBRATIONSTART) then
+			print("[eos.kinect] Calibration started for user with id: "..eos.message.current.userId..", time: "..eos.message.current.time)
+		end
+		if(eos.message.current.event == eos.kinect.EVT_CALIBRATIONEND) then
+			print("[eos.kinect] Calibration complete for user with id: "..eos.message.current.userId..", time: "..eos.message.current.time)
+		end
+		if(eos.message.current.event == eos.kinect.EVT_CALIBRATIONFAIL) then
+			print("[eos.kinect] Calibration failed for user with id: "..eos.message.current.userId..", time: "..eos.message.current.time)
+		end
+	end
+	--
+end

@@ -1,0 +1,99 @@
+--
+-- g3d module test
+--
+
+function this.init()
+	-- 
+	-- variables
+	this.fps = 0
+	this.fullscreen = false
+	this.screenWidth = 640
+	this.screenHeight = 480
+	--
+	-- load modules
+	eos.module.load("./eosmodule.g3d")
+	eos.module.load("./eosmodule.view")
+	eos.module.load("./eosmodule.input")
+	--eos.module.load("./module.ogre")
+	--eos.module.load("./module.freeimage")
+	--
+	-- initialize view
+	this.windowId = eos.view.window.create(0, this.screenWidth, this.screenHeight, 32, 0, this.fullscreen)	
+	--
+	-- initialize ois	
+	eos.input.attachToWindow(this.windowId, this.screenWidth, this.screenHeight, false, this.fullscreen)	
+	--
+	-- initializes g3d on view window
+	eos.g3d.initialize(this.windowId)
+		
+	-- creates a g3d render target
+	local g3dRS = eos.g3d.createRenderSurface("default", 640, 480)
+  
+	-- creates a view surface from g3d render target
+	this.surfaceId = eos.view.surface.createFromObject(g3dRS)
+	  	
+	-- sets a skybox...
+	eos.g3d.world.setSkyBox("Examples/SpaceSkyBox");	
+
+	-- loads a mesh
+	eos.g3d.entity.load("SpaceShip", "ship01.mesh")
+  
+	eos.g3d.camera.setPosition(0, 0, -100)
+	
+	-- gets the actual position of the SpaceShip
+	-- NOTE: object itself does not have a position, it's only a graphic
+	-- object. Doing eos.g3d.entity.load(), g3d loads an instance of the 
+	-- mesh, and *attaches it to a SceneNode*. This scenenode contains all the
+	-- spatial properties of the visible object, such as position, orientation
+	-- and scale.
+	this.shipNode = eos.g3d.object.getNodeName("SpaceShip")
+	local x, y, z = eos.g3d.node.getPosition(this.shipNode, true)
+
+	-- makes camera "look at" the object position
+	eos.g3d.camera.lookAt(x, y, z)
+  
+	this.x = 200
+	this.step = 0
+end
+
+
+
+function this.update()
+	--
+	--eos.shutdown()
+	--
+	this.step = this.step + 0.1	
+	--eos.view.surface.setPosition(this.surfaceId2, this.x + math.sin(this.step) * 150, this.x + math.cos(this.step) * 150, 0)
+	--
+	--eos.g3d.camera.rotateByAngles(0.1, 0, 0)
+	eos.g3d.node.rotateByAngles(this.shipNode, 0, 0.1, 0, true)
+	
+	local lft = eos.getLastFrameTime()
+	
+	eos.g3d.update(lft)
+	eos.g3d.render()
+	if(eos.view.window.update(this.windowId) == false) then eos.shutdown() end
+	eos.input.update()
+	--
+	local fpscounter = eos.view.window.getFps(this.windowId)
+	if(fpscounter ~= this.fps) then
+		this.fps = fpscounter
+		print("fps:", this.fps)
+	end
+end
+
+
+function this.cleanup()	
+end
+
+
+function this.processMessage()
+	--
+	if(eos.message.current.class == "input") then
+		if(eos.message.current.keyCode == eos.input.KEY_ESC) then
+			eos.shutdown()
+		end
+	end
+	--
+end
+

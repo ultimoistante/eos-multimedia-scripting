@@ -1,0 +1,147 @@
+body, table, div, p, dl {
+	font-family: Lucida Grande, Verdana, Geneva, Arial, sans-serif;
+	font-size: 12px;
+}
+
+/* @group Heading Levels */
+
+h1 {
+	text-align: center;
+	font-size: 150%;
+}
+
+h2 {
+	font-size: 120%;
+}
+
+h3 {
+	font-size: 100%;
+}
+
+/* @end */
+
+body {
+	background: white;
+	color: black;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+p.module_name
+  {
+	text-align: center;
+	font-size: 200%;
+  }
+
+p.module_brief
+  {
+	text-align: center;
+	font-size: 150%;
+  }
+
+p.smalltext
+  {
+	font-size: 80%;
+  }
+
+div.functions_list
+  {
+	margin-top: 40px;
+  }
+
+div.functions
+  {
+	margin-top: 40px;
+  }
+
+.page_footer
+  {
+	margin-top: 60px;
+	text-align: center;
+	border-top: 1px solid #DDD;
+  }
+
+.function_list_left, .function_list_right
+  {
+  background-color: #F6F5FB;
+  margin: 4px;
+  padding: 6px;
+	border-top: 1px solid #DDD;
+  }
+
+.function_name_left
+  {
+  background-color: #F6F5FB;
+  margin: 4px;
+  padding: 8px 8px 0 8px;
+	border-top: 1px solid #DDD;
+  }
+
+.function_name_right
+  {
+  background-color: #F6F5FB;
+  margin: 4px;
+  padding-top: 8px;
+  font-weight: bold;
+	border-top: 1px solid #DDD;
+  }
+
+.function_brief_left, .function_brief_right
+  {
+  background-color: #F6F5FB;
+  border: none;
+  padding-bottom: 6px;
+  }
+
+.function_returns_header_left, .function_returns_header_right
+  {
+  background-color: #F6F5FB;
+  border: none;
+  margin: 4px;
+  padding: 4px;
+	color: #7F7F7F;
+  }
+
+.function_return_left, .function_return_right
+  {
+  background-color: #F6F5FB;
+  border: none;
+  margin: 4px;
+  padding-left: 8px;
+	color: #7F7F7F;
+  }
+
+.function_params_header_left, .function_params_header_right
+  {
+  background-color: #F6F5FB;
+  border: none;
+  margin: 4px;
+  padding: 4px;
+	color: #7F7F7F;
+  }
+
+.function_param_left, .function_param_right
+  {
+  background-color: #F6F5FB;
+  border: none;
+  margin: 4px;
+  padding-left: 8px;
+	color: #7F7F7F;
+  }
+
+span.brief, span.function_list-brief
+  {
+	color: #7F7F7F;
+  }
+
+span.return_name, span.param_name
+  {
+	color: #7F7F7F;
+	font-style: italic;
+  font-weight: bold;
+  }
+
+span.function_list-name
+  {
+  font-weight: bold;
+  }

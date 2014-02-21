@@ -1,0 +1,38 @@
+EOS Application started on 19/11/2012 - 09:58:03.
+[09:58:03][I] EOS Integrated Scripting System - Kernel v.0.9.1 (Aurora), Nov 04, 2009
+[09:58:03][I] (C) 2009-2013 Salvatore Carotenuto, aka ultimoistante (mailto: ultimoistante@gmail.com)
+[09:58:03][I] [eos.kernel.init()] - Instancing Lua environment... done.
+[09:58:03][I] [eos.kernel.init()] - Registering functions groups in Lua environment...
+[09:58:03][I]    + [ main        ]
+[09:58:03][I]    + [ module      ]
+[09:58:03][I]    + [ time        ]
+[09:58:03][I]    + [ process     ]
+[09:58:03][I]    + [ message     ]
+[09:58:03][I]    + [ log         ]
+[09:58:03][I] [eos.kernel.init()] - Initializing ScriptManager... done.
+[09:58:03][I] [eos.kernel.init()] - Loading MasterProcess script...
+[09:58:03][I] [eos.kernel] >>> loaded module view.eosmodule
+[09:58:03][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[09:58:03][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[09:58:03][I]               +  table name: eos.view
+[09:58:03][I]               +  author : EOS Scripting Team
+[09:58:03][I] [eos.kernel] >>> loaded module input.eosmodule
+[09:58:03][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[09:58:03][I]               +  Input Module for EOS Scripting Environment
+[09:58:03][I]               +  table name: eos.input
+[09:58:03][I]               +  author : EOS Scripting Team
+[09:58:03][I] [eos.kernel] >>> loaded module kinect.eosmodule
+[09:58:03][I]               +  kinect.eosmodule v.0.1 - November 12, 2012
+[09:58:03][I]               +  Kinect and OpenNI module for EOS Scripting Environment
+[09:58:03][I]               +  table name: eos.kinect
+[09:58:03][I]               +  author : EOS Scripting Team
+[09:58:03][I] [eos.oisinput] OIS Input attached to window whith id 65011716.
+[09:58:11][I] [eos.kernel.init()] - MasterProcess init() executed.
+[09:58:11][I] [eos.kernel.init()] - initialization complete.
+[09:58:11][I] --- [eos.kernel.run()] - Running...
+[09:58:21][I] --- [eos.kernel.run()] - End Running.
+[09:58:21][I] [eos.kernel.cleanup()] - Cleaning up...
+[09:58:21][I] [eos.view] Shutting down...
+[09:58:21][I] [eos.input] Shutting down...
+[09:58:22][I] [eos.kernel.cleanup()] - Cleanup complete.
+Application closed.

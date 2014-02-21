@@ -1,0 +1,77 @@
+EOS Application started on 24/04/2013 - 16:43:00.
+[16:43:00][I] EOS Integrated Scripting System - Kernel v.0.9.1 (Aurora), Nov 04, 2009
+[16:43:00][I] (C) 2009-2013 Salvatore Carotenuto, aka ultimoistante (mailto: ultimoistante@gmail.com)
+[16:43:00][I] [eos.kernel.init()] - Instancing Lua environment... done.
+[16:43:00][I] [eos.kernel.init()] - Registering functions groups in Lua environment...
+[16:43:00][I]    + [ main        ]
+[16:43:00][I]    + [ module      ]
+[16:43:00][I]    + [ time        ]
+[16:43:00][I]    + [ process     ]
+[16:43:00][I]    + [ message     ]
+[16:43:00][I]    + [ log         ]
+[16:43:00][I] [eos.kernel.init()] - Initializing ScriptManager... done.
+[16:43:00][I] [eos.kernel.init()] - Loading MasterProcess script...
+[16:43:00][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:00][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:00][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:00][I]               +  table name: eos.view
+[16:43:00][I]               +  author : EOS Scripting Team
+[16:43:00][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:00][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:00][I]               +  Input Module for EOS Scripting Environment
+[16:43:00][I]               +  table name: eos.input
+[16:43:00][I]               +  author : EOS Scripting Team
+[16:43:00][I] [eos.kernel] >>> loaded module g2d.eosmodule
+[16:43:00][I]               +  g2d.eosmodule v.0.2.1 - November 05, 2012
+[16:43:00][I]               +  2D OpenGL-powered sprites module for EOS Scripting Environment
+[16:43:00][I]               +  table name: eos.g2d
+[16:43:00][I]               +  author : EOS Scripting Team
+[16:43:00][I] [eos.kernel] >>> loaded module image.eosmodule
+[16:43:00][I]               +  image.eosmodule v.0.1 - September 9, 2009
+[16:43:00][I]               +  Multiple Image Format I/O utility  module for EOS Scripting Environment
+[16:43:00][I]               +  table name: eos.image
+[16:43:00][I]               +  author : EOS Scripting Team
+[16:43:00][I] [eos.view.window] List available video modes:
+[16:43:00][I]     mode 0 - 3840x1080
+[16:43:00][I]     mode 1 - 1920x1080
+[16:43:00][I]     mode 2 - 1920x1080
+[16:43:00][I]     mode 3 - 1920x1080
+[16:43:00][I]     mode 4 - 1920x1080
+[16:43:00][I]     mode 5 - 1920x1080
+[16:43:00][I]     mode 6 - 1920x1080
+[16:43:00][I]     mode 7 - 1680x1050
+[16:43:00][I]     mode 8 - 1440x900
+[16:43:00][I]     mode 9 - 1280x1024
+[16:43:00][I]     mode 10 - 1280x1024
+[16:43:00][I]     mode 11 - 1280x720
+[16:43:00][I]     mode 12 - 1280x720
+[16:43:00][I]     mode 13 - 1280x720
+[16:43:00][I]     mode 14 - 1152x864
+[16:43:00][I]     mode 15 - 1024x768
+[16:43:00][I]     mode 16 - 1024x768
+[16:43:00][I]     mode 17 - 1024x768
+[16:43:00][I]     mode 18 - 800x600  <--  selected
+[16:43:00][I]     mode 19 - 800x600  <--  selected
+[16:43:00][I]     mode 20 - 800x600  <--  selected
+[16:43:00][I]     mode 21 - 800x600  <--  selected
+[16:43:00][I]     mode 22 - 720x576
+[16:43:00][I]     mode 23 - 720x576
+[16:43:00][I]     mode 24 - 720x480
+[16:43:00][I]     mode 25 - 720x480
+[16:43:00][I]     mode 26 - 640x480
+[16:43:00][I]     mode 27 - 640x480
+[16:43:00][I]     mode 28 - 640x480
+[16:43:00][I]     mode 29 - 640x480
+[16:43:00][I] [eos.oisinput] OIS Input attached to window whith id 69206020.
+[16:43:00][E] [eos.view] imagetype unknown
+[16:43:00][I] [eos.kernel.init()] - MasterProcess init() executed.
+[16:43:00][I] [eos.kernel.init()] - initialization complete.
+[16:43:00][I] --- [eos.kernel.run()] - Running...
+[16:43:04][I] --- [eos.kernel.run()] - End Running.
+[16:43:04][I] [eos.cleanup()] - Cleaning up...
+[16:43:04][I] [eos.g2d] Shutting down...
+[16:43:04][I] [eos.view] Shutting down...
+[16:43:04][W] [eos.view] surface already disconnected
+[16:43:04][I] [eos.input] Shutting down...
+[16:43:04][I] [eos.cleanup()] - Cleanup complete.
+Application closed.

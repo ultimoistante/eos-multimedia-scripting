@@ -1,0 +1,92 @@
+\hypertarget{EOSKernel_8h}{
+\section{EOSKernel.h File Reference}
+\label{EOSKernel_8h}\index{EOSKernel.h@{EOSKernel.h}}
+}
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$sys/timeb.h$>$}\par
+{\tt \#include $<$time.h$>$}\par
+{\tt \#include $<$unistd.h$>$}\par
+{\tt \#include $<$string$>$}\par
+{\tt \#include $<$fstream$>$}\par
+{\tt \#include $<$queue$>$}\par
+{\tt \#include $<$dirent.h$>$}\par
+{\tt \#include $<$sys/stat.h$>$}\par
+{\tt \#include \char`\"{}EOSLuaEnvironment.h\char`\"{}}\par
+{\tt \#include \char`\"{}EOSScriptManager.h\char`\"{}}\par
+{\tt \#include \char`\"{}EOSPrecisionTimer.h\char`\"{}}\par
+{\tt \#include \char`\"{}EOSProcess.h\char`\"{}}\par
+{\tt \#include \char`\"{}EOSMessage.h\char`\"{}}\par
+\subsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+class \hyperlink{structEOSKernel}{EOSKernel}
+\begin{CompactList}\small\item\em Main class of the EOS Kernel module. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{EOSKernel_8h_dac3f0d259eab59b96db7a251f7b0e19}{LOGLEVEL\_\-NONE}~0
+\item 
+\#define \hyperlink{EOSKernel_8h_7db9985dba9e7117ef9b167bb144d4a9}{LOGLEVEL\_\-ERR}~1
+\item 
+\#define \hyperlink{EOSKernel_8h_31d42310410936652708853a25da3bcb}{LOGLEVEL\_\-WARN}~2
+\item 
+\#define \hyperlink{EOSKernel_8h_ddb06f608ef8a9f4a882bc1b55ffe272}{LOGLEVEL\_\-DBUG}~3
+\item 
+\#define \hyperlink{EOSKernel_8h_4b54cbfc7e5a0bf9f038129ff49e1fdd}{LOGLEVEL\_\-USER}~4
+\item 
+\#define \hyperlink{EOSKernel_8h_8d7f5a2187ee65467f650a56cd7568ea}{LOGLEVEL\_\-INFO}~5
+\item 
+\#define \hyperlink{EOSKernel_8h_419a2b749d95786e999c70dd3fc3bfb6}{LOGLEVEL\_\-NOHEADER}~9
+\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{EOSKernel_8h_dac3f0d259eab59b96db7a251f7b0e19}{
+\index{EOSKernel.h@{EOSKernel.h}!LOGLEVEL\_\-NONE@{LOGLEVEL\_\-NONE}}
+\index{LOGLEVEL\_\-NONE@{LOGLEVEL\_\-NONE}!EOSKernel.h@{EOSKernel.h}}
+\subsubsection[{LOGLEVEL\_\-NONE}]{\setlength{\rightskip}{0pt plus 5cm}\#define LOGLEVEL\_\-NONE~0}}
+\label{EOSKernel_8h_dac3f0d259eab59b96db7a251f7b0e19}
+
+
+\hypertarget{EOSKernel_8h_7db9985dba9e7117ef9b167bb144d4a9}{
+\index{EOSKernel.h@{EOSKernel.h}!LOGLEVEL\_\-ERR@{LOGLEVEL\_\-ERR}}
+\index{LOGLEVEL\_\-ERR@{LOGLEVEL\_\-ERR}!EOSKernel.h@{EOSKernel.h}}
+\subsubsection[{LOGLEVEL\_\-ERR}]{\setlength{\rightskip}{0pt plus 5cm}\#define LOGLEVEL\_\-ERR~1}}
+\label{EOSKernel_8h_7db9985dba9e7117ef9b167bb144d4a9}
+
+
+\hypertarget{EOSKernel_8h_31d42310410936652708853a25da3bcb}{
+\index{EOSKernel.h@{EOSKernel.h}!LOGLEVEL\_\-WARN@{LOGLEVEL\_\-WARN}}
+\index{LOGLEVEL\_\-WARN@{LOGLEVEL\_\-WARN}!EOSKernel.h@{EOSKernel.h}}
+\subsubsection[{LOGLEVEL\_\-WARN}]{\setlength{\rightskip}{0pt plus 5cm}\#define LOGLEVEL\_\-WARN~2}}
+\label{EOSKernel_8h_31d42310410936652708853a25da3bcb}
+
+
+\hypertarget{EOSKernel_8h_ddb06f608ef8a9f4a882bc1b55ffe272}{
+\index{EOSKernel.h@{EOSKernel.h}!LOGLEVEL\_\-DBUG@{LOGLEVEL\_\-DBUG}}
+\index{LOGLEVEL\_\-DBUG@{LOGLEVEL\_\-DBUG}!EOSKernel.h@{EOSKernel.h}}
+\subsubsection[{LOGLEVEL\_\-DBUG}]{\setlength{\rightskip}{0pt plus 5cm}\#define LOGLEVEL\_\-DBUG~3}}
+\label{EOSKernel_8h_ddb06f608ef8a9f4a882bc1b55ffe272}
+
+
+\hypertarget{EOSKernel_8h_4b54cbfc7e5a0bf9f038129ff49e1fdd}{
+\index{EOSKernel.h@{EOSKernel.h}!LOGLEVEL\_\-USER@{LOGLEVEL\_\-USER}}
+\index{LOGLEVEL\_\-USER@{LOGLEVEL\_\-USER}!EOSKernel.h@{EOSKernel.h}}
+\subsubsection[{LOGLEVEL\_\-USER}]{\setlength{\rightskip}{0pt plus 5cm}\#define LOGLEVEL\_\-USER~4}}
+\label{EOSKernel_8h_4b54cbfc7e5a0bf9f038129ff49e1fdd}
+
+
+\hypertarget{EOSKernel_8h_8d7f5a2187ee65467f650a56cd7568ea}{
+\index{EOSKernel.h@{EOSKernel.h}!LOGLEVEL\_\-INFO@{LOGLEVEL\_\-INFO}}
+\index{LOGLEVEL\_\-INFO@{LOGLEVEL\_\-INFO}!EOSKernel.h@{EOSKernel.h}}
+\subsubsection[{LOGLEVEL\_\-INFO}]{\setlength{\rightskip}{0pt plus 5cm}\#define LOGLEVEL\_\-INFO~5}}
+\label{EOSKernel_8h_8d7f5a2187ee65467f650a56cd7568ea}
+
+
+\hypertarget{EOSKernel_8h_419a2b749d95786e999c70dd3fc3bfb6}{
+\index{EOSKernel.h@{EOSKernel.h}!LOGLEVEL\_\-NOHEADER@{LOGLEVEL\_\-NOHEADER}}
+\index{LOGLEVEL\_\-NOHEADER@{LOGLEVEL\_\-NOHEADER}!EOSKernel.h@{EOSKernel.h}}
+\subsubsection[{LOGLEVEL\_\-NOHEADER}]{\setlength{\rightskip}{0pt plus 5cm}\#define LOGLEVEL\_\-NOHEADER~9}}
+\label{EOSKernel_8h_419a2b749d95786e999c70dd3fc3bfb6}
+
+

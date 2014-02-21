@@ -1,0 +1,71 @@
+--
+-- cairo module test
+--
+
+function this.init()
+	--
+	-- variables
+	this.fps = 0
+	this.fullscreen = false
+	this.screenWidth = 640
+	this.screenHeight = 480
+	--
+	-- load modules
+	eos.module.load("./module.glitter")
+	eos.module.load("./module.oisinput")
+	eos.module.load("./module.cairo")
+	--
+	-- initialize glitter
+	this.windowId = eos.glitter.window.create(0, this.screenWidth, this.screenHeight, 32, 0, this.fullscreen)	
+	--
+	-- initialize ois	
+	eos.oisinput.attachToWindow(this.windowId, this.screenWidth, this.screenHeight, false, this.fullscreen)	
+	--
+	-- creates a render target
+	eos.cairo.renderTarget.create("default", 320, 200)
+	--
+	-- "exports" a render target as standard eos data source
+	eos.cairo.renderTarget.exportAsDataSource("default", "cairo.default")
+
+	-- "connects" a presentation module to a data source:
+	-- below, we create a Glitter surface, and connect it to the data source exported by Ogre module
+	this.surfaceId1 = eos.glitter.surface.create()
+	eos.glitter.surface.fromDataSource(this.surfaceId1, eos.dataSources.getByName("cairo.default"))	
+	
+end
+
+
+function this.update()
+	--
+	eos.cairo.setDrawingColor(1, 1, 1, 1)
+	eos.cairo.moveTo(50, 100)
+	eos.cairo.setFontSize(30)
+	eos.cairo.textPath("eos was here!")
+	--
+	--eos.cairo.rectangle(0.25, 0.25, 0.50, 0.50)
+	eos.cairo.fill()
+	--
+	if(eos.glitter.window.update(this.windowId)	 == false) then eos.shutdown() end
+	eos.oisinput.update()
+	--
+	local fpscounter = eos.glitter.window.getFps(this.windowId)
+	if(fpscounter ~= this.fps) then
+		this.fps = fpscounter
+		print("fps:", this.fps)
+	end
+end
+
+
+function this.cleanup()	
+end
+
+
+function this.processMessage()
+	--
+	if(EOSMessage.messageClass == "OISInput") then
+		if(EOSMessage.keyCode == eos.oisinput.KEY_ESC) then
+			eos.shutdown()
+		end
+	end
+end
+

@@ -1,0 +1,2184 @@
+EOS Application started on 24/04/2013 - 16:43:39.
+[16:43:39][I] EOS Integrated Scripting System - Kernel v.0.9.1 (Aurora), Nov 04, 2009
+[16:43:39][I] (C) 2009-2013 Salvatore Carotenuto, aka ultimoistante (mailto: ultimoistante@gmail.com)
+[16:43:39][I] [eos.kernel.init()] - Instancing Lua environment... done.
+[16:43:39][I] [eos.kernel.init()] - Registering functions groups in Lua environment...
+[16:43:39][I]    + [ main        ]
+[16:43:39][I]    + [ module      ]
+[16:43:39][I]    + [ time        ]
+[16:43:39][I]    + [ process     ]
+[16:43:39][I]    + [ message     ]
+[16:43:39][I]    + [ log         ]
+[16:43:39][I] [eos.kernel.init()] - Initializing ScriptManager... done.
+[16:43:39][I] [eos.kernel.init()] - Loading MasterProcess script...
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:43:39][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.view
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:43:39][I]               +  Input Module for EOS Scripting Environment
+[16:43:39][I]               +  table name: eos.input
+[16:43:39][I]               +  author : EOS Scripting Team
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][E] [eos.kernel] - unable to load module './eosmodule.video'. Cause: "libavutil.so.51: cannot open shared object file: No such file or directory"
+[16:43:39][E] [eos.kernel.loadmodule()] - unable to issue lua 'loadlib' function
+[16:43:39][E] [eos.kernel.loadmodule()] - unable to issue lua 'loadlib' function
+[16:43:39][E] [eos.kernel.loadmodule()] - unable to issue lua 'loadlib' function
+[16:43:39][I] [eos.kernel.init()] - MasterProcess init() executed.
+[16:43:39][I] [eos.kernel.init()] - initialization complete.
+[16:43:39][I] --- [eos.kernel.run()] - Running...
+[16:43:39][E] [eos.kernel] - Warning: SafeGuard function has detected an error during a module loading. EOS Kernel will now stopped.
+[16:43:39][I] --- [eos.kernel.run()] - End Running.
+[16:43:39][I] [eos.cleanup()] - Cleaning up...
+[16:43:39][I] [eos.cleanup()] - Cleanup complete.
+Application closed.

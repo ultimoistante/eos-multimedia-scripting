@@ -1,0 +1,18 @@
+# SConstruct file for eosmodulesdk base library
+
+env = Environment(
+                 CPPPATH='',
+                 LIBPATH='',
+                 LIBS='',
+                 CCFLAGS='-O3',
+                 LINKFLAGS=''
+                 )
+
+sources = ['EOSLuaRuntime.cpp',
+           'EOSObject.cpp',
+           'EOSPrecisionTimer.cpp',
+           'EOSProfiler.cpp'
+          ]
+
+target = env.StaticLibrary('modulesdk', sources)
+

@@ -1,0 +1,104 @@
+\hypertarget{classEOSScriptManager}{
+\section{EOSScriptManager Class Reference}
+\label{classEOSScriptManager}\index{EOSScriptManager@{EOSScriptManager}}
+}
+Class used to load and manage source scripts.  
+
+
+{\tt \#include $<$EOSScriptManager.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classEOSScriptManager_815c5c06c48751e49450d5f7e9408edb}{EOSScriptManager} (const char $\ast$scriptDirectory)
+\begin{CompactList}\small\item\em constructor \item\end{CompactList}\item 
+\hyperlink{classEOSScriptManager_8e394b82ab8ee05aaa41d3cb46938486}{$\sim$EOSScriptManager} ()
+\begin{CompactList}\small\item\em destructor \item\end{CompactList}\item 
+\hyperlink{structluaScriptBuffer}{luaScriptBuffer} $\ast$ \hyperlink{classEOSScriptManager_70aeb04d3b8e91b0ccf11bf66275ce80}{requestScript} (const char $\ast$scriptBaseName)
+\begin{CompactList}\small\item\em requests a script buffer from the cache \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{structluaScriptBuffer}{luaScriptBuffer} $\ast$ \hyperlink{classEOSScriptManager_36cf095b56f48611eff8b8fa4698b2e3}{loadScript} (const char $\ast$scriptBaseName)
+\begin{CompactList}\small\item\em effectively loads a source script, putting it in the cache \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+std::string \hyperlink{classEOSScriptManager_dced2289218a857f35fa61bcf01f728e}{scriptPath}
+\begin{CompactList}\small\item\em path where to find scripts \item\end{CompactList}\item 
+std::map$<$ std::string, \hyperlink{structluaScriptBuffer}{luaScriptBuffer} $\ast$ $>$ \hyperlink{classEOSScriptManager_5cb3f437eb3fbc6d770a978124fda515}{scriptBuffers}
+\begin{CompactList}\small\item\em hashmap used to implement script cache \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class used to load and manage source scripts. 
+
+Implements caching to avoid source buffer duplication in case of multiple processes with the same script. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEOSScriptManager_815c5c06c48751e49450d5f7e9408edb}{
+\index{EOSScriptManager@{EOSScriptManager}!EOSScriptManager@{EOSScriptManager}}
+\index{EOSScriptManager@{EOSScriptManager}!EOSScriptManager@{EOSScriptManager}}
+\subsubsection[{EOSScriptManager}]{\setlength{\rightskip}{0pt plus 5cm}EOSScriptManager::EOSScriptManager (const char $\ast$ {\em scriptDirectory})}}
+\label{classEOSScriptManager_815c5c06c48751e49450d5f7e9408edb}
+
+
+constructor 
+
+\hypertarget{classEOSScriptManager_8e394b82ab8ee05aaa41d3cb46938486}{
+\index{EOSScriptManager@{EOSScriptManager}!$\sim$EOSScriptManager@{$\sim$EOSScriptManager}}
+\index{$\sim$EOSScriptManager@{$\sim$EOSScriptManager}!EOSScriptManager@{EOSScriptManager}}
+\subsubsection[{$\sim$EOSScriptManager}]{\setlength{\rightskip}{0pt plus 5cm}EOSScriptManager::$\sim$EOSScriptManager ()}}
+\label{classEOSScriptManager_8e394b82ab8ee05aaa41d3cb46938486}
+
+
+destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEOSScriptManager_70aeb04d3b8e91b0ccf11bf66275ce80}{
+\index{EOSScriptManager@{EOSScriptManager}!requestScript@{requestScript}}
+\index{requestScript@{requestScript}!EOSScriptManager@{EOSScriptManager}}
+\subsubsection[{requestScript}]{\setlength{\rightskip}{0pt plus 5cm}{\bf luaScriptBuffer} $\ast$ EOSScriptManager::requestScript (const char $\ast$ {\em scriptBaseName})}}
+\label{classEOSScriptManager_70aeb04d3b8e91b0ccf11bf66275ce80}
+
+
+requests a script buffer from the cache 
+
+\hypertarget{classEOSScriptManager_36cf095b56f48611eff8b8fa4698b2e3}{
+\index{EOSScriptManager@{EOSScriptManager}!loadScript@{loadScript}}
+\index{loadScript@{loadScript}!EOSScriptManager@{EOSScriptManager}}
+\subsubsection[{loadScript}]{\setlength{\rightskip}{0pt plus 5cm}{\bf luaScriptBuffer} $\ast$ EOSScriptManager::loadScript (const char $\ast$ {\em scriptBaseName})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSScriptManager_36cf095b56f48611eff8b8fa4698b2e3}
+
+
+effectively loads a source script, putting it in the cache 
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classEOSScriptManager_dced2289218a857f35fa61bcf01f728e}{
+\index{EOSScriptManager@{EOSScriptManager}!scriptPath@{scriptPath}}
+\index{scriptPath@{scriptPath}!EOSScriptManager@{EOSScriptManager}}
+\subsubsection[{scriptPath}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf EOSScriptManager::scriptPath}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSScriptManager_dced2289218a857f35fa61bcf01f728e}
+
+
+path where to find scripts 
+
+\hypertarget{classEOSScriptManager_5cb3f437eb3fbc6d770a978124fda515}{
+\index{EOSScriptManager@{EOSScriptManager}!scriptBuffers@{scriptBuffers}}
+\index{scriptBuffers@{scriptBuffers}!EOSScriptManager@{EOSScriptManager}}
+\subsubsection[{scriptBuffers}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$std::string, {\bf luaScriptBuffer}$\ast$$>$ {\bf EOSScriptManager::scriptBuffers}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSScriptManager_5cb3f437eb3fbc6d770a978124fda515}
+
+
+hashmap used to implement script cache 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{EOSScriptManager_8h}{EOSScriptManager.h}\item 
+\hyperlink{EOSScriptManager_8cpp}{EOSScriptManager.cpp}\end{CompactItemize}

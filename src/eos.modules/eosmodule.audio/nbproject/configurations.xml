@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="84">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>EOSAudioDefines.h</itemPath>
+      <itemPath>EOSAudioDevice.h</itemPath>
+      <itemPath>EOSResourceManager.h</itemPath>
+      <itemPath>EOSSound.h</itemPath>
+      <itemPath>EOSSoundDUMB.h</itemPath>
+      <itemPath>EOSSoundFactory.h</itemPath>
+      <itemPath>EOSSoundOGG.h</itemPath>
+      <itemPath>EOSSoundWAV.h</itemPath>
+      <itemPath>tinythread.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>EOSAudioDevice.cpp</itemPath>
+      <itemPath>EOSModuleDSO.cpp</itemPath>
+      <itemPath>EOSResourceManager.cpp</itemPath>
+      <itemPath>EOSSound.cpp</itemPath>
+      <itemPath>EOSSoundDUMB.cpp</itemPath>
+      <itemPath>EOSSoundFactory.cpp</itemPath>
+      <itemPath>EOSSoundOGG.cpp</itemPath>
+      <itemPath>EOSSoundWAV.cpp</itemPath>
+      <itemPath>tinythread.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+      </compileType>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <stripSymbols>true</stripSymbols>
+          <incDir>
+            <pElem>../modulesdk</pElem>
+            <pElem>../../../../eos-deps/openal-soft-1.14/include</pElem>
+            <pElem>../../../../eos-deps/dumb-0.9.3/include</pElem>
+          </incDir>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <output>../../../bin/eosmodule.audio</output>
+          <linkerDynSerch>
+            <pElem>./lib</pElem>
+          </linkerDynSerch>
+          <stripSymbols>true</stripSymbols>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../modulesdk"
+                            CT="3"
+                            CN="Release"
+                            AC="true"
+                            BL="false"
+                            WD="../modulesdk"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libmodulesdk.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibLibItem>lua</linkerLibLibItem>
+            <linkerLibFileItem>../../../../eos-deps/openal-soft-1.14/build/libopenal.so</linkerLibFileItem>
+            <linkerLibLibItem>ogg</linkerLibLibItem>
+            <linkerLibLibItem>vorbis</linkerLibLibItem>
+            <linkerLibLibItem>vorbisfile</linkerLibLibItem>
+            <linkerLibFileItem>../../../../eos-deps/dumb-0.9.3/lib/unix/libdumb.a</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

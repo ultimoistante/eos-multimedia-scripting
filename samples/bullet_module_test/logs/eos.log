@@ -1,0 +1,41 @@
+EOS Application started on 26/09/2009 - 17:04:59.
+[17:04:59][I] EOS Integrated Scripting System - Kernel v.1.0.0 (Aurora), Sep 03, 2008
+[17:04:59][I] (C) 2009-2013 Salvatore Carotenuto, aka ultimoistante (mailto: ultimoistante@gmail.com)
+[17:04:59][I] [eos.kernel.init()] - Instancing Lua environment... done.
+[17:04:59][I] [eos.kernel.init()] - Registering functions groups in Lua environment...
+[17:04:59][I]    + [ main        ]
+[17:04:59][I]    + [ module      ]
+[17:04:59][I]    + [ time        ]
+[17:04:59][I]    + [ process     ]
+[17:04:59][I]    + [ message     ]
+[17:04:59][I]    + [ log         ]
+[17:04:59][I] [eos.kernel.init()] - Initializing ScriptManager... done.
+[17:04:59][I] [eos.kernel.init()] - Loading MasterProcess script...
+[17:04:59][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[17:04:59][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[17:04:59][I] [eos.kernel] >>> loaded module bullet.eosmodule
+[17:04:59][I]               +  bullet.eosmodule v.0.1 - September 26, 2009
+[17:04:59][I]               +  Bullet Collision Detection and Physics for EOS Scripting Environment
+[17:04:59][I]               +  table name: eos.bullet
+[17:04:59][I]               +  author : Play-ON.it and EOS Scripting Team
+[17:04:59][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[17:04:59][I] [eos.kernel] >>> loaded module ogre.eosmodule
+[17:04:59][I]               +  ogre.eosmodule v.0.9.2 - September 26, 2009
+[17:04:59][I]               +  OGRE (Object-Oriented Graphics Rendering Engine) 3D Graphics Module for EOS environment
+[17:04:59][I]               +  table name: eos.ogre
+[17:04:59][I]               +  author : Play-ON.it and EOS Scripting Team
+[17:04:59][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[17:04:59][I] [eos.oisinput] OIS Input attached to window whith id 52428804.
+[17:04:59][U] [eos.ogre] *** initialization on window with id: 52428804
+[17:04:59][U] [eos.ogre] *** Host window RenderSystem: OpenGL Rendering Subsystem
+[17:04:59][U] [eos.ogre] *** Render System found...
+[17:04:59][U] [eos.ogre] *** Set Render System ok...
+[17:04:59][U] [eos.ogre] *** Initialization ok...
+[17:05:00][U] [eos.ogre] *** createRenderWindow ok...
+[17:05:00][I] [eos.kernel.init()] - MasterProcess init() executed.
+[17:05:00][I] [eos.kernel.init()] - initialization complete.
+[17:05:00][I] --- [eos.kernel.run()] - Running...
+[17:05:05][I] --- [eos.kernel.run()] - End Running.
+[17:05:05][I] [eos.kernel.cleanup()] - Cleaning up...
+[17:05:05][I] [eos.kernel.cleanup()] - Cleanup complete.
+Application closed.

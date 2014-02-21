@@ -1,0 +1,77 @@
+EOS Application started on 29/04/2013 - 16:44:50.
+[16:44:50][I] EOS Integrated Scripting System - Kernel v.0.9.1 (Aurora), Nov 04, 2009
+[16:44:50][I] (C) 2009-2013 Salvatore Carotenuto, aka ultimoistante (mailto: ultimoistante@gmail.com)
+[16:44:50][I] [eos.kernel.init()] - Instancing Lua environment... done.
+[16:44:50][I] [eos.kernel.init()] - Registering functions groups in Lua environment...
+[16:44:50][I]    + [ main        ]
+[16:44:50][I]    + [ module      ]
+[16:44:50][I]    + [ time        ]
+[16:44:50][I]    + [ process     ]
+[16:44:50][I]    + [ message     ]
+[16:44:50][I]    + [ log         ]
+[16:44:50][I] [eos.kernel.init()] - Initializing ScriptManager... done.
+[16:44:50][I] [eos.kernel.init()] - Loading MasterProcess script...
+[16:44:50][I] [eos.kernel] >>> loaded module g3d.eosmodule
+[16:44:50][I]               +  g3d.eosmodule v.0.9.5 - November 05, 2012
+[16:44:50][I]               +  OGRE (Object-Oriented Graphics Rendering Engine) 3D Graphics Module for EOS environment
+[16:44:50][I]               +  table name: eos.g3d
+[16:44:50][I]               +  author : EOS Scripting Team
+[16:44:50][I] [eos.kernel] >>> loaded module view.eosmodule
+[16:44:50][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[16:44:50][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[16:44:50][I]               +  table name: eos.view
+[16:44:50][I]               +  author : EOS Scripting Team
+[16:44:50][I] [eos.kernel] >>> loaded module input.eosmodule
+[16:44:50][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[16:44:50][I]               +  Input Module for EOS Scripting Environment
+[16:44:50][I]               +  table name: eos.input
+[16:44:50][I]               +  author : EOS Scripting Team
+[16:44:50][I] [eos.view.window] List available video modes:
+[16:44:50][I]     mode 0 - 3840x1080
+[16:44:50][I]     mode 1 - 1920x1080
+[16:44:50][I]     mode 2 - 1920x1080
+[16:44:50][I]     mode 3 - 1920x1080
+[16:44:50][I]     mode 4 - 1920x1080
+[16:44:50][I]     mode 5 - 1920x1080
+[16:44:50][I]     mode 6 - 1920x1080
+[16:44:50][I]     mode 7 - 1680x1050
+[16:44:50][I]     mode 8 - 1440x900
+[16:44:50][I]     mode 9 - 1280x1024
+[16:44:50][I]     mode 10 - 1280x1024
+[16:44:50][I]     mode 11 - 1280x720
+[16:44:50][I]     mode 12 - 1280x720
+[16:44:50][I]     mode 13 - 1280x720
+[16:44:50][I]     mode 14 - 1152x864
+[16:44:50][I]     mode 15 - 1024x768
+[16:44:50][I]     mode 16 - 1024x768
+[16:44:50][I]     mode 17 - 1024x768
+[16:44:50][I]     mode 18 - 800x600
+[16:44:50][I]     mode 19 - 800x600
+[16:44:50][I]     mode 20 - 800x600
+[16:44:50][I]     mode 21 - 800x600
+[16:44:50][I]     mode 22 - 720x576
+[16:44:50][I]     mode 23 - 720x576
+[16:44:50][I]     mode 24 - 720x480
+[16:44:50][I]     mode 25 - 720x480
+[16:44:50][I]     mode 26 - 640x480  <--  selected
+[16:44:50][I]     mode 27 - 640x480  <--  selected
+[16:44:50][I]     mode 28 - 640x480  <--  selected
+[16:44:50][I]     mode 29 - 640x480  <--  selected
+[16:44:50][I] [eos.oisinput] OIS Input attached to window whith id 85983236.
+[16:44:50][U] [eos.g3d] *** initialization on window with id: 85983236
+[16:44:50][U] [eos.g3d] *** Host window RenderSystem: OpenGL Rendering Subsystem
+[16:44:50][U] [eos.g3d] *** Render System found...
+[16:44:50][U] [eos.g3d] *** Set Render System ok...
+[16:44:50][U] [eos.g3d] *** Initialization ok...
+[16:44:51][U] [eos.g3d] *** createRenderWindow ok...
+[16:44:51][I] [eos.kernel.init()] - MasterProcess init() executed.
+[16:44:51][I] [eos.kernel.init()] - initialization complete.
+[16:44:51][I] --- [eos.kernel.run()] - Running...
+[16:45:15][I] --- [eos.kernel.run()] - End Running.
+[16:45:15][I] [eos.cleanup()] - Cleaning up...
+[16:45:15][I] [eos.view] Shutting down...
+[16:45:15][I] [eos.g3d] Shutting down...
+[16:45:15][I] [eos.g3d] All objects deleted.
+[16:45:15][I] [eos.g3d] All render textures deleted.
+[16:45:15][I] [eos.g3d] All SimpleSplines deleted.
+[16:45:15][I] [eos.g3d] Scene cleared.

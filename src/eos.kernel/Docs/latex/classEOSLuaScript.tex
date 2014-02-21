@@ -1,0 +1,193 @@
+\hypertarget{classEOSLuaScript}{
+\section{EOSLuaScript Class Reference}
+\label{classEOSLuaScript}\index{EOSLuaScript@{EOSLuaScript}}
+}
+This class represents a single EOS Lua source script.  
+
+
+{\tt \#include $<$EOSLuaScript.h$>$}
+
+Inheritance diagram for EOSLuaScript::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classEOSLuaScript}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classEOSLuaScript_4983ae13c09b63b607885c0770655362}{EOSLuaScript} (\hyperlink{classEOSLuaEnvironment}{EOSLuaEnvironment} $\ast$luaEnvPtr, const char $\ast$scriptFileName)
+\begin{CompactList}\small\item\em constructor \item\end{CompactList}\item 
+virtual \hyperlink{classEOSLuaScript_0967a55fb7371b9e5808822ba184996b}{$\sim$EOSLuaScript} ()
+\begin{CompactList}\small\item\em destructor \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaScript_c1d576d2d3ffa64a9437a062f325a813}{compileBuffer} (unsigned char $\ast$bufferPtr, size\_\-t bufferSize)
+\begin{CompactList}\small\item\em calls Lua compiler on Lua code stored in a memory buffer \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaScript_7f00ff555be32da27000d51bc7ba420f}{selectScriptFunction} (const char $\ast$functionName)
+\begin{CompactList}\small\item\em Selects a Lua Script function to call. \item\end{CompactList}\item 
+void \hyperlink{classEOSLuaScript_a939a1d1daa1326a012e5e60e1b45f95}{addParam} (int intValue)
+\begin{CompactList}\small\item\em loads integer parameter to the selected function \item\end{CompactList}\item 
+void \hyperlink{classEOSLuaScript_1a6ac1c2783c000b1cf57b3a09c04cfc}{addParam} (float floatValue)
+\begin{CompactList}\small\item\em loads floating point parameter to the selected function \item\end{CompactList}\item 
+void \hyperlink{classEOSLuaScript_9a6e58cbb890391a8eb34cf22a0e7cfd}{addParam} (char $\ast$string)
+\begin{CompactList}\small\item\em loads string parameter to the selected function \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaScript_6d24519473b5a583d3ce89252a11e0ce}{go} (int nReturns=0)
+\begin{CompactList}\small\item\em Runs the loaded script. \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaScript_466d88c9afeec258536cd069b811f325}{scriptHasFunction} (const char $\ast$functionName)
+\begin{CompactList}\small\item\em tests if the script contains a function with a given name \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classEOSLuaEnvironment}{EOSLuaEnvironment} $\ast$ \hyperlink{classEOSLuaScript_4417b00b43ee03bc2120f76a3bb12d07}{luaEnv}
+\begin{CompactList}\small\item\em pointer to the Lua runtime environment \item\end{CompactList}\item 
+int \hyperlink{classEOSLuaScript_6ce277b904132a14459a929d6d8a5903}{luaThisRef}
+\begin{CompactList}\small\item\em variable used to handle the \char`\"{}this\char`\"{} reference in scripts \item\end{CompactList}\item 
+int \hyperlink{classEOSLuaScript_b86282ecf112d657fd92b29b4e21a40e}{numArgs}
+\begin{CompactList}\small\item\em counts the number of parameters loaded in the stack for the lua function \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classEOSLuaScript_f4fddb1fd2af7b266cb7b41f6b50a047}{currSelectedFuncName}
+\begin{CompactList}\small\item\em contains the name of the current Lua function to call \item\end{CompactList}\item 
+std::string \hyperlink{classEOSLuaScript_7ca6cc5f26c5cfad510e9391e5815d8c}{scriptName}
+\begin{CompactList}\small\item\em contains the name of this script \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents a single EOS Lua source script. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEOSLuaScript_4983ae13c09b63b607885c0770655362}{
+\index{EOSLuaScript@{EOSLuaScript}!EOSLuaScript@{EOSLuaScript}}
+\index{EOSLuaScript@{EOSLuaScript}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{EOSLuaScript}]{\setlength{\rightskip}{0pt plus 5cm}EOSLuaScript::EOSLuaScript ({\bf EOSLuaEnvironment} $\ast$ {\em luaEnvPtr}, \/  const char $\ast$ {\em scriptFileName})}}
+\label{classEOSLuaScript_4983ae13c09b63b607885c0770655362}
+
+
+constructor 
+
+\hypertarget{classEOSLuaScript_0967a55fb7371b9e5808822ba184996b}{
+\index{EOSLuaScript@{EOSLuaScript}!$\sim$EOSLuaScript@{$\sim$EOSLuaScript}}
+\index{$\sim$EOSLuaScript@{$\sim$EOSLuaScript}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{$\sim$EOSLuaScript}]{\setlength{\rightskip}{0pt plus 5cm}EOSLuaScript::$\sim$EOSLuaScript ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classEOSLuaScript_0967a55fb7371b9e5808822ba184996b}
+
+
+destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEOSLuaScript_c1d576d2d3ffa64a9437a062f325a813}{
+\index{EOSLuaScript@{EOSLuaScript}!compileBuffer@{compileBuffer}}
+\index{compileBuffer@{compileBuffer}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{compileBuffer}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaScript::compileBuffer (unsigned char $\ast$ {\em bufferPtr}, \/  size\_\-t {\em bufferSize})}}
+\label{classEOSLuaScript_c1d576d2d3ffa64a9437a062f325a813}
+
+
+calls Lua compiler on Lua code stored in a memory buffer 
+
+\hypertarget{classEOSLuaScript_7f00ff555be32da27000d51bc7ba420f}{
+\index{EOSLuaScript@{EOSLuaScript}!selectScriptFunction@{selectScriptFunction}}
+\index{selectScriptFunction@{selectScriptFunction}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{selectScriptFunction}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaScript::selectScriptFunction (const char $\ast$ {\em functionName})}}
+\label{classEOSLuaScript_7f00ff555be32da27000d51bc7ba420f}
+
+
+Selects a Lua Script function to call. 
+
+\hypertarget{classEOSLuaScript_a939a1d1daa1326a012e5e60e1b45f95}{
+\index{EOSLuaScript@{EOSLuaScript}!addParam@{addParam}}
+\index{addParam@{addParam}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{addParam}]{\setlength{\rightskip}{0pt plus 5cm}void EOSLuaScript::addParam (int {\em intValue})}}
+\label{classEOSLuaScript_a939a1d1daa1326a012e5e60e1b45f95}
+
+
+loads integer parameter to the selected function 
+
+\hypertarget{classEOSLuaScript_1a6ac1c2783c000b1cf57b3a09c04cfc}{
+\index{EOSLuaScript@{EOSLuaScript}!addParam@{addParam}}
+\index{addParam@{addParam}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{addParam}]{\setlength{\rightskip}{0pt plus 5cm}void EOSLuaScript::addParam (float {\em floatValue})}}
+\label{classEOSLuaScript_1a6ac1c2783c000b1cf57b3a09c04cfc}
+
+
+loads floating point parameter to the selected function 
+
+\hypertarget{classEOSLuaScript_9a6e58cbb890391a8eb34cf22a0e7cfd}{
+\index{EOSLuaScript@{EOSLuaScript}!addParam@{addParam}}
+\index{addParam@{addParam}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{addParam}]{\setlength{\rightskip}{0pt plus 5cm}void EOSLuaScript::addParam (char $\ast$ {\em string})}}
+\label{classEOSLuaScript_9a6e58cbb890391a8eb34cf22a0e7cfd}
+
+
+loads string parameter to the selected function 
+
+\hypertarget{classEOSLuaScript_6d24519473b5a583d3ce89252a11e0ce}{
+\index{EOSLuaScript@{EOSLuaScript}!go@{go}}
+\index{go@{go}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{go}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaScript::go (int {\em nReturns} = {\tt 0})}}
+\label{classEOSLuaScript_6d24519473b5a583d3ce89252a11e0ce}
+
+
+Runs the loaded script. 
+
+\hypertarget{classEOSLuaScript_466d88c9afeec258536cd069b811f325}{
+\index{EOSLuaScript@{EOSLuaScript}!scriptHasFunction@{scriptHasFunction}}
+\index{scriptHasFunction@{scriptHasFunction}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{scriptHasFunction}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaScript::scriptHasFunction (const char $\ast$ {\em functionName})}}
+\label{classEOSLuaScript_466d88c9afeec258536cd069b811f325}
+
+
+tests if the script contains a function with a given name 
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classEOSLuaScript_4417b00b43ee03bc2120f76a3bb12d07}{
+\index{EOSLuaScript@{EOSLuaScript}!luaEnv@{luaEnv}}
+\index{luaEnv@{luaEnv}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{luaEnv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EOSLuaEnvironment}$\ast$ {\bf EOSLuaScript::luaEnv}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classEOSLuaScript_4417b00b43ee03bc2120f76a3bb12d07}
+
+
+pointer to the Lua runtime environment 
+
+\hypertarget{classEOSLuaScript_6ce277b904132a14459a929d6d8a5903}{
+\index{EOSLuaScript@{EOSLuaScript}!luaThisRef@{luaThisRef}}
+\index{luaThisRef@{luaThisRef}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{luaThisRef}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf EOSLuaScript::luaThisRef}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classEOSLuaScript_6ce277b904132a14459a929d6d8a5903}
+
+
+variable used to handle the \char`\"{}this\char`\"{} reference in scripts 
+
+\hypertarget{classEOSLuaScript_b86282ecf112d657fd92b29b4e21a40e}{
+\index{EOSLuaScript@{EOSLuaScript}!numArgs@{numArgs}}
+\index{numArgs@{numArgs}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{numArgs}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf EOSLuaScript::numArgs}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classEOSLuaScript_b86282ecf112d657fd92b29b4e21a40e}
+
+
+counts the number of parameters loaded in the stack for the lua function 
+
+\hypertarget{classEOSLuaScript_f4fddb1fd2af7b266cb7b41f6b50a047}{
+\index{EOSLuaScript@{EOSLuaScript}!currSelectedFuncName@{currSelectedFuncName}}
+\index{currSelectedFuncName@{currSelectedFuncName}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{currSelectedFuncName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf EOSLuaScript::currSelectedFuncName}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classEOSLuaScript_f4fddb1fd2af7b266cb7b41f6b50a047}
+
+
+contains the name of the current Lua function to call 
+
+\hypertarget{classEOSLuaScript_7ca6cc5f26c5cfad510e9391e5815d8c}{
+\index{EOSLuaScript@{EOSLuaScript}!scriptName@{scriptName}}
+\index{scriptName@{scriptName}!EOSLuaScript@{EOSLuaScript}}
+\subsubsection[{scriptName}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf EOSLuaScript::scriptName}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classEOSLuaScript_7ca6cc5f26c5cfad510e9391e5815d8c}
+
+
+contains the name of this script 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{EOSLuaScript_8h}{EOSLuaScript.h}\item 
+\hyperlink{EOSLuaScript_8cpp}{EOSLuaScript.cpp}\end{CompactItemize}

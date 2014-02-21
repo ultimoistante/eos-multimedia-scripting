@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="84">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>G2D.h</itemPath>
+      <itemPath>G2DDefines.h</itemPath>
+      <itemPath>G2DElement.h</itemPath>
+      <itemPath>G2DRenderTarget.h</itemPath>
+      <itemPath>G2DSprite.h</itemPath>
+      <itemPath>G2DSpriteAnim.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>EOSModuleDSO.cpp</itemPath>
+      <itemPath>G2D.cpp</itemPath>
+      <itemPath>G2DElement.cpp</itemPath>
+      <itemPath>G2DRenderTarget.cpp</itemPath>
+      <itemPath>G2DSprite.cpp</itemPath>
+      <itemPath>G2DSpriteAnim.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../modulesdk</pElem>
+            <pElem>../../../../deps/vmmlib-1.0/include</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>../../../bin/eosmodule.g2d</output>
+          <linkerLibItems>
+            <linkerLibLibItem>GLee</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>6</developmentMode>
+          <stripSymbols>true</stripSymbols>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>../modulesdk</pElem>
+            <pElem>../../../../eos-deps/vmmlib-master/include</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>../../../bin/eosmodule.g2d</output>
+          <linkerLibItems>
+            <linkerLibFileItem>../modulesdk/dist/Release/GNU-Linux-x86/libmodulesdk.a</linkerLibFileItem>
+            <linkerLibLibItem>GLee</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

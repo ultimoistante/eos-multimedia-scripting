@@ -1,0 +1,58 @@
+--
+-- audio and session objects test
+--
+
+function this.init()
+	--
+	-- variables
+	this.fps = 0
+	this.fullscreen = false
+	this.screenWidth = 640
+	this.screenHeight = 480
+	--
+	-- load modules
+	eos.module.load("./eosmodule.view")
+	eos.module.load("./eosmodule.input")
+	eos.module.load("./eosmodule.audio")
+	--
+	-- initialize view
+	this.windowId = eos.view.window.create(0, this.screenWidth, this.screenHeight, 32, 0, this.fullscreen)	
+	--
+	-- initialize input
+	eos.input.attachToWindow(this.windowId, this.screenWidth, this.screenHeight, false, this.fullscreen)	
+	--
+	-- initialize audio
+	eos.audio.module.initialize()
+	
+	this.snd = eos.audio.sound.load("aurora.mod")
+	eos.audio.sound.play(this.snd, 1, false, false)
+	
+end
+
+
+function this.update()
+	--
+	if(eos.view.window.update(this.windowId) == false) then eos.shutdown() end
+	eos.input.update()
+	--
+	local fpscounter = eos.view.window.getFps(this.windowId)
+	if(fpscounter ~= this.fps) then
+		this.fps = fpscounter
+		print("fps:", this.fps)
+	end
+end
+
+
+function this.cleanup()	
+end
+
+function this.processMessage()
+	--
+	if(eos.message.current.class == "input") then
+		if(eos.message.current.keyCode == eos.input.KEY_ESC) then
+			eos.shutdown()
+		end
+	end
+	--
+end
+

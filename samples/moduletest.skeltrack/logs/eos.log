@@ -1,0 +1,69 @@
+EOS Application started on 15/05/2013 - 20:31:25.
+[20:31:25][I] EOS Integrated Scripting System - Kernel v.0.9.1 (Aurora), Nov 04, 2009
+[20:31:25][I] (C) 2009-2013 Salvatore Carotenuto, aka ultimoistante (mailto: ultimoistante@gmail.com)
+[20:31:25][I] [eos.kernel.init()] - Instancing Lua environment... done.
+[20:31:25][I] [eos.kernel.init()] - Registering functions groups in Lua environment...
+[20:31:25][I]    + [ main        ]
+[20:31:25][I]    + [ module      ]
+[20:31:25][I]    + [ time        ]
+[20:31:25][I]    + [ process     ]
+[20:31:25][I]    + [ message     ]
+[20:31:25][I]    + [ log         ]
+[20:31:25][I] [eos.kernel.init()] - Initializing ScriptManager... done.
+[20:31:25][I] [eos.kernel.init()] - Loading MasterProcess script...
+[20:31:25][I] [eos.kernel] >>> loaded module view.eosmodule
+[20:31:25][I]               +  view.eosmodule v.0.5 - Novmber 14, 2012
+[20:31:25][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[20:31:25][I]               +  table name: eos.view
+[20:31:25][I]               +  author : EOS Scripting Team
+[20:31:25][I] [eos.kernel] >>> loaded module input.eosmodule
+[20:31:25][I]               +  input.eosmodule v.0.3 - October 31, 2012
+[20:31:25][I]               +  Input Module for EOS Scripting Environment
+[20:31:25][I]               +  table name: eos.input
+[20:31:25][I]               +  author : EOS Scripting Team
+[20:31:25][I] [eos.kernel] >>> loaded module skeltrack.eosmodule
+[20:31:25][I]               +  skeltrack.eosmodule v.0.1 - May 13, 2013
+[20:31:25][I]               +  Skeltrack library wrapper module for EOS Scripting Environment
+[20:31:25][I]               +  table name: eos.skeltrack
+[20:31:25][I]               +  author : EOS Scripting Team
+[20:31:25][I] [eos.view.window] List available video modes:
+[20:31:25][I]     mode 0 - 3840x1080
+[20:31:25][I]     mode 1 - 1920x1080
+[20:31:25][I]     mode 2 - 1920x1080
+[20:31:25][I]     mode 3 - 1920x1080
+[20:31:25][I]     mode 4 - 1920x1080
+[20:31:25][I]     mode 5 - 1920x1080
+[20:31:25][I]     mode 6 - 1920x1080
+[20:31:25][I]     mode 7 - 1680x1050
+[20:31:25][I]     mode 8 - 1440x900
+[20:31:25][I]     mode 9 - 1280x1024
+[20:31:25][I]     mode 10 - 1280x1024
+[20:31:25][I]     mode 11 - 1280x720
+[20:31:25][I]     mode 12 - 1280x720
+[20:31:25][I]     mode 13 - 1280x720
+[20:31:25][I]     mode 14 - 1152x864
+[20:31:25][I]     mode 15 - 1024x768
+[20:31:25][I]     mode 16 - 1024x768
+[20:31:25][I]     mode 17 - 1024x768
+[20:31:25][I]     mode 18 - 800x600
+[20:31:25][I]     mode 19 - 800x600
+[20:31:25][I]     mode 20 - 800x600
+[20:31:25][I]     mode 21 - 800x600
+[20:31:25][I]     mode 22 - 720x576
+[20:31:25][I]     mode 23 - 720x576
+[20:31:25][I]     mode 24 - 720x480
+[20:31:25][I]     mode 25 - 720x480
+[20:31:25][I]     mode 26 - 640x480  <--  selected
+[20:31:25][I]     mode 27 - 640x480  <--  selected
+[20:31:25][I]     mode 28 - 640x480  <--  selected
+[20:31:25][I]     mode 29 - 640x480  <--  selected
+[20:31:25][I] [eos.oisinput] OIS Input attached to window whith id 79691780.
+[20:31:26][I] [eos.kernel.init()] - MasterProcess init() executed.
+[20:31:26][I] [eos.kernel.init()] - initialization complete.
+[20:31:26][I] --- [eos.kernel.run()] - Running...
+[20:31:35][I] --- [eos.kernel.run()] - End Running.
+[20:31:35][I] [eos.cleanup()] - Cleaning up...
+[20:31:35][I] [eos.view] Shutting down...
+[20:31:35][I] [eos.input] Shutting down...
+[20:31:35][I] [eos.cleanup()] - Cleanup complete.
+Application closed.

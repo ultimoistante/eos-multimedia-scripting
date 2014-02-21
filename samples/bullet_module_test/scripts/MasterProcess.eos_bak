@@ -1,0 +1,90 @@
+--
+-- ogre module test
+--
+
+function this.init()
+	--
+	-- variables
+	this.fps = 0
+	this.fullscreen = false
+	this.screenWidth = 640
+	this.screenHeight = 480
+	--
+	-- load modules
+	eos.module.load("./module.glitter")
+	eos.module.load("./module.oisinput")
+	eos.module.load("./module.ogre")
+	eos.module.load("./module.bullet")
+	--
+	-- initializes glitter
+	this.windowId = eos.glitter.window.create(0, this.screenWidth, this.screenHeight, 32, 0, this.fullscreen)	
+	--
+	-- initializes ois on glitter window
+	eos.oisinput.attachToWindow(this.windowId, this.screenWidth, this.screenHeight, false, this.fullscreen)	
+	--
+	-- initializes ogre on glitter window
+	eos.ogre.initialize(this.windowId)
+		
+  -- creates a new RenderTarget in Ogre Module (multiple render target support)
+  eos.ogre.createRenderTarget("defaultRenderTarget", 320, 200)
+
+	-- "exports" a data source: this operation registers a "data source" with the name specified in the parameter in the eos kernel sources table.
+  -- (This "registration" is done pushing a C pointer reference in the eos.kernel sources table. The pointer is relative to a valid structure internal to the module that registers it)
+	eos.ogre.exportDataSource("defaultRenderTarget")
+
+	this.imageId = eos.freeimage.load("image.jpg")		
+	eos.freeimage.resize(this.imageId, this.screenWidth, this.screenHeight)
+	eos.freeimage.exportAsDataSource(this.imageId, "viky")
+
+	-- "connects" a presentation module to a data source:
+	-- below, we create a Glitter surface, and connect it to the data source exported by Ogre module
+	this.surfaceId1 = eos.glitter.surface.create(this.windowId, this.screenWidth, this.screenHeight)
+	eos.glitter.surface.fromDataSource(this.surfaceId1, eos.dataSources.getByName("viky"))	
+
+	this.surfaceId2 = eos.glitter.surface.create(320, 240)
+
+	eos.glitter.surface.fromDataSource(this.surfaceId2, eos.dataSources.getByName("defaultRenderTarget"))
+	eos.glitter.surface.addSubSurface(this.surfaceId1, this.surfaceId2)	
+
+	--
+	-- sets a skybox...
+	eos.ogre.world.setSkyBox("Examples/SpaceSkyBox")
+	
+	this.x = 200
+	this.step = 0
+end
+
+
+
+function this.update()
+	--
+	this.step = this.step + 0.01	
+	eos.glitter.surface.setPosition(this.surfaceId2, this.x + math.sin(this.step) * 150, this.x + math.cos(this.step) * 150, 0)
+	--
+	eos.ogre.camera.rotateByAngles(0.1, 0, 0)
+	eos.ogre.update(15)
+	eos.ogre.render()
+	if(eos.glitter.window.update(this.windowId)	 == false) then eos.shutdown() end
+	eos.oisinput.update()
+	--
+	local fpscounter = eos.glitter.window.getFps(this.windowId)
+	if(fpscounter ~= this.fps) then
+		this.fps = fpscounter
+		print("fps:", this.fps)
+	end
+end
+
+
+function this.cleanup()	
+end
+
+
+function this.processMessage()
+	--
+	if(EOSMessage.messageClass == "OISInput") then
+		if(EOSMessage.keyCode == eos.oisinput.KEY_ESC) then
+			eos.shutdown()
+		end
+	end
+end
+

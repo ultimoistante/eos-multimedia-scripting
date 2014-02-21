@@ -1,0 +1,1795 @@
+EOS Application started on 04/11/2009 - 00:22:54.
+[00:22:54][I] EOS Integrated Scripting System - Kernel v.1.0.0 (Aurora), Sep 03, 2008
+[00:22:54][I] (C) 2009-2013 Salvatore Carotenuto, aka ultimoistante (mailto: ultimoistante@gmail.com)
+[00:22:54][I] [eos.kernel.init()] - Instancing Lua environment... done.
+[00:22:54][I] [eos.kernel.init()] - Registering functions groups in Lua environment...
+[00:22:54][I]    + [ main        ]
+[00:22:54][I]    + [ module      ]
+[00:22:54][I]    + [ time        ]
+[00:22:54][I]    + [ process     ]
+[00:22:54][I]    + [ message     ]
+[00:22:54][I]    + [ log         ]
+[00:22:54][I] [eos.kernel.init()] - enabling control streams (.eos-input and .eos-output)
+[00:22:54][I] [eos.kernel.init()] - Initializing ScriptManager... done.
+[00:22:54][I] [eos.kernel.init()] - Loading MasterProcess script...
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  glitter.eosmodule v.0.3 - August 05, 2009
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][I] [eos.kernel] >>> loaded module glitter.eosmodule
+[00:22:54][I]               +  3D OpenGL-powered Compositing Window Manager module for EOS Scripting Environment
+[00:22:54][I]               +  table name: eos.glitter
+[00:22:54][I]               +  author : Play-ON.it and EOS Scripting Team
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][I]               +  website: http://sourceforge.net/projects/eos-scripting/ | http://ultimoistante.wordpress.com/
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][E] [eos.kernel] - unable to load module './module.ogre'. Cause: "./module.ogre: cannot open shared object file: No such file or directory"
+[00:22:54][E] [eos.kernel.loadmodule()] - unable to issue lua 'loadlib' function
+[00:22:54][E] [eos.kernel.loadmodule()] - unable to issue lua 'loadlib' function
+[00:22:54][E] [eos.kernel.loadmodule()] - unable to issue lua 'loadlib' function
+[00:22:54][E] [eos.kernel.loadmodule()] - unable to issue lua 'loadlib' function
+[00:22:54][I] [eos.kernel.init()] - MasterProcess init() executed.
+[00:22:54][I] [eos.kernel.init()] - initialization complete.
+[00:22:54][I] --- [eos.kernel.run()] - Running...
+[00:22:54][E] [eos.kernel] - Warning: SafeGuard function has detected an error during a module loading. EOS Kernel will now stopped.
+[00:22:54][I] --- [eos.kernel.run()] - End Running.
+[00:22:54][I] [eos.kernel.cleanup()] - Cleaning up...
+[00:22:54][I] [eos.kernel.cleanup()] - Cleanup complete.
+Application closed.

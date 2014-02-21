@@ -1,0 +1,176 @@
+\hypertarget{classVariantData}{
+\section{VariantData Class Reference}
+\label{classVariantData}\index{VariantData@{VariantData}}
+}
+Class used to handle Lua Variant (boolean/numeric/string) data in EOS Kernel.  
+
+
+{\tt \#include $<$VariantData.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classVariantData_90e5e3c8c2e17774418b3c5de03d24c4}{VariantData} (bool value)
+\item 
+\hyperlink{classVariantData_1eccb0ef55abb0849460e289364fa8a1}{VariantData} (double value)
+\item 
+\hyperlink{classVariantData_033f281690c41ecb8529d5ec4dcee50f}{VariantData} (const char $\ast$value)
+\item 
+void \hyperlink{classVariantData_d4ee952cc8ced49176df1d773dec64dd}{setValue} (bool value)
+\item 
+void \hyperlink{classVariantData_4bb158230df201cbba62f3274bf67bf2}{setValue} (double value)
+\item 
+void \hyperlink{classVariantData_85c6fb4d9c36148288216e2fcc6a34b4}{setValue} (const char $\ast$value)
+\item 
+bool \hyperlink{classVariantData_7f93c9a6ba029700231cb457b96408b1}{isBoolean} ()
+\item 
+bool \hyperlink{classVariantData_f521379b31650cd5fb8f35fd029967f7}{isNumeric} ()
+\item 
+bool \hyperlink{classVariantData_add04c5ac48a44ad1c26ab6bf2099f4b}{isString} ()
+\item 
+bool \hyperlink{classVariantData_d6438333334172e261c0a76c8bbc325d}{getBooleanValue} ()
+\item 
+double \hyperlink{classVariantData_8ff14068dcf97d44f0cb73fe36fb90be}{getNumericValue} ()
+\item 
+const char $\ast$ \hyperlink{classVariantData_bbf9e6d4a64cf875d3d16a51d2e9fb2f}{getStringValue} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+bool \hyperlink{classVariantData_b89d01eddb1623a19a762816f8ecbe1b}{booleanValue}
+\item 
+double \hyperlink{classVariantData_2c126081da9af039f2a928eb1d0431c9}{numericValue}
+\item 
+std::string \hyperlink{classVariantData_b6149a1e20119b6ba877f7c6b43551e9}{stringValue}
+\item 
+char \hyperlink{classVariantData_c93d42bf9dd34df412312f2c29767aad}{type}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class used to handle Lua Variant (boolean/numeric/string) data in EOS Kernel. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classVariantData_90e5e3c8c2e17774418b3c5de03d24c4}{
+\index{VariantData@{VariantData}!VariantData@{VariantData}}
+\index{VariantData@{VariantData}!VariantData@{VariantData}}
+\subsubsection[{VariantData}]{\setlength{\rightskip}{0pt plus 5cm}VariantData::VariantData (bool {\em value})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_90e5e3c8c2e17774418b3c5de03d24c4}
+
+
+\hypertarget{classVariantData_1eccb0ef55abb0849460e289364fa8a1}{
+\index{VariantData@{VariantData}!VariantData@{VariantData}}
+\index{VariantData@{VariantData}!VariantData@{VariantData}}
+\subsubsection[{VariantData}]{\setlength{\rightskip}{0pt plus 5cm}VariantData::VariantData (double {\em value})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_1eccb0ef55abb0849460e289364fa8a1}
+
+
+\hypertarget{classVariantData_033f281690c41ecb8529d5ec4dcee50f}{
+\index{VariantData@{VariantData}!VariantData@{VariantData}}
+\index{VariantData@{VariantData}!VariantData@{VariantData}}
+\subsubsection[{VariantData}]{\setlength{\rightskip}{0pt plus 5cm}VariantData::VariantData (const char $\ast$ {\em value})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_033f281690c41ecb8529d5ec4dcee50f}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classVariantData_d4ee952cc8ced49176df1d773dec64dd}{
+\index{VariantData@{VariantData}!setValue@{setValue}}
+\index{setValue@{setValue}!VariantData@{VariantData}}
+\subsubsection[{setValue}]{\setlength{\rightskip}{0pt plus 5cm}void VariantData::setValue (bool {\em value})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_d4ee952cc8ced49176df1d773dec64dd}
+
+
+\hypertarget{classVariantData_4bb158230df201cbba62f3274bf67bf2}{
+\index{VariantData@{VariantData}!setValue@{setValue}}
+\index{setValue@{setValue}!VariantData@{VariantData}}
+\subsubsection[{setValue}]{\setlength{\rightskip}{0pt plus 5cm}void VariantData::setValue (double {\em value})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_4bb158230df201cbba62f3274bf67bf2}
+
+
+\hypertarget{classVariantData_85c6fb4d9c36148288216e2fcc6a34b4}{
+\index{VariantData@{VariantData}!setValue@{setValue}}
+\index{setValue@{setValue}!VariantData@{VariantData}}
+\subsubsection[{setValue}]{\setlength{\rightskip}{0pt plus 5cm}void VariantData::setValue (const char $\ast$ {\em value})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_85c6fb4d9c36148288216e2fcc6a34b4}
+
+
+\hypertarget{classVariantData_7f93c9a6ba029700231cb457b96408b1}{
+\index{VariantData@{VariantData}!isBoolean@{isBoolean}}
+\index{isBoolean@{isBoolean}!VariantData@{VariantData}}
+\subsubsection[{isBoolean}]{\setlength{\rightskip}{0pt plus 5cm}bool VariantData::isBoolean ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_7f93c9a6ba029700231cb457b96408b1}
+
+
+\hypertarget{classVariantData_f521379b31650cd5fb8f35fd029967f7}{
+\index{VariantData@{VariantData}!isNumeric@{isNumeric}}
+\index{isNumeric@{isNumeric}!VariantData@{VariantData}}
+\subsubsection[{isNumeric}]{\setlength{\rightskip}{0pt plus 5cm}bool VariantData::isNumeric ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_f521379b31650cd5fb8f35fd029967f7}
+
+
+\hypertarget{classVariantData_add04c5ac48a44ad1c26ab6bf2099f4b}{
+\index{VariantData@{VariantData}!isString@{isString}}
+\index{isString@{isString}!VariantData@{VariantData}}
+\subsubsection[{isString}]{\setlength{\rightskip}{0pt plus 5cm}bool VariantData::isString ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_add04c5ac48a44ad1c26ab6bf2099f4b}
+
+
+\hypertarget{classVariantData_d6438333334172e261c0a76c8bbc325d}{
+\index{VariantData@{VariantData}!getBooleanValue@{getBooleanValue}}
+\index{getBooleanValue@{getBooleanValue}!VariantData@{VariantData}}
+\subsubsection[{getBooleanValue}]{\setlength{\rightskip}{0pt plus 5cm}bool VariantData::getBooleanValue ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_d6438333334172e261c0a76c8bbc325d}
+
+
+\hypertarget{classVariantData_8ff14068dcf97d44f0cb73fe36fb90be}{
+\index{VariantData@{VariantData}!getNumericValue@{getNumericValue}}
+\index{getNumericValue@{getNumericValue}!VariantData@{VariantData}}
+\subsubsection[{getNumericValue}]{\setlength{\rightskip}{0pt plus 5cm}double VariantData::getNumericValue ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_8ff14068dcf97d44f0cb73fe36fb90be}
+
+
+\hypertarget{classVariantData_bbf9e6d4a64cf875d3d16a51d2e9fb2f}{
+\index{VariantData@{VariantData}!getStringValue@{getStringValue}}
+\index{getStringValue@{getStringValue}!VariantData@{VariantData}}
+\subsubsection[{getStringValue}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ VariantData::getStringValue ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classVariantData_bbf9e6d4a64cf875d3d16a51d2e9fb2f}
+
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classVariantData_b89d01eddb1623a19a762816f8ecbe1b}{
+\index{VariantData@{VariantData}!booleanValue@{booleanValue}}
+\index{booleanValue@{booleanValue}!VariantData@{VariantData}}
+\subsubsection[{booleanValue}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf VariantData::booleanValue}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classVariantData_b89d01eddb1623a19a762816f8ecbe1b}
+
+
+\hypertarget{classVariantData_2c126081da9af039f2a928eb1d0431c9}{
+\index{VariantData@{VariantData}!numericValue@{numericValue}}
+\index{numericValue@{numericValue}!VariantData@{VariantData}}
+\subsubsection[{numericValue}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VariantData::numericValue}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classVariantData_2c126081da9af039f2a928eb1d0431c9}
+
+
+\hypertarget{classVariantData_b6149a1e20119b6ba877f7c6b43551e9}{
+\index{VariantData@{VariantData}!stringValue@{stringValue}}
+\index{stringValue@{stringValue}!VariantData@{VariantData}}
+\subsubsection[{stringValue}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf VariantData::stringValue}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classVariantData_b6149a1e20119b6ba877f7c6b43551e9}
+
+
+\hypertarget{classVariantData_c93d42bf9dd34df412312f2c29767aad}{
+\index{VariantData@{VariantData}!type@{type}}
+\index{type@{type}!VariantData@{VariantData}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf VariantData::type}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classVariantData_c93d42bf9dd34df412312f2c29767aad}
+
+
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+\hyperlink{VariantData_8h}{VariantData.h}\end{CompactItemize}

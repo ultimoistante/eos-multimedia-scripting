@@ -1,0 +1,29 @@
+# SConstruct file for eos.kernel project
+
+env = Environment(
+                 CPPPATH='../eos.modules/modulesdk',
+                 LIBPATH='../eos.modules/modulesdk',
+                 LIBS=['modulesdk', 'lua', 'dl'],
+                 CCFLAGS='-O3',
+                 LINKFLAGS='-Wl,-rpath -Wl,./lib'
+                 )
+
+sources = ['EOSKernel.cpp',
+           'EOSLauncher.cpp',
+           'EOSLuaEnvironment.cpp',
+           'EOSLuaScript.cpp',
+           'EOSMessage.cpp',
+           'EOSProcess.cpp',
+           'EOSScriptManager.cpp',
+           'UDPSocketHandler.cpp',
+           'EOSRemoteCommandParser.cpp'
+          ]
+
+targetName = 'eos'
+installDir = '../../bin/'
+
+target = env.Program(targetName, sources)
+inst = env.Install(installDir, target)
+#env.Alias('install', installDir)
+env.AddPostAction(inst, env.Action('strip %s%s' % (installDir,targetName)))
+

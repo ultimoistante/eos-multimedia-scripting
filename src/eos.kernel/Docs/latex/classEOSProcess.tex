@@ -1,0 +1,388 @@
+\hypertarget{classEOSProcess}{
+\section{EOSProcess Class Reference}
+\label{classEOSProcess}\index{EOSProcess@{EOSProcess}}
+}
+Class used to model an EOS Process (a single script instance).  
+
+
+{\tt \#include $<$EOSProcess.h$>$}
+
+Inheritance diagram for EOSProcess::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classEOSProcess}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classEOSProcess_7c1ceeba22b5a334c0f95e32facddbea}{EOSProcess} (\hyperlink{classEOSLuaEnvironment}{EOSLuaEnvironment} $\ast$luaEnvPtr, \hyperlink{classEOSScriptManager}{EOSScriptManager} $\ast$scriptManagerPtr, const char $\ast$processName, const char $\ast$\hyperlink{classEOSLuaScript_7ca6cc5f26c5cfad510e9391e5815d8c}{scriptName})
+\begin{CompactList}\small\item\em constructor \item\end{CompactList}\item 
+\hyperlink{classEOSProcess_4204e2edd0f82d46409d37cbf309c8c6}{$\sim$EOSProcess} ()
+\begin{CompactList}\small\item\em destructor \item\end{CompactList}\item 
+bool \hyperlink{classEOSProcess_e595b8a353aac17d1ded7811d137a0ca}{init} ()
+\begin{CompactList}\small\item\em executes \char`\"{}init\char`\"{} function from script \item\end{CompactList}\item 
+bool \hyperlink{classEOSProcess_c141df99c0216969bc8b6b463f12b924}{update} ()
+\begin{CompactList}\small\item\em executes \char`\"{}update\char`\"{} function from script \item\end{CompactList}\item 
+bool \hyperlink{classEOSProcess_224e00ab735c33b4c5a4e58b9fe1826c}{cleanup} ()
+\begin{CompactList}\small\item\em executes \char`\"{}cleanup\char`\"{} function from script \item\end{CompactList}\item 
+void \hyperlink{classEOSProcess_bdaf60e60530702981c1d4ac5ceb4c3e}{processMessage} (\hyperlink{classEOSMessage}{EOSMessage} $\ast$message)
+\begin{CompactList}\small\item\em executes \char`\"{}processMessage\char`\"{} function from script \item\end{CompactList}\item 
+bool \hyperlink{classEOSProcess_e0e33032bb4be23f342515af1a3ff911}{isActive} ()
+\begin{CompactList}\small\item\em returns the current activity status of this process \item\end{CompactList}\item 
+bool \hyperlink{classEOSProcess_b5760c226c46227d395ec2e8fef7d340}{setActive} (bool status)
+\begin{CompactList}\small\item\em sets the current activity status of this process \item\end{CompactList}\item 
+bool \hyperlink{classEOSProcess_d5f8f932b1194afba3e3e4f37883e29a}{isGarbaged} ()
+\begin{CompactList}\small\item\em returns the current garbage status of this process \item\end{CompactList}\item 
+void \hyperlink{classEOSProcess_bec41530a483ecc6b9b35b34388515ec}{garbage} ()
+\begin{CompactList}\small\item\em puts this process in \char`\"{}garbaged\char`\"{} status (a way to kill and deallocate it) \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaScript_c1d576d2d3ffa64a9437a062f325a813}{compileBuffer} (unsigned char $\ast$bufferPtr, size\_\-t bufferSize)
+\begin{CompactList}\small\item\em calls Lua compiler on Lua code stored in a memory buffer \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaScript_7f00ff555be32da27000d51bc7ba420f}{selectScriptFunction} (const char $\ast$functionName)
+\begin{CompactList}\small\item\em Selects a Lua Script function to call. \item\end{CompactList}\item 
+void \hyperlink{classEOSLuaScript_a939a1d1daa1326a012e5e60e1b45f95}{addParam} (int intValue)
+\begin{CompactList}\small\item\em loads integer parameter to the selected function \item\end{CompactList}\item 
+void \hyperlink{classEOSLuaScript_1a6ac1c2783c000b1cf57b3a09c04cfc}{addParam} (float floatValue)
+\begin{CompactList}\small\item\em loads floating point parameter to the selected function \item\end{CompactList}\item 
+void \hyperlink{classEOSLuaScript_9a6e58cbb890391a8eb34cf22a0e7cfd}{addParam} (char $\ast$string)
+\begin{CompactList}\small\item\em loads string parameter to the selected function \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaScript_6d24519473b5a583d3ce89252a11e0ce}{go} (int nReturns=0)
+\begin{CompactList}\small\item\em Runs the loaded script. \item\end{CompactList}\item 
+bool \hyperlink{classEOSLuaScript_466d88c9afeec258536cd069b811f325}{scriptHasFunction} (const char $\ast$functionName)
+\begin{CompactList}\small\item\em tests if the script contains a function with a given name \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classEOSLuaEnvironment}{EOSLuaEnvironment} $\ast$ \hyperlink{classEOSLuaScript_4417b00b43ee03bc2120f76a3bb12d07}{luaEnv}
+\begin{CompactList}\small\item\em pointer to the Lua runtime environment \item\end{CompactList}\item 
+int \hyperlink{classEOSLuaScript_6ce277b904132a14459a929d6d8a5903}{luaThisRef}
+\begin{CompactList}\small\item\em variable used to handle the \char`\"{}this\char`\"{} reference in scripts \item\end{CompactList}\item 
+int \hyperlink{classEOSLuaScript_b86282ecf112d657fd92b29b4e21a40e}{numArgs}
+\begin{CompactList}\small\item\em counts the number of parameters loaded in the stack for the lua function \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classEOSLuaScript_f4fddb1fd2af7b266cb7b41f6b50a047}{currSelectedFuncName}
+\begin{CompactList}\small\item\em contains the name of the current Lua function to call \item\end{CompactList}\item 
+std::string \hyperlink{classEOSLuaScript_7ca6cc5f26c5cfad510e9391e5815d8c}{scriptName}
+\begin{CompactList}\small\item\em contains the name of this script \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classEOSProcess_f05d10a4411470314d51dea89c980967}{pushProcessName} ()
+\begin{CompactList}\small\item\em puts this process name in the Lua environment, under \char`\"{}this.processName\char`\"{} \item\end{CompactList}\item 
+void \hyperlink{classEOSProcess_9beab4f3d93c870ce78905dff204ed14}{clearProcessName} ()
+\begin{CompactList}\small\item\em clears \char`\"{}this.processName\char`\"{} variable in the Lua environment \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+char \hyperlink{classEOSProcess_318b6a6c7ab85ac4b9ecad280cd3fe5d}{luaChunk} \mbox{[}MAXCHUNKLENGTH+1\mbox{]}
+\begin{CompactList}\small\item\em holds a temporary lua source buffer \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classEOSProcess_19fe017cf86629e8783b745e5f88a5a7}{thisProcessName}
+\begin{CompactList}\small\item\em holds the name of this process \item\end{CompactList}\item 
+bool \hyperlink{classEOSProcess_223622c13ea24b06079078ac0910925f}{active}
+\begin{CompactList}\small\item\em holds the current activity status of this process \item\end{CompactList}\item 
+bool \hyperlink{classEOSProcess_69b4f5d326f9fbbda1ddad22b42f80b9}{valid}
+\begin{CompactList}\small\item\em used to trace internally the validity of this process \item\end{CompactList}\item 
+bool \hyperlink{classEOSProcess_97ff1c226411207b2fe0582b1b67603b}{initialized}
+\begin{CompactList}\small\item\em used to trace internally the initialization status of this process \item\end{CompactList}\item 
+bool \hyperlink{classEOSProcess_a3bc6045894d86d9d64d9ad8ab610684}{garbaged}
+\begin{CompactList}\small\item\em holds the current \char`\"{}garbage\char`\"{} status of this process \item\end{CompactList}\item 
+\hyperlink{classEOSScriptManager}{EOSScriptManager} $\ast$ \hyperlink{classEOSProcess_86d146cc56d2a9aa68fdb6ab3ded52f0}{scriptManager}
+\begin{CompactList}\small\item\em pointer to the ScriptManager class \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class used to model an EOS Process (a single script instance). 
+
+Many processes can share the same script source. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEOSProcess_7c1ceeba22b5a334c0f95e32facddbea}{
+\index{EOSProcess@{EOSProcess}!EOSProcess@{EOSProcess}}
+\index{EOSProcess@{EOSProcess}!EOSProcess@{EOSProcess}}
+\subsubsection[{EOSProcess}]{\setlength{\rightskip}{0pt plus 5cm}EOSProcess::EOSProcess ({\bf EOSLuaEnvironment} $\ast$ {\em luaEnvPtr}, \/  {\bf EOSScriptManager} $\ast$ {\em scriptManagerPtr}, \/  const char $\ast$ {\em processName}, \/  const char $\ast$ {\em scriptName})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSProcess_7c1ceeba22b5a334c0f95e32facddbea}
+
+
+constructor 
+
+\hypertarget{classEOSProcess_4204e2edd0f82d46409d37cbf309c8c6}{
+\index{EOSProcess@{EOSProcess}!$\sim$EOSProcess@{$\sim$EOSProcess}}
+\index{$\sim$EOSProcess@{$\sim$EOSProcess}!EOSProcess@{EOSProcess}}
+\subsubsection[{$\sim$EOSProcess}]{\setlength{\rightskip}{0pt plus 5cm}EOSProcess::$\sim$EOSProcess ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSProcess_4204e2edd0f82d46409d37cbf309c8c6}
+
+
+destructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEOSProcess_e595b8a353aac17d1ded7811d137a0ca}{
+\index{EOSProcess@{EOSProcess}!init@{init}}
+\index{init@{init}!EOSProcess@{EOSProcess}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSProcess::init ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSProcess_e595b8a353aac17d1ded7811d137a0ca}
+
+
+executes \char`\"{}init\char`\"{} function from script 
+
+\hypertarget{classEOSProcess_c141df99c0216969bc8b6b463f12b924}{
+\index{EOSProcess@{EOSProcess}!update@{update}}
+\index{update@{update}!EOSProcess@{EOSProcess}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSProcess::update ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSProcess_c141df99c0216969bc8b6b463f12b924}
+
+
+executes \char`\"{}update\char`\"{} function from script 
+
+\hypertarget{classEOSProcess_224e00ab735c33b4c5a4e58b9fe1826c}{
+\index{EOSProcess@{EOSProcess}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!EOSProcess@{EOSProcess}}
+\subsubsection[{cleanup}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSProcess::cleanup ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSProcess_224e00ab735c33b4c5a4e58b9fe1826c}
+
+
+executes \char`\"{}cleanup\char`\"{} function from script 
+
+\hypertarget{classEOSProcess_bdaf60e60530702981c1d4ac5ceb4c3e}{
+\index{EOSProcess@{EOSProcess}!processMessage@{processMessage}}
+\index{processMessage@{processMessage}!EOSProcess@{EOSProcess}}
+\subsubsection[{processMessage}]{\setlength{\rightskip}{0pt plus 5cm}void EOSProcess::processMessage ({\bf EOSMessage} $\ast$ {\em message})}}
+\label{classEOSProcess_bdaf60e60530702981c1d4ac5ceb4c3e}
+
+
+executes \char`\"{}processMessage\char`\"{} function from script 
+
+\hypertarget{classEOSProcess_e0e33032bb4be23f342515af1a3ff911}{
+\index{EOSProcess@{EOSProcess}!isActive@{isActive}}
+\index{isActive@{isActive}!EOSProcess@{EOSProcess}}
+\subsubsection[{isActive}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSProcess::isActive ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSProcess_e0e33032bb4be23f342515af1a3ff911}
+
+
+returns the current activity status of this process 
+
+\hypertarget{classEOSProcess_b5760c226c46227d395ec2e8fef7d340}{
+\index{EOSProcess@{EOSProcess}!setActive@{setActive}}
+\index{setActive@{setActive}!EOSProcess@{EOSProcess}}
+\subsubsection[{setActive}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSProcess::setActive (bool {\em status})}}
+\label{classEOSProcess_b5760c226c46227d395ec2e8fef7d340}
+
+
+sets the current activity status of this process 
+
+\hypertarget{classEOSProcess_d5f8f932b1194afba3e3e4f37883e29a}{
+\index{EOSProcess@{EOSProcess}!isGarbaged@{isGarbaged}}
+\index{isGarbaged@{isGarbaged}!EOSProcess@{EOSProcess}}
+\subsubsection[{isGarbaged}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSProcess::isGarbaged ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSProcess_d5f8f932b1194afba3e3e4f37883e29a}
+
+
+returns the current garbage status of this process 
+
+\hypertarget{classEOSProcess_bec41530a483ecc6b9b35b34388515ec}{
+\index{EOSProcess@{EOSProcess}!garbage@{garbage}}
+\index{garbage@{garbage}!EOSProcess@{EOSProcess}}
+\subsubsection[{garbage}]{\setlength{\rightskip}{0pt plus 5cm}void EOSProcess::garbage ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classEOSProcess_bec41530a483ecc6b9b35b34388515ec}
+
+
+puts this process in \char`\"{}garbaged\char`\"{} status (a way to kill and deallocate it) 
+
+\hypertarget{classEOSProcess_f05d10a4411470314d51dea89c980967}{
+\index{EOSProcess@{EOSProcess}!pushProcessName@{pushProcessName}}
+\index{pushProcessName@{pushProcessName}!EOSProcess@{EOSProcess}}
+\subsubsection[{pushProcessName}]{\setlength{\rightskip}{0pt plus 5cm}void EOSProcess::pushProcessName ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSProcess_f05d10a4411470314d51dea89c980967}
+
+
+puts this process name in the Lua environment, under \char`\"{}this.processName\char`\"{} 
+
+\hypertarget{classEOSProcess_9beab4f3d93c870ce78905dff204ed14}{
+\index{EOSProcess@{EOSProcess}!clearProcessName@{clearProcessName}}
+\index{clearProcessName@{clearProcessName}!EOSProcess@{EOSProcess}}
+\subsubsection[{clearProcessName}]{\setlength{\rightskip}{0pt plus 5cm}void EOSProcess::clearProcessName ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSProcess_9beab4f3d93c870ce78905dff204ed14}
+
+
+clears \char`\"{}this.processName\char`\"{} variable in the Lua environment 
+
+\hypertarget{classEOSLuaScript_c1d576d2d3ffa64a9437a062f325a813}{
+\index{EOSProcess@{EOSProcess}!compileBuffer@{compileBuffer}}
+\index{compileBuffer@{compileBuffer}!EOSProcess@{EOSProcess}}
+\subsubsection[{compileBuffer}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaScript::compileBuffer (unsigned char $\ast$ {\em bufferPtr}, \/  size\_\-t {\em bufferSize})\hspace{0.3cm}{\tt  \mbox{[}inherited\mbox{]}}}}
+\label{classEOSLuaScript_c1d576d2d3ffa64a9437a062f325a813}
+
+
+calls Lua compiler on Lua code stored in a memory buffer 
+
+\hypertarget{classEOSLuaScript_7f00ff555be32da27000d51bc7ba420f}{
+\index{EOSProcess@{EOSProcess}!selectScriptFunction@{selectScriptFunction}}
+\index{selectScriptFunction@{selectScriptFunction}!EOSProcess@{EOSProcess}}
+\subsubsection[{selectScriptFunction}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaScript::selectScriptFunction (const char $\ast$ {\em functionName})\hspace{0.3cm}{\tt  \mbox{[}inherited\mbox{]}}}}
+\label{classEOSLuaScript_7f00ff555be32da27000d51bc7ba420f}
+
+
+Selects a Lua Script function to call. 
+
+\hypertarget{classEOSLuaScript_a939a1d1daa1326a012e5e60e1b45f95}{
+\index{EOSProcess@{EOSProcess}!addParam@{addParam}}
+\index{addParam@{addParam}!EOSProcess@{EOSProcess}}
+\subsubsection[{addParam}]{\setlength{\rightskip}{0pt plus 5cm}void EOSLuaScript::addParam (int {\em intValue})\hspace{0.3cm}{\tt  \mbox{[}inherited\mbox{]}}}}
+\label{classEOSLuaScript_a939a1d1daa1326a012e5e60e1b45f95}
+
+
+loads integer parameter to the selected function 
+
+\hypertarget{classEOSLuaScript_1a6ac1c2783c000b1cf57b3a09c04cfc}{
+\index{EOSProcess@{EOSProcess}!addParam@{addParam}}
+\index{addParam@{addParam}!EOSProcess@{EOSProcess}}
+\subsubsection[{addParam}]{\setlength{\rightskip}{0pt plus 5cm}void EOSLuaScript::addParam (float {\em floatValue})\hspace{0.3cm}{\tt  \mbox{[}inherited\mbox{]}}}}
+\label{classEOSLuaScript_1a6ac1c2783c000b1cf57b3a09c04cfc}
+
+
+loads floating point parameter to the selected function 
+
+\hypertarget{classEOSLuaScript_9a6e58cbb890391a8eb34cf22a0e7cfd}{
+\index{EOSProcess@{EOSProcess}!addParam@{addParam}}
+\index{addParam@{addParam}!EOSProcess@{EOSProcess}}
+\subsubsection[{addParam}]{\setlength{\rightskip}{0pt plus 5cm}void EOSLuaScript::addParam (char $\ast$ {\em string})\hspace{0.3cm}{\tt  \mbox{[}inherited\mbox{]}}}}
+\label{classEOSLuaScript_9a6e58cbb890391a8eb34cf22a0e7cfd}
+
+
+loads string parameter to the selected function 
+
+\hypertarget{classEOSLuaScript_6d24519473b5a583d3ce89252a11e0ce}{
+\index{EOSProcess@{EOSProcess}!go@{go}}
+\index{go@{go}!EOSProcess@{EOSProcess}}
+\subsubsection[{go}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaScript::go (int {\em nReturns} = {\tt 0})\hspace{0.3cm}{\tt  \mbox{[}inherited\mbox{]}}}}
+\label{classEOSLuaScript_6d24519473b5a583d3ce89252a11e0ce}
+
+
+Runs the loaded script. 
+
+\hypertarget{classEOSLuaScript_466d88c9afeec258536cd069b811f325}{
+\index{EOSProcess@{EOSProcess}!scriptHasFunction@{scriptHasFunction}}
+\index{scriptHasFunction@{scriptHasFunction}!EOSProcess@{EOSProcess}}
+\subsubsection[{scriptHasFunction}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSLuaScript::scriptHasFunction (const char $\ast$ {\em functionName})\hspace{0.3cm}{\tt  \mbox{[}inherited\mbox{]}}}}
+\label{classEOSLuaScript_466d88c9afeec258536cd069b811f325}
+
+
+tests if the script contains a function with a given name 
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classEOSProcess_318b6a6c7ab85ac4b9ecad280cd3fe5d}{
+\index{EOSProcess@{EOSProcess}!luaChunk@{luaChunk}}
+\index{luaChunk@{luaChunk}!EOSProcess@{EOSProcess}}
+\subsubsection[{luaChunk}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf EOSProcess::luaChunk}\mbox{[}MAXCHUNKLENGTH+1\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSProcess_318b6a6c7ab85ac4b9ecad280cd3fe5d}
+
+
+holds a temporary lua source buffer 
+
+\hypertarget{classEOSProcess_19fe017cf86629e8783b745e5f88a5a7}{
+\index{EOSProcess@{EOSProcess}!thisProcessName@{thisProcessName}}
+\index{thisProcessName@{thisProcessName}!EOSProcess@{EOSProcess}}
+\subsubsection[{thisProcessName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf EOSProcess::thisProcessName}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSProcess_19fe017cf86629e8783b745e5f88a5a7}
+
+
+holds the name of this process 
+
+\hypertarget{classEOSProcess_223622c13ea24b06079078ac0910925f}{
+\index{EOSProcess@{EOSProcess}!active@{active}}
+\index{active@{active}!EOSProcess@{EOSProcess}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf EOSProcess::active}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSProcess_223622c13ea24b06079078ac0910925f}
+
+
+holds the current activity status of this process 
+
+\hypertarget{classEOSProcess_69b4f5d326f9fbbda1ddad22b42f80b9}{
+\index{EOSProcess@{EOSProcess}!valid@{valid}}
+\index{valid@{valid}!EOSProcess@{EOSProcess}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf EOSProcess::valid}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSProcess_69b4f5d326f9fbbda1ddad22b42f80b9}
+
+
+used to trace internally the validity of this process 
+
+\hypertarget{classEOSProcess_97ff1c226411207b2fe0582b1b67603b}{
+\index{EOSProcess@{EOSProcess}!initialized@{initialized}}
+\index{initialized@{initialized}!EOSProcess@{EOSProcess}}
+\subsubsection[{initialized}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf EOSProcess::initialized}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSProcess_97ff1c226411207b2fe0582b1b67603b}
+
+
+used to trace internally the initialization status of this process 
+
+\hypertarget{classEOSProcess_a3bc6045894d86d9d64d9ad8ab610684}{
+\index{EOSProcess@{EOSProcess}!garbaged@{garbaged}}
+\index{garbaged@{garbaged}!EOSProcess@{EOSProcess}}
+\subsubsection[{garbaged}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf EOSProcess::garbaged}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSProcess_a3bc6045894d86d9d64d9ad8ab610684}
+
+
+holds the current \char`\"{}garbage\char`\"{} status of this process 
+
+\hypertarget{classEOSProcess_86d146cc56d2a9aa68fdb6ab3ded52f0}{
+\index{EOSProcess@{EOSProcess}!scriptManager@{scriptManager}}
+\index{scriptManager@{scriptManager}!EOSProcess@{EOSProcess}}
+\subsubsection[{scriptManager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EOSScriptManager}$\ast$ {\bf EOSProcess::scriptManager}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classEOSProcess_86d146cc56d2a9aa68fdb6ab3ded52f0}
+
+
+pointer to the ScriptManager class 
+
+\hypertarget{classEOSLuaScript_4417b00b43ee03bc2120f76a3bb12d07}{
+\index{EOSProcess@{EOSProcess}!luaEnv@{luaEnv}}
+\index{luaEnv@{luaEnv}!EOSProcess@{EOSProcess}}
+\subsubsection[{luaEnv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EOSLuaEnvironment}$\ast$ {\bf EOSLuaScript::luaEnv}\hspace{0.3cm}{\tt  \mbox{[}protected, inherited\mbox{]}}}}
+\label{classEOSLuaScript_4417b00b43ee03bc2120f76a3bb12d07}
+
+
+pointer to the Lua runtime environment 
+
+\hypertarget{classEOSLuaScript_6ce277b904132a14459a929d6d8a5903}{
+\index{EOSProcess@{EOSProcess}!luaThisRef@{luaThisRef}}
+\index{luaThisRef@{luaThisRef}!EOSProcess@{EOSProcess}}
+\subsubsection[{luaThisRef}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf EOSLuaScript::luaThisRef}\hspace{0.3cm}{\tt  \mbox{[}protected, inherited\mbox{]}}}}
+\label{classEOSLuaScript_6ce277b904132a14459a929d6d8a5903}
+
+
+variable used to handle the \char`\"{}this\char`\"{} reference in scripts 
+
+\hypertarget{classEOSLuaScript_b86282ecf112d657fd92b29b4e21a40e}{
+\index{EOSProcess@{EOSProcess}!numArgs@{numArgs}}
+\index{numArgs@{numArgs}!EOSProcess@{EOSProcess}}
+\subsubsection[{numArgs}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf EOSLuaScript::numArgs}\hspace{0.3cm}{\tt  \mbox{[}protected, inherited\mbox{]}}}}
+\label{classEOSLuaScript_b86282ecf112d657fd92b29b4e21a40e}
+
+
+counts the number of parameters loaded in the stack for the lua function 
+
+\hypertarget{classEOSLuaScript_f4fddb1fd2af7b266cb7b41f6b50a047}{
+\index{EOSProcess@{EOSProcess}!currSelectedFuncName@{currSelectedFuncName}}
+\index{currSelectedFuncName@{currSelectedFuncName}!EOSProcess@{EOSProcess}}
+\subsubsection[{currSelectedFuncName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf EOSLuaScript::currSelectedFuncName}\hspace{0.3cm}{\tt  \mbox{[}protected, inherited\mbox{]}}}}
+\label{classEOSLuaScript_f4fddb1fd2af7b266cb7b41f6b50a047}
+
+
+contains the name of the current Lua function to call 
+
+\hypertarget{classEOSLuaScript_7ca6cc5f26c5cfad510e9391e5815d8c}{
+\index{EOSProcess@{EOSProcess}!scriptName@{scriptName}}
+\index{scriptName@{scriptName}!EOSProcess@{EOSProcess}}
+\subsubsection[{scriptName}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf EOSLuaScript::scriptName}\hspace{0.3cm}{\tt  \mbox{[}protected, inherited\mbox{]}}}}
+\label{classEOSLuaScript_7ca6cc5f26c5cfad510e9391e5815d8c}
+
+
+contains the name of this script 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{EOSProcess_8h}{EOSProcess.h}\item 
+\hyperlink{EOSProcess_8cpp}{EOSProcess.cpp}\end{CompactItemize}

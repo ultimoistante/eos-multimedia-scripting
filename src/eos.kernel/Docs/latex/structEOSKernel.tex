@@ -1,0 +1,1036 @@
+\hypertarget{structEOSKernel}{
+\section{EOSKernel Class Reference}
+\label{structEOSKernel}\index{EOSKernel@{EOSKernel}}
+}
+Main class of the EOS Kernel module.  
+
+
+{\tt \#include $<$EOSKernel.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{structEOSKernel_4d41f3d1f8081b9e9e729708ae66996b}{$\sim$EOSKernel} ()
+\begin{CompactList}\small\item\em destructor \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_6cbf49a8f46959908b08abaa969b0764}{start} (const char $\ast$appPath, bool norun)
+\begin{CompactList}\small\item\em starts the kernel \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_c0cf9a53338567326ad7e6388a54d208}{stop} ()
+\begin{CompactList}\small\item\em stops the kernel \item\end{CompactList}\item 
+\hyperlink{classEOSLuaEnvironment}{EOSLuaEnvironment} $\ast$ \hyperlink{structEOSKernel_dc571bb375ca531603c49e15bd5b5e1e}{getLuaEnvironment} ()
+\begin{CompactList}\small\item\em returns a pointer to the current \hyperlink{classEOSLuaEnvironment}{EOSLuaEnvironment} wrapper class \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static \hyperlink{structEOSKernel}{EOSKernel} $\ast$ \hyperlink{structEOSKernel_b18f0db248717d197b3f0963265bf541}{getInstance} ()
+\begin{CompactList}\small\item\em returns the static instance of the class \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_ed482eda9801f20453fdca40d91e7512}{moduleLoad} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.module.load})\/}\par
+\par
+ Loads a module in EOS environment \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_5818cdf156babf931c7203339d6ee8ac}{shutdown} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.shutdown})\/}\par
+\par
+ Shuts down the kernel (closes the application) \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_b1d4a0583d293c85eaec6d645aa073de}{sleep} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.sleep})\/}\par
+\par
+ Suspends kernel execution for a given number of milliseconds \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_8b244f5fbf545937dccaa2cb01720f33}{getCurrentTime} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.time.getCurrent})\/}\par
+\par
+ Returns the time (in seconds) since application started \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_3b68f7decae2685ffa3137f290656a1e}{getCurrentTimeMillis} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.time.getCurrentMillis})\/}\par
+\par
+ Returns the time (in milliseconds) since application started \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_66a2b6a361992f0fb4c6e51c345e4811}{setTargetFrameRate} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.setTargetFrameRate})\/}\par
+\par
+ Sets the target frame rate of the kernel (number of \char`\"{}update\char`\"{} executions per second) \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_38b029c0f4c889658b15b1fd87404934}{getTargetFrameRate} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.getTargetFrameRate})\/}\par
+\par
+ Returns the current target frame rate of the kernel \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_d47c8cea2665110c5da64b2af16e49ac}{getLastFrameTime} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.getLastFrameTime})\/}\par
+\par
+ Returns the duration (in seconds) of last kernel iteration (formerly a 'frame') \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_d1ccb01e71a53c8219f0d1a8a2fa87d1}{getApplicationRoot} (lua\_\-State $\ast$luaRuntime)
+\item 
+static int \hyperlink{structEOSKernel_e22b7cc7c59c6a3f40bbe3f45009b6f7}{processCreate} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.process.create})\/}\par
+\par
+ Returns the time (in seconds) since application started \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_cd45fae422857bc7341451ff8b63f0aa}{processExists} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.process.exists})\/}\par
+\par
+ Tests the existence of a process \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_4def28b41973ca584e9a701dc77493bc}{processSetActive} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.process.setActive})\/}\par
+\par
+ Sets the activity status of a Process \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_0cc83428fafd6edbde079be3d40ab9b5}{processIsActive} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.process.isActive})\/}\par
+\par
+ Sets the activity status of a Process \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_540af533e83f0920b55b4ad638a76ab5}{processDestroy} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.process.destroy})\/}\par
+\par
+ Destroys a Process \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_b4212bfe6463d4d660724b74fa23fcca}{messageInit} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.message.init})\/}\par
+\par
+ Initializes a message structure \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_a41c8c1590f49342c901ac8e0c055e2c}{messagePushData} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.message.pushData})\/}\par
+\par
+ Pushes a data pair (key, value) in a previously initialized message (see messageInit) \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_3d3c99f27856467254fdbc66388e059f}{messageSend} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.message.send})\/}\par
+\par
+ Sends a previously initialized and prepared message \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_32cd671874726365523a0ed8f0d21339}{setConsoleLogLevel} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.log.setConsoleLogLevel})\/}\par
+\par
+ Sets the verbosity level (on stderr) of the EOS Kernel \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_9d25589438c403f7b8db9c77bb354a0c}{traceError} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.log.traceError})\/}\par
+\par
+ Writes a line in eos.log logfile, with 'error' class mark (\mbox{[}E\mbox{]}) \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_186131b875c0871e4b0e5d4f9a484b16}{traceWarning} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.log.traceWarning})\/}\par
+\par
+ Writes a line in EOS.log logfile, with 'warning' class mark (\mbox{[}W\mbox{]}) \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_3407dd17642df22065837296f2a49f8a}{traceDebug} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.log.traceDebug})\/}\par
+\par
+ Writes a line in EOS.log logfile, with 'debug' class mark (\mbox{[}D\mbox{]}) \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_29224ae2d81261b6f4d859f6dfcde468}{traceUser} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.log.traceUser})\/}\par
+\par
+ Writes a line in EOS.log logfile, with 'user' class mark (\mbox{[}U\mbox{]}) \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_dfbb944ca4916e758c9e3ada4c3f3644}{traceInfo} (lua\_\-State $\ast$luaRuntime)
+\begin{CompactList}\small\item\em {\em (Lua binding interface: mapped to {\bf eos.log.traceInfo})\/}\par
+\par
+ Writes a line in EOS.log logfile, with 'info' class mark (\mbox{[}I\mbox{]}) \item\end{CompactList}\end{CompactItemize}
+\subsection*{Data Fields}
+\begin{CompactItemize}
+\item 
+int \hyperlink{structEOSKernel_834ee3631c926c273cb99ab2a80e2a4c}{consoleVerbosityLevel}
+\begin{CompactList}\small\item\em verbosity level for the console (stderr) output \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static int \hyperlink{structEOSKernel_c952db283e29f0b6927b130da6396d20}{SAFEGUARD\_\-ACTIVE} = 1
+\begin{CompactList}\small\item\em safeguard mechanism: activity flag \item\end{CompactList}\item 
+static int \hyperlink{structEOSKernel_c97927724be5b7c2eebf92739155ca0d}{SAFEGUARD\_\-FLAG\_\-LOADMODULE} = 2
+\begin{CompactList}\small\item\em safeguard mechanism: module load check \item\end{CompactList}\item 
+static struct luaL\_\-reg \hyperlink{structEOSKernel_b6b80a3e788ce2d8efcfc693d1e2e24c}{lua\_\-eoskernel\_\-main} \mbox{[}$\,$\mbox{]}
+\begin{CompactList}\small\item\em contains top level lua binding functions (eos.$\ast$) \item\end{CompactList}\item 
+static struct luaL\_\-reg \hyperlink{structEOSKernel_369f2e0709ea1be66f5f47dd5e861025}{lua\_\-eoskernel\_\-module} \mbox{[}$\,$\mbox{]}
+\begin{CompactList}\small\item\em contains module handling lua binding functions (eos.module.$\ast$) \item\end{CompactList}\item 
+static struct luaL\_\-reg \hyperlink{structEOSKernel_ffcec7d380b132f1dbebfd46b83f5c8d}{lua\_\-eoskernel\_\-time} \mbox{[}$\,$\mbox{]}
+\begin{CompactList}\small\item\em contains time related lua binding functions (eos.time.$\ast$) \item\end{CompactList}\item 
+static struct luaL\_\-reg \hyperlink{structEOSKernel_077213f420729c5a87f04c29fd14ce21}{lua\_\-eoskernel\_\-process} \mbox{[}$\,$\mbox{]}
+\begin{CompactList}\small\item\em contains process handling lua binding functions (eos.process.$\ast$) \item\end{CompactList}\item 
+static struct luaL\_\-reg \hyperlink{structEOSKernel_7033fb8fd34a75b851d9d9958e38c8f1}{lua\_\-eoskernel\_\-message} \mbox{[}$\,$\mbox{]}
+\begin{CompactList}\small\item\em contains message handling lua binding functions (eos.message.$\ast$) \item\end{CompactList}\item 
+static struct luaL\_\-reg \hyperlink{structEOSKernel_ed8c742384718b2e595d4f800178f80a}{lua\_\-eoskernel\_\-log} \mbox{[}$\,$\mbox{]}
+\begin{CompactList}\small\item\em contains log handling lua binding functions (eos.log.$\ast$) \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{structEOSKernel_06b0f1294a41e6203f303991ccfd9f56}{EOSKernel} ()
+\begin{CompactList}\small\item\em private constructor \item\end{CompactList}\item 
+int \hyperlink{structEOSKernel_04741bac06a4289eeaa252290c9ea48f}{init} (const char $\ast$appPath, bool norun)
+\begin{CompactList}\small\item\em runs early initialization code of the kernel \item\end{CompactList}\item 
+int \hyperlink{structEOSKernel_d6091282d486d45fe2c243510031ad32}{makeScripts} (const char $\ast$scriptsPath)
+\begin{CompactList}\small\item\em compiles given application source scripts \item\end{CompactList}\item 
+bool \hyperlink{structEOSKernel_13844b7aae15bf38e0ceca3a5be52b9b}{safeguardCheck} ()
+\begin{CompactList}\small\item\em safeguard mechanism: exception check \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_29d304241dfe47c34d782b0b93a6b986}{update} ()
+\begin{CompactList}\small\item\em executes an update cycle of the kernel (formerly a \char`\"{}frame\char`\"{}) \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_2659cec44279505b550ab273010cb6b9}{run} ()
+\begin{CompactList}\small\item\em starts kernel execution cycle \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_c951ed12c4318cb8272849abf124ee51}{pause} (unsigned int milliseconds)
+\begin{CompactList}\small\item\em pauses kernel for a given number of milliseconds \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_f9ca04a44a732ba92ff65927f3757ffd}{cleanup} ()
+\begin{CompactList}\small\item\em kernel resources cleanup. This function also calls cleanup on all loaded extension modules. \item\end{CompactList}\item 
+bool \hyperlink{structEOSKernel_a58308c8aa2b19378d24af1cb51b78d2}{createProcess} (const char $\ast$processName, const char $\ast$scriptName)
+\begin{CompactList}\small\item\em creates an EOS Process \item\end{CompactList}\item 
+\hyperlink{classEOSProcess}{EOSProcess} $\ast$ \hyperlink{structEOSKernel_9b9fa8938a1ad005b3b55df2aa4ba32c}{processByName} (const char $\ast$processName)
+\begin{CompactList}\small\item\em returns the pointer to an EOS Process, by its name \item\end{CompactList}\item 
+bool \hyperlink{structEOSKernel_9ab346976e19d85ebfbad260b3913734}{setProcessActivity} (const char $\ast$processName, bool activity)
+\begin{CompactList}\small\item\em sets the activity status of an EOS Process \item\end{CompactList}\item 
+bool \hyperlink{structEOSKernel_214499b9e8c0ab67eddd377a780cb3fa}{destroyProcess} (const char $\ast$processName)
+\begin{CompactList}\small\item\em destroys an EOS Process \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_4b51e69b7ddd8e0fa02a339dfb5f86f9}{\_\-setFrameRate} (const char $\ast$requestedFrameRate)
+\begin{CompactList}\small\item\em sets the target execution frame rate of the kernel \item\end{CompactList}\item 
+float \hyperlink{structEOSKernel_68610ced573efe86f7db3ca176590793}{currentTime} ()
+\begin{CompactList}\small\item\em returns elapsed time since kernel start, in seconds \item\end{CompactList}\item 
+unsigned long \hyperlink{structEOSKernel_2b1e8769e99c2af88e199534c1cc694b}{currentTimeMillis} ()
+\begin{CompactList}\small\item\em returns elapsed time since kernel start, in milliseconds \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_3901b7994589931f6d409a3a7f42dae2}{logMessage} (int level, const char $\ast$format\_\-string,...)
+\begin{CompactList}\small\item\em writes a line in the application log file \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_5a647f0ff07643959bebac4408d6c105}{prepareMessage} (const char $\ast$messageClass)
+\begin{CompactList}\small\item\em prepares (initializes) a new \hyperlink{classEOSMessage}{EOSMessage} structure \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_335409b15526d516a8051199cc7fa619}{pushMessageData} (const char $\ast$messageDataKey, bool messageDataValue)
+\begin{CompactList}\small\item\em pushes a boolean data field in the current \hyperlink{classEOSMessage}{EOSMessage} structure \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_756f0c37601b7a9bc59832948a2b20ad}{pushMessageData} (const char $\ast$messageDataKey, float messageDataValue)
+\begin{CompactList}\small\item\em pushes a numeric data field in the current \hyperlink{classEOSMessage}{EOSMessage} structure \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_3e7745d89db284ffa185b399a88ff8e5}{pushMessageData} (const char $\ast$messageDataKey, const char $\ast$messageDataValue)
+\begin{CompactList}\small\item\em pushes a string data field in the current \hyperlink{classEOSMessage}{EOSMessage} structure \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_f515d2bca73d1c3eed643605274bc3c2}{sendPreparedMessage} (const char $\ast$messageReceiver)
+\begin{CompactList}\small\item\em sends current \hyperlink{classEOSMessage}{EOSMessage} structure to the receiver Process \item\end{CompactList}\item 
+void \hyperlink{structEOSKernel_9d3dac36c51293a2d55b5ccd55411fe1}{registerNativeLuaFunctions} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+EOSPrecisionTimer $\ast$ \hyperlink{structEOSKernel_cf859572d0066a9f3b14276c39d33845}{kernelTimer}
+\begin{CompactList}\small\item\em precision timer to handle execution timings \item\end{CompactList}\item 
+\hyperlink{classEOSLuaEnvironment}{EOSLuaEnvironment} $\ast$ \hyperlink{structEOSKernel_5b6a6d064e015c2db02ed67ca224f080}{luaEnvironment}
+\begin{CompactList}\small\item\em instance of the class that manages Lua Runtime Environment \item\end{CompactList}\item 
+\hyperlink{classEOSScriptManager}{EOSScriptManager} $\ast$ \hyperlink{structEOSKernel_b48245e1274b86370aebc583430b9199}{scriptManager}
+\begin{CompactList}\small\item\em instance of the class that manages source scripts \item\end{CompactList}\item 
+\hyperlink{classEOSProcess}{EOSProcess} $\ast$ \hyperlink{structEOSKernel_7224243c464c099b92494f3a06eeb99e}{masterProcess}
+\begin{CompactList}\small\item\em pointer to the application's main process (MasterProcess is the only process automatically instanced by the kernel) \item\end{CompactList}\item 
+\hyperlink{classEOSMessage}{EOSMessage} $\ast$ \hyperlink{structEOSKernel_a755627acbc4b4b61d4fcbdef216baef}{temporaryMessage}
+\begin{CompactList}\small\item\em pointer to the temporary \hyperlink{classEOSMessage}{EOSMessage} structure \item\end{CompactList}\item 
+std::queue$<$ \hyperlink{classEOSMessage}{EOSMessage} $\ast$ $>$ \hyperlink{structEOSKernel_e6cc8ecb01686b6284ec7fb8ce2d376f}{messageQueue}
+\begin{CompactList}\small\item\em message queue \item\end{CompactList}\item 
+unsigned long \hyperlink{structEOSKernel_200122496966050fd49e27dd74323093}{frameStart}
+\item 
+unsigned long \hyperlink{structEOSKernel_288bf0407fc19109c67102df51a4774c}{lastFrameTime}
+\item 
+unsigned long \hyperlink{structEOSKernel_96244c5052baeb3cb4915e655a12b50d}{targetFrameTime}
+\begin{CompactList}\small\item\em fields used for timing purposes \item\end{CompactList}\item 
+std::map$<$ std::string, \hyperlink{classEOSProcess}{EOSProcess} $\ast$ $>$ \hyperlink{structEOSKernel_2ef28158d540dabd63d2020e082fa925}{processes}
+\begin{CompactList}\small\item\em processes hashmap \item\end{CompactList}\item 
+unsigned int \hyperlink{structEOSKernel_1624f33c49b9fcdd0a0b4a8bd2342267}{safeguardRegistry}
+\begin{CompactList}\small\item\em safeguard mechanism: flag registry \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Private Attributes}
+\begin{CompactItemize}
+\item 
+static bool \hyperlink{structEOSKernel_73cfb100d6374fd4cd0f5a7e80179b06}{instanceFlag} = false
+\begin{CompactList}\small\item\em static instance flag \item\end{CompactList}\item 
+static \hyperlink{structEOSKernel}{EOSKernel} $\ast$ \hyperlink{structEOSKernel_b29a9811607e25ec65e6432fec112c74}{instance} = NULL
+\begin{CompactList}\small\item\em static instance \item\end{CompactList}\item 
+static std::ofstream \hyperlink{structEOSKernel_06d1a03f14d2102f0e92196db921a13e}{logStream}
+\begin{CompactList}\small\item\em application's output log stream \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Main class of the EOS Kernel module. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structEOSKernel_4d41f3d1f8081b9e9e729708ae66996b}{
+\index{EOSKernel@{EOSKernel}!$\sim$EOSKernel@{$\sim$EOSKernel}}
+\index{$\sim$EOSKernel@{$\sim$EOSKernel}!EOSKernel@{EOSKernel}}
+\subsubsection[{$\sim$EOSKernel}]{\setlength{\rightskip}{0pt plus 5cm}EOSKernel::$\sim$EOSKernel ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{structEOSKernel_4d41f3d1f8081b9e9e729708ae66996b}
+
+
+destructor 
+
+\hypertarget{structEOSKernel_06b0f1294a41e6203f303991ccfd9f56}{
+\index{EOSKernel@{EOSKernel}!EOSKernel@{EOSKernel}}
+\index{EOSKernel@{EOSKernel}!EOSKernel@{EOSKernel}}
+\subsubsection[{EOSKernel}]{\setlength{\rightskip}{0pt plus 5cm}EOSKernel::EOSKernel ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_06b0f1294a41e6203f303991ccfd9f56}
+
+
+private constructor 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structEOSKernel_b18f0db248717d197b3f0963265bf541}{
+\index{EOSKernel@{EOSKernel}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!EOSKernel@{EOSKernel}}
+\subsubsection[{getInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EOSKernel} $\ast$ EOSKernel::getInstance ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_b18f0db248717d197b3f0963265bf541}
+
+
+returns the static instance of the class 
+
+\hypertarget{structEOSKernel_6cbf49a8f46959908b08abaa969b0764}{
+\index{EOSKernel@{EOSKernel}!start@{start}}
+\index{start@{start}!EOSKernel@{EOSKernel}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::start (const char $\ast$ {\em appPath}, \/  bool {\em norun})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{structEOSKernel_6cbf49a8f46959908b08abaa969b0764}
+
+
+starts the kernel 
+
+\hypertarget{structEOSKernel_c0cf9a53338567326ad7e6388a54d208}{
+\index{EOSKernel@{EOSKernel}!stop@{stop}}
+\index{stop@{stop}!EOSKernel@{EOSKernel}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::stop ()}}
+\label{structEOSKernel_c0cf9a53338567326ad7e6388a54d208}
+
+
+stops the kernel 
+
+\hypertarget{structEOSKernel_dc571bb375ca531603c49e15bd5b5e1e}{
+\index{EOSKernel@{EOSKernel}!getLuaEnvironment@{getLuaEnvironment}}
+\index{getLuaEnvironment@{getLuaEnvironment}!EOSKernel@{EOSKernel}}
+\subsubsection[{getLuaEnvironment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EOSLuaEnvironment}$\ast$ EOSKernel::getLuaEnvironment ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{structEOSKernel_dc571bb375ca531603c49e15bd5b5e1e}
+
+
+returns a pointer to the current \hyperlink{classEOSLuaEnvironment}{EOSLuaEnvironment} wrapper class 
+
+\hypertarget{structEOSKernel_ed482eda9801f20453fdca40d91e7512}{
+\index{EOSKernel@{EOSKernel}!moduleLoad@{moduleLoad}}
+\index{moduleLoad@{moduleLoad}!EOSKernel@{EOSKernel}}
+\subsubsection[{moduleLoad}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::moduleLoad (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_ed482eda9801f20453fdca40d91e7512}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.module.load})\/}\par
+\par
+ Loads a module in EOS environment 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em moduleName}]filename (relative to eos executable location) of the EOS Dynamic Module to load \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true in case of success, false otherwise \end{Desc}
+\hypertarget{structEOSKernel_5818cdf156babf931c7203339d6ee8ac}{
+\index{EOSKernel@{EOSKernel}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!EOSKernel@{EOSKernel}}
+\subsubsection[{shutdown}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::shutdown (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_5818cdf156babf931c7203339d6ee8ac}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.shutdown})\/}\par
+\par
+ Shuts down the kernel (closes the application) 
+
+\hypertarget{structEOSKernel_b1d4a0583d293c85eaec6d645aa073de}{
+\index{EOSKernel@{EOSKernel}!sleep@{sleep}}
+\index{sleep@{sleep}!EOSKernel@{EOSKernel}}
+\subsubsection[{sleep}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::sleep (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_b1d4a0583d293c85eaec6d645aa073de}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.sleep})\/}\par
+\par
+ Suspends kernel execution for a given number of milliseconds 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em milliseconds}]number of milliseconds to sleep \end{description}
+\end{Desc}
+\hypertarget{structEOSKernel_8b244f5fbf545937dccaa2cb01720f33}{
+\index{EOSKernel@{EOSKernel}!getCurrentTime@{getCurrentTime}}
+\index{getCurrentTime@{getCurrentTime}!EOSKernel@{EOSKernel}}
+\subsubsection[{getCurrentTime}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::getCurrentTime (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_8b244f5fbf545937dccaa2cb01720f33}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.time.getCurrent})\/}\par
+\par
+ Returns the time (in seconds) since application started 
+
+\begin{Desc}
+\item[Returns:]elapsed time since application started \end{Desc}
+\hypertarget{structEOSKernel_3b68f7decae2685ffa3137f290656a1e}{
+\index{EOSKernel@{EOSKernel}!getCurrentTimeMillis@{getCurrentTimeMillis}}
+\index{getCurrentTimeMillis@{getCurrentTimeMillis}!EOSKernel@{EOSKernel}}
+\subsubsection[{getCurrentTimeMillis}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::getCurrentTimeMillis (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_3b68f7decae2685ffa3137f290656a1e}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.time.getCurrentMillis})\/}\par
+\par
+ Returns the time (in milliseconds) since application started 
+
+\begin{Desc}
+\item[Returns:]elapsed time since application started \end{Desc}
+\hypertarget{structEOSKernel_66a2b6a361992f0fb4c6e51c345e4811}{
+\index{EOSKernel@{EOSKernel}!setTargetFrameRate@{setTargetFrameRate}}
+\index{setTargetFrameRate@{setTargetFrameRate}!EOSKernel@{EOSKernel}}
+\subsubsection[{setTargetFrameRate}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::setTargetFrameRate (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_66a2b6a361992f0fb4c6e51c345e4811}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.setTargetFrameRate})\/}\par
+\par
+ Sets the target frame rate of the kernel (number of \char`\"{}update\char`\"{} executions per second) 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em targetFrameRate}]requested target frame rate \end{description}
+\end{Desc}
+\hypertarget{structEOSKernel_38b029c0f4c889658b15b1fd87404934}{
+\index{EOSKernel@{EOSKernel}!getTargetFrameRate@{getTargetFrameRate}}
+\index{getTargetFrameRate@{getTargetFrameRate}!EOSKernel@{EOSKernel}}
+\subsubsection[{getTargetFrameRate}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::getTargetFrameRate (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_38b029c0f4c889658b15b1fd87404934}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.getTargetFrameRate})\/}\par
+\par
+ Returns the current target frame rate of the kernel 
+
+\begin{Desc}
+\item[Returns:]current frame rate of the kernel \end{Desc}
+\hypertarget{structEOSKernel_d47c8cea2665110c5da64b2af16e49ac}{
+\index{EOSKernel@{EOSKernel}!getLastFrameTime@{getLastFrameTime}}
+\index{getLastFrameTime@{getLastFrameTime}!EOSKernel@{EOSKernel}}
+\subsubsection[{getLastFrameTime}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::getLastFrameTime (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_d47c8cea2665110c5da64b2af16e49ac}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.getLastFrameTime})\/}\par
+\par
+ Returns the duration (in seconds) of last kernel iteration (formerly a 'frame') 
+
+\begin{Desc}
+\item[Returns:]duration of last frame, in seconds \end{Desc}
+\hypertarget{structEOSKernel_d1ccb01e71a53c8219f0d1a8a2fa87d1}{
+\index{EOSKernel@{EOSKernel}!getApplicationRoot@{getApplicationRoot}}
+\index{getApplicationRoot@{getApplicationRoot}!EOSKernel@{EOSKernel}}
+\subsubsection[{getApplicationRoot}]{\setlength{\rightskip}{0pt plus 5cm}static int EOSKernel::getApplicationRoot (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_d1ccb01e71a53c8219f0d1a8a2fa87d1}
+
+
+\hypertarget{structEOSKernel_e22b7cc7c59c6a3f40bbe3f45009b6f7}{
+\index{EOSKernel@{EOSKernel}!processCreate@{processCreate}}
+\index{processCreate@{processCreate}!EOSKernel@{EOSKernel}}
+\subsubsection[{processCreate}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::processCreate (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_e22b7cc7c59c6a3f40bbe3f45009b6f7}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.process.create})\/}\par
+\par
+ Returns the time (in seconds) since application started 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em processName}]- name of the new Process to create. The name must be unique. \item[{\em scriptName}]- name of the script to use for the process. A script can be used for many processes. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true in case of success, false otherwise \end{Desc}
+\hypertarget{structEOSKernel_cd45fae422857bc7341451ff8b63f0aa}{
+\index{EOSKernel@{EOSKernel}!processExists@{processExists}}
+\index{processExists@{processExists}!EOSKernel@{EOSKernel}}
+\subsubsection[{processExists}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::processExists (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_cd45fae422857bc7341451ff8b63f0aa}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.process.exists})\/}\par
+\par
+ Tests the existence of a process 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em processName}]- name of Process to test \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true if the process exists, false otherwise \end{Desc}
+\hypertarget{structEOSKernel_4def28b41973ca584e9a701dc77493bc}{
+\index{EOSKernel@{EOSKernel}!processSetActive@{processSetActive}}
+\index{processSetActive@{processSetActive}!EOSKernel@{EOSKernel}}
+\subsubsection[{processSetActive}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::processSetActive (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_4def28b41973ca584e9a701dc77493bc}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.process.setActive})\/}\par
+\par
+ Sets the activity status of a Process 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em processName}]- name of the Process \item[{\em activity}]- the activity status (true$|$false) to set \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true if case of success, false otherwise \end{Desc}
+\hypertarget{structEOSKernel_0cc83428fafd6edbde079be3d40ab9b5}{
+\index{EOSKernel@{EOSKernel}!processIsActive@{processIsActive}}
+\index{processIsActive@{processIsActive}!EOSKernel@{EOSKernel}}
+\subsubsection[{processIsActive}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::processIsActive (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_0cc83428fafd6edbde079be3d40ab9b5}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.process.isActive})\/}\par
+\par
+ Sets the activity status of a Process 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em processName}]- name of the Process \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]current activity status of the process (true: active, false: inactive) \end{Desc}
+\hypertarget{structEOSKernel_540af533e83f0920b55b4ad638a76ab5}{
+\index{EOSKernel@{EOSKernel}!processDestroy@{processDestroy}}
+\index{processDestroy@{processDestroy}!EOSKernel@{EOSKernel}}
+\subsubsection[{processDestroy}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::processDestroy (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_540af533e83f0920b55b4ad638a76ab5}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.process.destroy})\/}\par
+\par
+ Destroys a Process 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em processName}]- name of the Process to destroy \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true if case of success, false otherwise \end{Desc}
+\hypertarget{structEOSKernel_b4212bfe6463d4d660724b74fa23fcca}{
+\index{EOSKernel@{EOSKernel}!messageInit@{messageInit}}
+\index{messageInit@{messageInit}!EOSKernel@{EOSKernel}}
+\subsubsection[{messageInit}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::messageInit (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_b4212bfe6463d4d660724b74fa23fcca}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.message.init})\/}\par
+\par
+ Initializes a message structure 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em messageClass}]- class of the message (tipically a string that identifies the sender, or the type of the message) \end{description}
+\end{Desc}
+\hypertarget{structEOSKernel_a41c8c1590f49342c901ac8e0c055e2c}{
+\index{EOSKernel@{EOSKernel}!messagePushData@{messagePushData}}
+\index{messagePushData@{messagePushData}!EOSKernel@{EOSKernel}}
+\subsubsection[{messagePushData}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::messagePushData (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_a41c8c1590f49342c901ac8e0c055e2c}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.message.pushData})\/}\par
+\par
+ Pushes a data pair (key, value) in a previously initialized message (see messageInit) 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em keyName}]- name of the data field to push (the 'key') \item[{\em valueData}]- value to push: it can be a Boolean, a Numeric, or a String \end{description}
+\end{Desc}
+\hypertarget{structEOSKernel_3d3c99f27856467254fdbc66388e059f}{
+\index{EOSKernel@{EOSKernel}!messageSend@{messageSend}}
+\index{messageSend@{messageSend}!EOSKernel@{EOSKernel}}
+\subsubsection[{messageSend}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::messageSend (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_3d3c99f27856467254fdbc66388e059f}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.message.send})\/}\par
+\par
+ Sends a previously initialized and prepared message 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em receiverProcessName}]- name of the receiver process \end{description}
+\end{Desc}
+\hypertarget{structEOSKernel_32cd671874726365523a0ed8f0d21339}{
+\index{EOSKernel@{EOSKernel}!setConsoleLogLevel@{setConsoleLogLevel}}
+\index{setConsoleLogLevel@{setConsoleLogLevel}!EOSKernel@{EOSKernel}}
+\subsubsection[{setConsoleLogLevel}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::setConsoleLogLevel (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_32cd671874726365523a0ed8f0d21339}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.log.setConsoleLogLevel})\/}\par
+\par
+ Sets the verbosity level (on stderr) of the EOS Kernel 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em verbosityLevel}]- max message level to dump on stderr. (A constant between eos.kernel.\mbox{[} LOGLEVEL\_\-NONE $|$ LOGLEVEL\_\-ERR $|$ LOGLEVEL\_\-WARN $|$ LOGLEVEL\_\-DBUG $|$ LOGLEVEL\_\-USER $|$ LOGLEVEL\_\-INFO \mbox{]} ) \end{description}
+\end{Desc}
+\hypertarget{structEOSKernel_9d25589438c403f7b8db9c77bb354a0c}{
+\index{EOSKernel@{EOSKernel}!traceError@{traceError}}
+\index{traceError@{traceError}!EOSKernel@{EOSKernel}}
+\subsubsection[{traceError}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::traceError (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_9d25589438c403f7b8db9c77bb354a0c}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.log.traceError})\/}\par
+\par
+ Writes a line in eos.log logfile, with 'error' class mark (\mbox{[}E\mbox{]}) 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em logLine}]- line to write to log \end{description}
+\end{Desc}
+\hypertarget{structEOSKernel_186131b875c0871e4b0e5d4f9a484b16}{
+\index{EOSKernel@{EOSKernel}!traceWarning@{traceWarning}}
+\index{traceWarning@{traceWarning}!EOSKernel@{EOSKernel}}
+\subsubsection[{traceWarning}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::traceWarning (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_186131b875c0871e4b0e5d4f9a484b16}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.log.traceWarning})\/}\par
+\par
+ Writes a line in EOS.log logfile, with 'warning' class mark (\mbox{[}W\mbox{]}) 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em logLine}]- line to write to log \end{description}
+\end{Desc}
+\hypertarget{structEOSKernel_3407dd17642df22065837296f2a49f8a}{
+\index{EOSKernel@{EOSKernel}!traceDebug@{traceDebug}}
+\index{traceDebug@{traceDebug}!EOSKernel@{EOSKernel}}
+\subsubsection[{traceDebug}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::traceDebug (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_3407dd17642df22065837296f2a49f8a}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.log.traceDebug})\/}\par
+\par
+ Writes a line in EOS.log logfile, with 'debug' class mark (\mbox{[}D\mbox{]}) 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em logLine}]- line to write to log \end{description}
+\end{Desc}
+\hypertarget{structEOSKernel_29224ae2d81261b6f4d859f6dfcde468}{
+\index{EOSKernel@{EOSKernel}!traceUser@{traceUser}}
+\index{traceUser@{traceUser}!EOSKernel@{EOSKernel}}
+\subsubsection[{traceUser}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::traceUser (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_29224ae2d81261b6f4d859f6dfcde468}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.log.traceUser})\/}\par
+\par
+ Writes a line in EOS.log logfile, with 'user' class mark (\mbox{[}U\mbox{]}) 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em logLine}]- line to write to log \end{description}
+\end{Desc}
+\hypertarget{structEOSKernel_dfbb944ca4916e758c9e3ada4c3f3644}{
+\index{EOSKernel@{EOSKernel}!traceInfo@{traceInfo}}
+\index{traceInfo@{traceInfo}!EOSKernel@{EOSKernel}}
+\subsubsection[{traceInfo}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::traceInfo (lua\_\-State $\ast$ {\em luaRuntime})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_dfbb944ca4916e758c9e3ada4c3f3644}
+
+
+{\em (Lua binding interface: mapped to {\bf eos.log.traceInfo})\/}\par
+\par
+ Writes a line in EOS.log logfile, with 'info' class mark (\mbox{[}I\mbox{]}) 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em logLine}]- line to write to log \end{description}
+\end{Desc}
+\hypertarget{structEOSKernel_04741bac06a4289eeaa252290c9ea48f}{
+\index{EOSKernel@{EOSKernel}!init@{init}}
+\index{init@{init}!EOSKernel@{EOSKernel}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::init (const char $\ast$ {\em appPath}, \/  bool {\em norun})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_04741bac06a4289eeaa252290c9ea48f}
+
+
+runs early initialization code of the kernel 
+
+\hypertarget{structEOSKernel_d6091282d486d45fe2c243510031ad32}{
+\index{EOSKernel@{EOSKernel}!makeScripts@{makeScripts}}
+\index{makeScripts@{makeScripts}!EOSKernel@{EOSKernel}}
+\subsubsection[{makeScripts}]{\setlength{\rightskip}{0pt plus 5cm}int EOSKernel::makeScripts (const char $\ast$ {\em scriptsPath})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_d6091282d486d45fe2c243510031ad32}
+
+
+compiles given application source scripts 
+
+\hypertarget{structEOSKernel_13844b7aae15bf38e0ceca3a5be52b9b}{
+\index{EOSKernel@{EOSKernel}!safeguardCheck@{safeguardCheck}}
+\index{safeguardCheck@{safeguardCheck}!EOSKernel@{EOSKernel}}
+\subsubsection[{safeguardCheck}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSKernel::safeguardCheck ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_13844b7aae15bf38e0ceca3a5be52b9b}
+
+
+safeguard mechanism: exception check 
+
+\hypertarget{structEOSKernel_29d304241dfe47c34d782b0b93a6b986}{
+\index{EOSKernel@{EOSKernel}!update@{update}}
+\index{update@{update}!EOSKernel@{EOSKernel}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::update ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_29d304241dfe47c34d782b0b93a6b986}
+
+
+executes an update cycle of the kernel (formerly a \char`\"{}frame\char`\"{}) 
+
+\hypertarget{structEOSKernel_2659cec44279505b550ab273010cb6b9}{
+\index{EOSKernel@{EOSKernel}!run@{run}}
+\index{run@{run}!EOSKernel@{EOSKernel}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::run ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_2659cec44279505b550ab273010cb6b9}
+
+
+starts kernel execution cycle 
+
+\hypertarget{structEOSKernel_c951ed12c4318cb8272849abf124ee51}{
+\index{EOSKernel@{EOSKernel}!pause@{pause}}
+\index{pause@{pause}!EOSKernel@{EOSKernel}}
+\subsubsection[{pause}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::pause (unsigned int {\em milliseconds})\hspace{0.3cm}{\tt  \mbox{[}inline, private\mbox{]}}}}
+\label{structEOSKernel_c951ed12c4318cb8272849abf124ee51}
+
+
+pauses kernel for a given number of milliseconds 
+
+\hypertarget{structEOSKernel_f9ca04a44a732ba92ff65927f3757ffd}{
+\index{EOSKernel@{EOSKernel}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!EOSKernel@{EOSKernel}}
+\subsubsection[{cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::cleanup ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_f9ca04a44a732ba92ff65927f3757ffd}
+
+
+kernel resources cleanup. This function also calls cleanup on all loaded extension modules. 
+
+\hypertarget{structEOSKernel_a58308c8aa2b19378d24af1cb51b78d2}{
+\index{EOSKernel@{EOSKernel}!createProcess@{createProcess}}
+\index{createProcess@{createProcess}!EOSKernel@{EOSKernel}}
+\subsubsection[{createProcess}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSKernel::createProcess (const char $\ast$ {\em processName}, \/  const char $\ast$ {\em scriptName})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_a58308c8aa2b19378d24af1cb51b78d2}
+
+
+creates an EOS Process 
+
+\hypertarget{structEOSKernel_9b9fa8938a1ad005b3b55df2aa4ba32c}{
+\index{EOSKernel@{EOSKernel}!processByName@{processByName}}
+\index{processByName@{processByName}!EOSKernel@{EOSKernel}}
+\subsubsection[{processByName}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EOSProcess} $\ast$ EOSKernel::processByName (const char $\ast$ {\em processName})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_9b9fa8938a1ad005b3b55df2aa4ba32c}
+
+
+returns the pointer to an EOS Process, by its name 
+
+\hypertarget{structEOSKernel_9ab346976e19d85ebfbad260b3913734}{
+\index{EOSKernel@{EOSKernel}!setProcessActivity@{setProcessActivity}}
+\index{setProcessActivity@{setProcessActivity}!EOSKernel@{EOSKernel}}
+\subsubsection[{setProcessActivity}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSKernel::setProcessActivity (const char $\ast$ {\em processName}, \/  bool {\em activity})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_9ab346976e19d85ebfbad260b3913734}
+
+
+sets the activity status of an EOS Process 
+
+\hypertarget{structEOSKernel_214499b9e8c0ab67eddd377a780cb3fa}{
+\index{EOSKernel@{EOSKernel}!destroyProcess@{destroyProcess}}
+\index{destroyProcess@{destroyProcess}!EOSKernel@{EOSKernel}}
+\subsubsection[{destroyProcess}]{\setlength{\rightskip}{0pt plus 5cm}bool EOSKernel::destroyProcess (const char $\ast$ {\em processName})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_214499b9e8c0ab67eddd377a780cb3fa}
+
+
+destroys an EOS Process 
+
+\hypertarget{structEOSKernel_4b51e69b7ddd8e0fa02a339dfb5f86f9}{
+\index{EOSKernel@{EOSKernel}!\_\-setFrameRate@{\_\-setFrameRate}}
+\index{\_\-setFrameRate@{\_\-setFrameRate}!EOSKernel@{EOSKernel}}
+\subsubsection[{\_\-setFrameRate}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::\_\-setFrameRate (const char $\ast$ {\em requestedFrameRate})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_4b51e69b7ddd8e0fa02a339dfb5f86f9}
+
+
+sets the target execution frame rate of the kernel 
+
+\hypertarget{structEOSKernel_68610ced573efe86f7db3ca176590793}{
+\index{EOSKernel@{EOSKernel}!currentTime@{currentTime}}
+\index{currentTime@{currentTime}!EOSKernel@{EOSKernel}}
+\subsubsection[{currentTime}]{\setlength{\rightskip}{0pt plus 5cm}float EOSKernel::currentTime ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_68610ced573efe86f7db3ca176590793}
+
+
+returns elapsed time since kernel start, in seconds 
+
+\hypertarget{structEOSKernel_2b1e8769e99c2af88e199534c1cc694b}{
+\index{EOSKernel@{EOSKernel}!currentTimeMillis@{currentTimeMillis}}
+\index{currentTimeMillis@{currentTimeMillis}!EOSKernel@{EOSKernel}}
+\subsubsection[{currentTimeMillis}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long EOSKernel::currentTimeMillis ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_2b1e8769e99c2af88e199534c1cc694b}
+
+
+returns elapsed time since kernel start, in milliseconds 
+
+\hypertarget{structEOSKernel_3901b7994589931f6d409a3a7f42dae2}{
+\index{EOSKernel@{EOSKernel}!logMessage@{logMessage}}
+\index{logMessage@{logMessage}!EOSKernel@{EOSKernel}}
+\subsubsection[{logMessage}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::logMessage (int {\em level}, \/  const char $\ast$ {\em format\_\-string}, \/   {\em ...})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_3901b7994589931f6d409a3a7f42dae2}
+
+
+writes a line in the application log file 
+
+\hypertarget{structEOSKernel_5a647f0ff07643959bebac4408d6c105}{
+\index{EOSKernel@{EOSKernel}!prepareMessage@{prepareMessage}}
+\index{prepareMessage@{prepareMessage}!EOSKernel@{EOSKernel}}
+\subsubsection[{prepareMessage}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::prepareMessage (const char $\ast$ {\em messageClass})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_5a647f0ff07643959bebac4408d6c105}
+
+
+prepares (initializes) a new \hyperlink{classEOSMessage}{EOSMessage} structure 
+
+\hypertarget{structEOSKernel_335409b15526d516a8051199cc7fa619}{
+\index{EOSKernel@{EOSKernel}!pushMessageData@{pushMessageData}}
+\index{pushMessageData@{pushMessageData}!EOSKernel@{EOSKernel}}
+\subsubsection[{pushMessageData}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::pushMessageData (const char $\ast$ {\em messageDataKey}, \/  bool {\em messageDataValue})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_335409b15526d516a8051199cc7fa619}
+
+
+pushes a boolean data field in the current \hyperlink{classEOSMessage}{EOSMessage} structure 
+
+\hypertarget{structEOSKernel_756f0c37601b7a9bc59832948a2b20ad}{
+\index{EOSKernel@{EOSKernel}!pushMessageData@{pushMessageData}}
+\index{pushMessageData@{pushMessageData}!EOSKernel@{EOSKernel}}
+\subsubsection[{pushMessageData}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::pushMessageData (const char $\ast$ {\em messageDataKey}, \/  float {\em messageDataValue})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_756f0c37601b7a9bc59832948a2b20ad}
+
+
+pushes a numeric data field in the current \hyperlink{classEOSMessage}{EOSMessage} structure 
+
+\hypertarget{structEOSKernel_3e7745d89db284ffa185b399a88ff8e5}{
+\index{EOSKernel@{EOSKernel}!pushMessageData@{pushMessageData}}
+\index{pushMessageData@{pushMessageData}!EOSKernel@{EOSKernel}}
+\subsubsection[{pushMessageData}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::pushMessageData (const char $\ast$ {\em messageDataKey}, \/  const char $\ast$ {\em messageDataValue})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_3e7745d89db284ffa185b399a88ff8e5}
+
+
+pushes a string data field in the current \hyperlink{classEOSMessage}{EOSMessage} structure 
+
+\hypertarget{structEOSKernel_f515d2bca73d1c3eed643605274bc3c2}{
+\index{EOSKernel@{EOSKernel}!sendPreparedMessage@{sendPreparedMessage}}
+\index{sendPreparedMessage@{sendPreparedMessage}!EOSKernel@{EOSKernel}}
+\subsubsection[{sendPreparedMessage}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::sendPreparedMessage (const char $\ast$ {\em messageReceiver})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_f515d2bca73d1c3eed643605274bc3c2}
+
+
+sends current \hyperlink{classEOSMessage}{EOSMessage} structure to the receiver Process 
+
+\hypertarget{structEOSKernel_9d3dac36c51293a2d55b5ccd55411fe1}{
+\index{EOSKernel@{EOSKernel}!registerNativeLuaFunctions@{registerNativeLuaFunctions}}
+\index{registerNativeLuaFunctions@{registerNativeLuaFunctions}!EOSKernel@{EOSKernel}}
+\subsubsection[{registerNativeLuaFunctions}]{\setlength{\rightskip}{0pt plus 5cm}void EOSKernel::registerNativeLuaFunctions ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_9d3dac36c51293a2d55b5ccd55411fe1}
+
+
+
+
+\subsection{Field Documentation}
+\hypertarget{structEOSKernel_834ee3631c926c273cb99ab2a80e2a4c}{
+\index{EOSKernel@{EOSKernel}!consoleVerbosityLevel@{consoleVerbosityLevel}}
+\index{consoleVerbosityLevel@{consoleVerbosityLevel}!EOSKernel@{EOSKernel}}
+\subsubsection[{consoleVerbosityLevel}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf EOSKernel::consoleVerbosityLevel}}}
+\label{structEOSKernel_834ee3631c926c273cb99ab2a80e2a4c}
+
+
+verbosity level for the console (stderr) output 
+
+\hypertarget{structEOSKernel_c952db283e29f0b6927b130da6396d20}{
+\index{EOSKernel@{EOSKernel}!SAFEGUARD\_\-ACTIVE@{SAFEGUARD\_\-ACTIVE}}
+\index{SAFEGUARD\_\-ACTIVE@{SAFEGUARD\_\-ACTIVE}!EOSKernel@{EOSKernel}}
+\subsubsection[{SAFEGUARD\_\-ACTIVE}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf EOSKernel::SAFEGUARD\_\-ACTIVE} = 1\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_c952db283e29f0b6927b130da6396d20}
+
+
+safeguard mechanism: activity flag 
+
+\hypertarget{structEOSKernel_c97927724be5b7c2eebf92739155ca0d}{
+\index{EOSKernel@{EOSKernel}!SAFEGUARD\_\-FLAG\_\-LOADMODULE@{SAFEGUARD\_\-FLAG\_\-LOADMODULE}}
+\index{SAFEGUARD\_\-FLAG\_\-LOADMODULE@{SAFEGUARD\_\-FLAG\_\-LOADMODULE}!EOSKernel@{EOSKernel}}
+\subsubsection[{SAFEGUARD\_\-FLAG\_\-LOADMODULE}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf EOSKernel::SAFEGUARD\_\-FLAG\_\-LOADMODULE} = 2\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{structEOSKernel_c97927724be5b7c2eebf92739155ca0d}
+
+
+safeguard mechanism: module load check 
+
+\hypertarget{structEOSKernel_b6b80a3e788ce2d8efcfc693d1e2e24c}{
+\index{EOSKernel@{EOSKernel}!lua\_\-eoskernel\_\-main@{lua\_\-eoskernel\_\-main}}
+\index{lua\_\-eoskernel\_\-main@{lua\_\-eoskernel\_\-main}!EOSKernel@{EOSKernel}}
+\subsubsection[{lua\_\-eoskernel\_\-main}]{\setlength{\rightskip}{0pt plus 5cm}struct luaL\_\-reg {\bf EOSKernel::lua\_\-eoskernel\_\-main}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}static, read\mbox{]}}}}
+\label{structEOSKernel_b6b80a3e788ce2d8efcfc693d1e2e24c}
+
+
+contains top level lua binding functions (eos.$\ast$) 
+
+\hypertarget{structEOSKernel_369f2e0709ea1be66f5f47dd5e861025}{
+\index{EOSKernel@{EOSKernel}!lua\_\-eoskernel\_\-module@{lua\_\-eoskernel\_\-module}}
+\index{lua\_\-eoskernel\_\-module@{lua\_\-eoskernel\_\-module}!EOSKernel@{EOSKernel}}
+\subsubsection[{lua\_\-eoskernel\_\-module}]{\setlength{\rightskip}{0pt plus 5cm}struct luaL\_\-reg {\bf EOSKernel::lua\_\-eoskernel\_\-module}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}static, read\mbox{]}}}}
+\label{structEOSKernel_369f2e0709ea1be66f5f47dd5e861025}
+
+
+contains module handling lua binding functions (eos.module.$\ast$) 
+
+\hypertarget{structEOSKernel_ffcec7d380b132f1dbebfd46b83f5c8d}{
+\index{EOSKernel@{EOSKernel}!lua\_\-eoskernel\_\-time@{lua\_\-eoskernel\_\-time}}
+\index{lua\_\-eoskernel\_\-time@{lua\_\-eoskernel\_\-time}!EOSKernel@{EOSKernel}}
+\subsubsection[{lua\_\-eoskernel\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}struct luaL\_\-reg {\bf EOSKernel::lua\_\-eoskernel\_\-time}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}static, read\mbox{]}}}}
+\label{structEOSKernel_ffcec7d380b132f1dbebfd46b83f5c8d}
+
+
+contains time related lua binding functions (eos.time.$\ast$) 
+
+\hypertarget{structEOSKernel_077213f420729c5a87f04c29fd14ce21}{
+\index{EOSKernel@{EOSKernel}!lua\_\-eoskernel\_\-process@{lua\_\-eoskernel\_\-process}}
+\index{lua\_\-eoskernel\_\-process@{lua\_\-eoskernel\_\-process}!EOSKernel@{EOSKernel}}
+\subsubsection[{lua\_\-eoskernel\_\-process}]{\setlength{\rightskip}{0pt plus 5cm}struct luaL\_\-reg {\bf EOSKernel::lua\_\-eoskernel\_\-process}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}static, read\mbox{]}}}}
+\label{structEOSKernel_077213f420729c5a87f04c29fd14ce21}
+
+
+contains process handling lua binding functions (eos.process.$\ast$) 
+
+\hypertarget{structEOSKernel_7033fb8fd34a75b851d9d9958e38c8f1}{
+\index{EOSKernel@{EOSKernel}!lua\_\-eoskernel\_\-message@{lua\_\-eoskernel\_\-message}}
+\index{lua\_\-eoskernel\_\-message@{lua\_\-eoskernel\_\-message}!EOSKernel@{EOSKernel}}
+\subsubsection[{lua\_\-eoskernel\_\-message}]{\setlength{\rightskip}{0pt plus 5cm}struct luaL\_\-reg {\bf EOSKernel::lua\_\-eoskernel\_\-message}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}static, read\mbox{]}}}}
+\label{structEOSKernel_7033fb8fd34a75b851d9d9958e38c8f1}
+
+
+contains message handling lua binding functions (eos.message.$\ast$) 
+
+\hypertarget{structEOSKernel_ed8c742384718b2e595d4f800178f80a}{
+\index{EOSKernel@{EOSKernel}!lua\_\-eoskernel\_\-log@{lua\_\-eoskernel\_\-log}}
+\index{lua\_\-eoskernel\_\-log@{lua\_\-eoskernel\_\-log}!EOSKernel@{EOSKernel}}
+\subsubsection[{lua\_\-eoskernel\_\-log}]{\setlength{\rightskip}{0pt plus 5cm}struct luaL\_\-reg {\bf EOSKernel::lua\_\-eoskernel\_\-log}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}static, read\mbox{]}}}}
+\label{structEOSKernel_ed8c742384718b2e595d4f800178f80a}
+
+
+contains log handling lua binding functions (eos.log.$\ast$) 
+
+\hypertarget{structEOSKernel_73cfb100d6374fd4cd0f5a7e80179b06}{
+\index{EOSKernel@{EOSKernel}!instanceFlag@{instanceFlag}}
+\index{instanceFlag@{instanceFlag}!EOSKernel@{EOSKernel}}
+\subsubsection[{instanceFlag}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf EOSKernel::instanceFlag} = false\hspace{0.3cm}{\tt  \mbox{[}static, private\mbox{]}}}}
+\label{structEOSKernel_73cfb100d6374fd4cd0f5a7e80179b06}
+
+
+static instance flag 
+
+\hypertarget{structEOSKernel_b29a9811607e25ec65e6432fec112c74}{
+\index{EOSKernel@{EOSKernel}!instance@{instance}}
+\index{instance@{instance}!EOSKernel@{EOSKernel}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EOSKernel} $\ast$ {\bf EOSKernel::instance} = NULL\hspace{0.3cm}{\tt  \mbox{[}static, private\mbox{]}}}}
+\label{structEOSKernel_b29a9811607e25ec65e6432fec112c74}
+
+
+static instance 
+
+\hypertarget{structEOSKernel_06d1a03f14d2102f0e92196db921a13e}{
+\index{EOSKernel@{EOSKernel}!logStream@{logStream}}
+\index{logStream@{logStream}!EOSKernel@{EOSKernel}}
+\subsubsection[{logStream}]{\setlength{\rightskip}{0pt plus 5cm}std::ofstream {\bf EOSKernel::logStream}\hspace{0.3cm}{\tt  \mbox{[}static, private\mbox{]}}}}
+\label{structEOSKernel_06d1a03f14d2102f0e92196db921a13e}
+
+
+application's output log stream 
+
+\hypertarget{structEOSKernel_cf859572d0066a9f3b14276c39d33845}{
+\index{EOSKernel@{EOSKernel}!kernelTimer@{kernelTimer}}
+\index{kernelTimer@{kernelTimer}!EOSKernel@{EOSKernel}}
+\subsubsection[{kernelTimer}]{\setlength{\rightskip}{0pt plus 5cm}EOSPrecisionTimer$\ast$ {\bf EOSKernel::kernelTimer}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_cf859572d0066a9f3b14276c39d33845}
+
+
+precision timer to handle execution timings 
+
+\hypertarget{structEOSKernel_5b6a6d064e015c2db02ed67ca224f080}{
+\index{EOSKernel@{EOSKernel}!luaEnvironment@{luaEnvironment}}
+\index{luaEnvironment@{luaEnvironment}!EOSKernel@{EOSKernel}}
+\subsubsection[{luaEnvironment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EOSLuaEnvironment}$\ast$ {\bf EOSKernel::luaEnvironment}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_5b6a6d064e015c2db02ed67ca224f080}
+
+
+instance of the class that manages Lua Runtime Environment 
+
+\hypertarget{structEOSKernel_b48245e1274b86370aebc583430b9199}{
+\index{EOSKernel@{EOSKernel}!scriptManager@{scriptManager}}
+\index{scriptManager@{scriptManager}!EOSKernel@{EOSKernel}}
+\subsubsection[{scriptManager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EOSScriptManager}$\ast$ {\bf EOSKernel::scriptManager}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_b48245e1274b86370aebc583430b9199}
+
+
+instance of the class that manages source scripts 
+
+\hypertarget{structEOSKernel_7224243c464c099b92494f3a06eeb99e}{
+\index{EOSKernel@{EOSKernel}!masterProcess@{masterProcess}}
+\index{masterProcess@{masterProcess}!EOSKernel@{EOSKernel}}
+\subsubsection[{masterProcess}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EOSProcess}$\ast$ {\bf EOSKernel::masterProcess}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_7224243c464c099b92494f3a06eeb99e}
+
+
+pointer to the application's main process (MasterProcess is the only process automatically instanced by the kernel) 
+
+\hypertarget{structEOSKernel_a755627acbc4b4b61d4fcbdef216baef}{
+\index{EOSKernel@{EOSKernel}!temporaryMessage@{temporaryMessage}}
+\index{temporaryMessage@{temporaryMessage}!EOSKernel@{EOSKernel}}
+\subsubsection[{temporaryMessage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EOSMessage}$\ast$ {\bf EOSKernel::temporaryMessage}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_a755627acbc4b4b61d4fcbdef216baef}
+
+
+pointer to the temporary \hyperlink{classEOSMessage}{EOSMessage} structure 
+
+\hypertarget{structEOSKernel_e6cc8ecb01686b6284ec7fb8ce2d376f}{
+\index{EOSKernel@{EOSKernel}!messageQueue@{messageQueue}}
+\index{messageQueue@{messageQueue}!EOSKernel@{EOSKernel}}
+\subsubsection[{messageQueue}]{\setlength{\rightskip}{0pt plus 5cm}std::queue$<${\bf EOSMessage}$\ast$$>$ {\bf EOSKernel::messageQueue}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_e6cc8ecb01686b6284ec7fb8ce2d376f}
+
+
+message queue 
+
+\hypertarget{structEOSKernel_200122496966050fd49e27dd74323093}{
+\index{EOSKernel@{EOSKernel}!frameStart@{frameStart}}
+\index{frameStart@{frameStart}!EOSKernel@{EOSKernel}}
+\subsubsection[{frameStart}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf EOSKernel::frameStart}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_200122496966050fd49e27dd74323093}
+
+
+\hypertarget{structEOSKernel_288bf0407fc19109c67102df51a4774c}{
+\index{EOSKernel@{EOSKernel}!lastFrameTime@{lastFrameTime}}
+\index{lastFrameTime@{lastFrameTime}!EOSKernel@{EOSKernel}}
+\subsubsection[{lastFrameTime}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf EOSKernel::lastFrameTime}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_288bf0407fc19109c67102df51a4774c}
+
+
+\hypertarget{structEOSKernel_96244c5052baeb3cb4915e655a12b50d}{
+\index{EOSKernel@{EOSKernel}!targetFrameTime@{targetFrameTime}}
+\index{targetFrameTime@{targetFrameTime}!EOSKernel@{EOSKernel}}
+\subsubsection[{targetFrameTime}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf EOSKernel::targetFrameTime}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_96244c5052baeb3cb4915e655a12b50d}
+
+
+fields used for timing purposes 
+
+\hypertarget{structEOSKernel_2ef28158d540dabd63d2020e082fa925}{
+\index{EOSKernel@{EOSKernel}!processes@{processes}}
+\index{processes@{processes}!EOSKernel@{EOSKernel}}
+\subsubsection[{processes}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$std::string, {\bf EOSProcess}$\ast$$>$ {\bf EOSKernel::processes}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_2ef28158d540dabd63d2020e082fa925}
+
+
+processes hashmap 
+
+\hypertarget{structEOSKernel_1624f33c49b9fcdd0a0b4a8bd2342267}{
+\index{EOSKernel@{EOSKernel}!safeguardRegistry@{safeguardRegistry}}
+\index{safeguardRegistry@{safeguardRegistry}!EOSKernel@{EOSKernel}}
+\subsubsection[{safeguardRegistry}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf EOSKernel::safeguardRegistry}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{structEOSKernel_1624f33c49b9fcdd0a0b4a8bd2342267}
+
+
+safeguard mechanism: flag registry 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{EOSKernel_8cpp}{EOSKernel.cpp}\item 
+\hyperlink{EOSKernel_8h}{EOSKernel.h}\end{CompactItemize}
